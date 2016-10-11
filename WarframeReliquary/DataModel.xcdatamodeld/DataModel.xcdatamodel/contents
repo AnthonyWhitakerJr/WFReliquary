@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16A323" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Item" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isRetired" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Rarity" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Relic" syncable="YES">
+        <attribute name="isRetired" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tier" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tier" syncable="YES"/>
+    </entity>
+    <entity name="Reward" syncable="YES">
+        <relationship name="item" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" syncable="YES"/>
+        <relationship name="rarity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Rarity" syncable="YES"/>
+        <relationship name="relic" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Relic" syncable="YES"/>
+    </entity>
+    <entity name="Tier" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Rarity" positionX="-63" positionY="-18" width="128" height="60"/>
+        <element name="Relic" positionX="-63" positionY="-9" width="128" height="90"/>
+        <element name="Item" positionX="-54" positionY="0" width="128" height="90"/>
+        <element name="Reward" positionX="-36" positionY="9" width="128" height="90"/>
+        <element name="Tier" positionX="-18" positionY="27" width="128" height="60"/>
+    </elements>
+</model>

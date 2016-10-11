@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		924063361DAD940D00398571 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924063351DAD940D00398571 /* Item.swift */; };
+		924063381DAD94A000398571 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924063371DAD94A000398571 /* Reward.swift */; };
+		9240633A1DAD952E00398571 /* Rarity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924063391DAD952E00398571 /* Rarity.swift */; };
+		9240633C1DAD9C2600398571 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240633B1DAD9C2600398571 /* Extensions.swift */; };
 		92DA45EE1DAD690900D9D3E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA45ED1DAD690900D9D3E0 /* AppDelegate.swift */; };
 		92DA45F01DAD690900D9D3E0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA45EF1DAD690900D9D3E0 /* FirstViewController.swift */; };
 		92DA45F21DAD690900D9D3E0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA45F11DAD690900D9D3E0 /* SecondViewController.swift */; };
@@ -15,6 +19,9 @@
 		92DA45FA1DAD690900D9D3E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DA45F81DAD690900D9D3E0 /* LaunchScreen.storyboard */; };
 		92DA46051DAD690900D9D3E0 /* WarframeReliquaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA46041DAD690900D9D3E0 /* WarframeReliquaryTests.swift */; };
 		92DA46101DAD690900D9D3E0 /* WarframeReliquaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA460F1DAD690900D9D3E0 /* WarframeReliquaryUITests.swift */; };
+		92DA46221DAD8AFF00D9D3E0 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92DA46201DAD8AFF00D9D3E0 /* DataModel.xcdatamodeld */; };
+		92DA46241DAD8E0F00D9D3E0 /* Relic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA46231DAD8E0F00D9D3E0 /* Relic.swift */; };
+		92DA46261DAD8E7300D9D3E0 /* Tier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA46251DAD8E7300D9D3E0 /* Tier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		924063351DAD940D00398571 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		924063371DAD94A000398571 /* Reward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
+		924063391DAD952E00398571 /* Rarity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rarity.swift; sourceTree = "<group>"; };
+		9240633B1DAD9C2600398571 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		92DA45EA1DAD690900D9D3E0 /* WarframeReliquary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarframeReliquary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DA45ED1DAD690900D9D3E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92DA45EF1DAD690900D9D3E0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +60,9 @@
 		92DA460B1DAD690900D9D3E0 /* WarframeReliquaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarframeReliquaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DA460F1DAD690900D9D3E0 /* WarframeReliquaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarframeReliquaryUITests.swift; sourceTree = "<group>"; };
 		92DA46111DAD690900D9D3E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92DA46211DAD8AFF00D9D3E0 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		92DA46231DAD8E0F00D9D3E0 /* Relic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relic.swift; sourceTree = "<group>"; };
+		92DA46251DAD8E7300D9D3E0 /* Tier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +113,11 @@
 		92DA45EC1DAD690900D9D3E0 /* WarframeReliquary */ = {
 			isa = PBXGroup;
 			children = (
+				92DA461F1DAD6A4000D9D3E0 /* Controller */,
+				92DA461E1DAD6A3800D9D3E0 /* Model */,
+				92DA461D1DAD6A3200D9D3E0 /* View */,
 				92DA45ED1DAD690900D9D3E0 /* AppDelegate.swift */,
-				92DA45EF1DAD690900D9D3E0 /* FirstViewController.swift */,
-				92DA45F11DAD690900D9D3E0 /* SecondViewController.swift */,
-				92DA45F31DAD690900D9D3E0 /* Main.storyboard */,
 				92DA45F61DAD690900D9D3E0 /* Assets.xcassets */,
-				92DA45F81DAD690900D9D3E0 /* LaunchScreen.storyboard */,
 				92DA45FB1DAD690900D9D3E0 /* Info.plist */,
 			);
 			path = WarframeReliquary;
@@ -126,6 +139,38 @@
 				92DA46111DAD690900D9D3E0 /* Info.plist */,
 			);
 			path = WarframeReliquaryUITests;
+			sourceTree = "<group>";
+		};
+		92DA461D1DAD6A3200D9D3E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92DA45F81DAD690900D9D3E0 /* LaunchScreen.storyboard */,
+				92DA45F31DAD690900D9D3E0 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		92DA461E1DAD6A3800D9D3E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92DA46201DAD8AFF00D9D3E0 /* DataModel.xcdatamodeld */,
+				92DA46231DAD8E0F00D9D3E0 /* Relic.swift */,
+				92DA46251DAD8E7300D9D3E0 /* Tier.swift */,
+				924063351DAD940D00398571 /* Item.swift */,
+				924063371DAD94A000398571 /* Reward.swift */,
+				924063391DAD952E00398571 /* Rarity.swift */,
+				9240633B1DAD9C2600398571 /* Extensions.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		92DA461F1DAD6A4000D9D3E0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				92DA45EF1DAD690900D9D3E0 /* FirstViewController.swift */,
+				92DA45F11DAD690900D9D3E0 /* SecondViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +311,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				92DA45F21DAD690900D9D3E0 /* SecondViewController.swift in Sources */,
+				92DA46241DAD8E0F00D9D3E0 /* Relic.swift in Sources */,
+				92DA46221DAD8AFF00D9D3E0 /* DataModel.xcdatamodeld in Sources */,
+				9240633A1DAD952E00398571 /* Rarity.swift in Sources */,
+				92DA46261DAD8E7300D9D3E0 /* Tier.swift in Sources */,
+				9240633C1DAD9C2600398571 /* Extensions.swift in Sources */,
+				924063381DAD94A000398571 /* Reward.swift in Sources */,
+				924063361DAD940D00398571 /* Item.swift in Sources */,
 				92DA45EE1DAD690900D9D3E0 /* AppDelegate.swift in Sources */,
 				92DA45F01DAD690900D9D3E0 /* FirstViewController.swift in Sources */,
 			);
@@ -516,6 +568,7 @@
 				92DA46161DAD690900D9D3E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92DA46171DAD690900D9D3E0 /* Build configuration list for PBXNativeTarget "WarframeReliquaryTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +577,7 @@
 				92DA46191DAD690900D9D3E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92DA461A1DAD690900D9D3E0 /* Build configuration list for PBXNativeTarget "WarframeReliquaryUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,8 +586,22 @@
 				92DA461C1DAD690900D9D3E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		92DA46201DAD8AFF00D9D3E0 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				92DA46211DAD8AFF00D9D3E0 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 92DA46211DAD8AFF00D9D3E0 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 92DA45E21DAD690900D9D3E0 /* Project object */;
 }
