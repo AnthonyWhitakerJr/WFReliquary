@@ -20,7 +20,6 @@ class FirstViewController: UIViewController {
         
         parseCsvFiles()
         populateRelicRewardTable()
-        print("Done")
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,8 +35,8 @@ class FirstViewController: UIViewController {
     
     func populateRelicRewardTable() {
         for reward in rewards {
-            if var relicRewards = rewardsTable[reward.relic.key] {
-                relicRewards.append(reward)
+            if rewardsTable[reward.relic.key] != nil {
+                rewardsTable[reward.relic.key]!.append(reward)
             } else {
                 rewardsTable[reward.relic.key] = [reward]
             }

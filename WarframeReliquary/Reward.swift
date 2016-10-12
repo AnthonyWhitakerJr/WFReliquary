@@ -8,11 +8,15 @@
 
 import Foundation
 
-class Reward {
+class Reward : CustomStringConvertible {
     
     private(set) var relic: Relic //Change to Relic.Key?
     private(set) var item: Item
     private(set) var rarity: Rarity
+    
+    var description: String {
+        return "\(relic) - \(item) - \(rarity)"
+    }
     
     init(relic: Relic, item: Item, rarity: Rarity) {
         self.relic = relic
