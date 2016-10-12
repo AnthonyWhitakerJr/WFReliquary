@@ -8,16 +8,51 @@
 
 import Foundation
 
-class Relic {
-    private(set) var tier: Tier!
-    private(set) var name: String!
-    private(set) var isRetired: Bool!
+class Relic : Comparable {
     
+    // MARK: Properties
+    private(set) var isRetired: Bool!
+    let key: Key!
+    
+    // MARK: Key
+    struct Key : Comparable, Hashable {
+        let tier: Tier!
+        let name: String!
+        
+        static func < (lhs: Key, rhs: Key) -> Bool {
+            if lhs.tier != rhs.tier {
+                return lhs.tier < rhs.tier
+            } else {
+                return lhs.name < rhs.name
+            }
+        }
+        
+        static func == (lhs: Key, rhs: Key) -> Bool {
+            return lhs.tier == rhs.tier && lhs.name == rhs.name
+        }
+        
+        var hashValue: Int {
+            return tier.hashValue ^ name.hashValue
+        }
+    }
+    
+    // MARK: - Initializers
     init(tier: Tier, name: String, isRetired: Bool = false) {
-        self.tier = tier
-        self.name = name
+        self.key = Key(tier: tier, name: name)
         self.isRetired = isRetired
     }
     
+    convenience init(key: Key, isRetired: Bool = false) {
+        self.init(tier: key.tier, name: key.name, isRetired: isRetired)
+    }
+    
+    // MARK: - Comparable
+    static func < (lhs: Relic, rhs: Relic) -> Bool {
+        return lhs.key < rhs.key
+    }
+    
+    static func == (lhs: Relic, rhs: Relic) -> Bool {
+        return lhs.key == rhs.key
+    }
     
 }

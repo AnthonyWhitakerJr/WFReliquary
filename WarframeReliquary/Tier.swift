@@ -8,9 +8,14 @@
 
 import Foundation
 
-enum Tier {
+enum Tier : String, Comparable {
     case Lith
     case Meso
     case Neo
     case Axi
+    
+    static func < (lhs: Tier, rhs: Tier) -> Bool {
+            return lhs.rawValue < rhs.rawValue
+    }
+
 }
