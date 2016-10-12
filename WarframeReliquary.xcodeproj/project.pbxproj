@@ -11,6 +11,11 @@
 		924063381DAD94A000398571 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924063371DAD94A000398571 /* Reward.swift */; };
 		9240633A1DAD952E00398571 /* Rarity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924063391DAD952E00398571 /* Rarity.swift */; };
 		9240633C1DAD9C2600398571 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240633B1DAD9C2600398571 /* Extensions.swift */; };
+		924CDFC31DADEC8200F5D982 /* Items.csv in Resources */ = {isa = PBXBuildFile; fileRef = 924CDFBE1DADEC8200F5D982 /* Items.csv */; };
+		924CDFC41DADEC8200F5D982 /* Rarity.csv in Resources */ = {isa = PBXBuildFile; fileRef = 924CDFBF1DADEC8200F5D982 /* Rarity.csv */; };
+		924CDFC51DADEC8200F5D982 /* Relics.csv in Resources */ = {isa = PBXBuildFile; fileRef = 924CDFC01DADEC8200F5D982 /* Relics.csv */; };
+		924CDFC61DADEC8200F5D982 /* Rewards.csv in Resources */ = {isa = PBXBuildFile; fileRef = 924CDFC11DADEC8200F5D982 /* Rewards.csv */; };
+		924CDFC71DADEC8200F5D982 /* Tier.csv in Resources */ = {isa = PBXBuildFile; fileRef = 924CDFC21DADEC8200F5D982 /* Tier.csv */; };
 		92DA45EE1DAD690900D9D3E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA45ED1DAD690900D9D3E0 /* AppDelegate.swift */; };
 		92DA45F01DAD690900D9D3E0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA45EF1DAD690900D9D3E0 /* FirstViewController.swift */; };
 		92DA45F21DAD690900D9D3E0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA45F11DAD690900D9D3E0 /* SecondViewController.swift */; };
@@ -19,7 +24,7 @@
 		92DA45FA1DAD690900D9D3E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DA45F81DAD690900D9D3E0 /* LaunchScreen.storyboard */; };
 		92DA46051DAD690900D9D3E0 /* WarframeReliquaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA46041DAD690900D9D3E0 /* WarframeReliquaryTests.swift */; };
 		92DA46101DAD690900D9D3E0 /* WarframeReliquaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA460F1DAD690900D9D3E0 /* WarframeReliquaryUITests.swift */; };
-		92DA46221DAD8AFF00D9D3E0 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92DA46201DAD8AFF00D9D3E0 /* DataModel.xcdatamodeld */; };
+		92DA46221DAD8AFF00D9D3E0 /* WarframeReliquary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92DA46201DAD8AFF00D9D3E0 /* WarframeReliquary.xcdatamodeld */; };
 		92DA46241DAD8E0F00D9D3E0 /* Relic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA46231DAD8E0F00D9D3E0 /* Relic.swift */; };
 		92DA46261DAD8E7300D9D3E0 /* Tier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA46251DAD8E7300D9D3E0 /* Tier.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +51,11 @@
 		924063371DAD94A000398571 /* Reward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
 		924063391DAD952E00398571 /* Rarity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rarity.swift; sourceTree = "<group>"; };
 		9240633B1DAD9C2600398571 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		924CDFBE1DADEC8200F5D982 /* Items.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Items.csv; sourceTree = "<group>"; };
+		924CDFBF1DADEC8200F5D982 /* Rarity.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rarity.csv; sourceTree = "<group>"; };
+		924CDFC01DADEC8200F5D982 /* Relics.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Relics.csv; sourceTree = "<group>"; };
+		924CDFC11DADEC8200F5D982 /* Rewards.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rewards.csv; sourceTree = "<group>"; };
+		924CDFC21DADEC8200F5D982 /* Tier.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tier.csv; sourceTree = "<group>"; };
 		92DA45EA1DAD690900D9D3E0 /* WarframeReliquary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarframeReliquary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DA45ED1DAD690900D9D3E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92DA45EF1DAD690900D9D3E0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +70,7 @@
 		92DA460B1DAD690900D9D3E0 /* WarframeReliquaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarframeReliquaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DA460F1DAD690900D9D3E0 /* WarframeReliquaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarframeReliquaryUITests.swift; sourceTree = "<group>"; };
 		92DA46111DAD690900D9D3E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92DA46211DAD8AFF00D9D3E0 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		92DA46211DAD8AFF00D9D3E0 /* WarframeReliquary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WarframeReliquary.xcdatamodel; sourceTree = "<group>"; };
 		92DA46231DAD8E0F00D9D3E0 /* Relic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relic.swift; sourceTree = "<group>"; };
 		92DA46251DAD8E7300D9D3E0 /* Tier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +100,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		924CDFBD1DADEC4C00F5D982 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				924CDFBE1DADEC8200F5D982 /* Items.csv */,
+				924CDFBF1DADEC8200F5D982 /* Rarity.csv */,
+				924CDFC01DADEC8200F5D982 /* Relics.csv */,
+				924CDFC11DADEC8200F5D982 /* Rewards.csv */,
+				924CDFC21DADEC8200F5D982 /* Tier.csv */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		92DA45E11DAD690900D9D3E0 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +135,7 @@
 		92DA45EC1DAD690900D9D3E0 /* WarframeReliquary */ = {
 			isa = PBXGroup;
 			children = (
+				924CDFBD1DADEC4C00F5D982 /* Resources */,
 				92DA461F1DAD6A4000D9D3E0 /* Controller */,
 				92DA461E1DAD6A3800D9D3E0 /* Model */,
 				92DA461D1DAD6A3200D9D3E0 /* View */,
@@ -153,7 +176,7 @@
 		92DA461E1DAD6A3800D9D3E0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				92DA46201DAD8AFF00D9D3E0 /* DataModel.xcdatamodeld */,
+				92DA46201DAD8AFF00D9D3E0 /* WarframeReliquary.xcdatamodeld */,
 				92DA46231DAD8E0F00D9D3E0 /* Relic.swift */,
 				92DA46251DAD8E7300D9D3E0 /* Tier.swift */,
 				924063351DAD940D00398571 /* Item.swift */,
@@ -284,8 +307,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				92DA45FA1DAD690900D9D3E0 /* LaunchScreen.storyboard in Resources */,
+				924CDFC31DADEC8200F5D982 /* Items.csv in Resources */,
 				92DA45F71DAD690900D9D3E0 /* Assets.xcassets in Resources */,
+				924CDFC41DADEC8200F5D982 /* Rarity.csv in Resources */,
+				924CDFC51DADEC8200F5D982 /* Relics.csv in Resources */,
 				92DA45F51DAD690900D9D3E0 /* Main.storyboard in Resources */,
+				924CDFC71DADEC8200F5D982 /* Tier.csv in Resources */,
+				924CDFC61DADEC8200F5D982 /* Rewards.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +340,7 @@
 			files = (
 				92DA45F21DAD690900D9D3E0 /* SecondViewController.swift in Sources */,
 				92DA46241DAD8E0F00D9D3E0 /* Relic.swift in Sources */,
-				92DA46221DAD8AFF00D9D3E0 /* DataModel.xcdatamodeld in Sources */,
+				92DA46221DAD8AFF00D9D3E0 /* WarframeReliquary.xcdatamodeld in Sources */,
 				9240633A1DAD952E00398571 /* Rarity.swift in Sources */,
 				92DA46261DAD8E7300D9D3E0 /* Tier.swift in Sources */,
 				9240633C1DAD9C2600398571 /* Extensions.swift in Sources */,
@@ -591,13 +619,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		92DA46201DAD8AFF00D9D3E0 /* DataModel.xcdatamodeld */ = {
+		92DA46201DAD8AFF00D9D3E0 /* WarframeReliquary.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				92DA46211DAD8AFF00D9D3E0 /* DataModel.xcdatamodel */,
+				92DA46211DAD8AFF00D9D3E0 /* WarframeReliquary.xcdatamodel */,
 			);
-			currentVersion = 92DA46211DAD8AFF00D9D3E0 /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
+			currentVersion = 92DA46211DAD8AFF00D9D3E0 /* WarframeReliquary.xcdatamodel */;
+			path = WarframeReliquary.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
