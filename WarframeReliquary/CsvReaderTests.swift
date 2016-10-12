@@ -23,12 +23,12 @@ class CsvReaderTests: XCTestCase {
     
     func testParseItemCsv() {
         let items = CsvReader.parseItemCsv()
-        XCTAssert(items.count == 122, "Incorrect number of Items read from file.")
+        XCTAssertEqual(122, items.count, "Incorrect number of Items read from file.")
     }
     
     func testparseRelicCsv() {
         let relics = CsvReader.parseRelicCsv()
-        XCTAssert(relics.count == 42, "Incorrect number of Relics read from file.")
+        XCTAssertEqual(42, relics.count, "Incorrect number of Relics read from file.")
     }
     
     func testparseRewardCsv() {
