@@ -8,10 +8,14 @@
 
 import Foundation
 
-class Item : Comparable {
-    
+class Item : Comparable, CustomStringConvertible {
+
     let name: String!
     private(set) var isRetired: Bool!
+    
+    var description: String {
+        return name
+    }
     
     init(name: String, isRetired: Bool) {
         self.name = name

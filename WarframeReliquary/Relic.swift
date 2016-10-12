@@ -8,16 +8,24 @@
 
 import Foundation
 
-class Relic : Comparable {
+class Relic : Comparable, CustomStringConvertible {
     
     // MARK: Properties
     private(set) var isRetired: Bool!
     let key: Key!
     
+    var description: String {
+        return key.description
+    }
+    
     // MARK: Key
-    struct Key : Comparable, Hashable {
+    struct Key : Comparable, Hashable, CustomStringConvertible {
         let tier: Tier!
         let name: String!
+        
+        var description: String {
+            return "\(tier!) \(name!)"
+        }
         
         static func < (lhs: Key, rhs: Key) -> Bool {
             if lhs.tier != rhs.tier {

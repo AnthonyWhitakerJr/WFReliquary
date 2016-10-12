@@ -9,10 +9,18 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    
+    var items = Dictionary<String, Item>()
+    var relics = Dictionary<Relic.Key, Relic>()
+    var rewards = [Reward]()
+    var rewardsTable = Dictionary<Relic.Key, [Reward]>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        parseCsvFiles()
+        populateRelicRewardTable()
+        print("Done")
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +28,20 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func parseCsvFiles() {
+        items = CsvReader.parseItemCSV()
+        relics = CsvReader.parseRelicCSV()
+        rewards = CsvReader.parseRewardCSV(relics: relics, items: items)
+    }
+    
+    func populateRelicRewardTable() {
+        for reward in rewards {
+            if var relicRewards = rewardsTable[reward.relic.key] {
+                relicRewards.append(reward)
+            } else {
+                rewardsTable[reward.relic.key] = [reward]
+            }
+        }
+    }
 }
 

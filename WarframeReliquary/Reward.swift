@@ -10,7 +10,7 @@ import Foundation
 
 class Reward {
     
-    private(set) var relic: Relic
+    private(set) var relic: Relic //Change to Relic.Key?
     private(set) var item: Item
     private(set) var rarity: Rarity
     

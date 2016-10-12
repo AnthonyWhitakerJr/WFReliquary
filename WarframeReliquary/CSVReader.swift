@@ -8,11 +8,11 @@
 
 import Foundation
 
-class CSVReader {
+class CsvReader {
     
-    func parseItemCSV() -> Dictionary<String, Item> {
+    static func parseItemCSV() -> Dictionary<String, Item> {
         var items = Dictionary<String, Item>()
-        let path = Bundle.main.path(forResource: "items", ofType: "csv")
+        let path = Bundle.main.path(forResource: "Items", ofType: "csv")
         
         do {
             let csv = try CSV(contentsOfFile: path!)
@@ -33,9 +33,9 @@ class CSVReader {
         return items
     }
     
-    func parseRelicCSV() -> Dictionary<Relic.Key, Relic> {
+    static func parseRelicCSV() -> Dictionary<Relic.Key, Relic> {
         var relics = Dictionary<Relic.Key, Relic>()
-        let path = Bundle.main.path(forResource: "items", ofType: "csv")
+        let path = Bundle.main.path(forResource: "Relics", ofType: "csv")
         
         do {
             let csv = try CSV(contentsOfFile: path!)
@@ -57,9 +57,9 @@ class CSVReader {
         return relics
     }
     
-    func parseRewardCSV(relics: Dictionary<Relic.Key, Relic>, items: Dictionary<String, Item>) -> [Reward] {
+    static func parseRewardCSV(relics: Dictionary<Relic.Key, Relic>, items: Dictionary<String, Item>) -> [Reward] {
         var rewards = [Reward]()
-        let path = Bundle.main.path(forResource: "items", ofType: "csv")
+        let path = Bundle.main.path(forResource: "Rewards", ofType: "csv")
         
         do {
             let csv = try CSV(contentsOfFile: path!)
@@ -72,7 +72,10 @@ class CSVReader {
                 let key = Relic.Key(tier: tier, name: type)
                 let rarity = Rarity(rawValue: row["rarity"]!.capitalized)
                 
-                let reward = Reward(relic: relics[key]!, item: items[itemName]!, rarity: rarity!)
+                let relic = relics[key]!
+                let item = items[itemName]!
+                
+                let reward = Reward(relic: relic, item: item, rarity: rarity!)
                 
                 rewards.append(reward)
             }
