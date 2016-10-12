@@ -8,13 +8,22 @@
 
 import Foundation
 
-class Item {
+class Item : Comparable {
     
-    private(set) var name: String!
+    let name: String!
     private(set) var isRetired: Bool!
     
     init(name: String, isRetired: Bool) {
         self.name = name
         self.isRetired = isRetired
+    }
+    
+    // MARK: - Comparable
+    static func < (lhs: Item, rhs: Item) -> Bool {
+        return lhs.name < rhs.name
+    }
+    
+    static func == (lhs: Item, rhs: Item) -> Bool {
+        return lhs.name == rhs.name
     }
 }
