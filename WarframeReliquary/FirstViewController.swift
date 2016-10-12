@@ -19,7 +19,7 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         
         parseCsvFiles()
-        populateRelicRewardTable()
+        rewardsTable = RewardUtils.groupByRelic(rewards: rewards)
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,19 +28,10 @@ class FirstViewController: UIViewController {
     }
 
     func parseCsvFiles() {
-        items = CsvReader.parseItemCSV()
-        relics = CsvReader.parseRelicCSV()
-        rewards = CsvReader.parseRewardCSV(relics: relics, items: items)
+        items = CsvReader.parseItemCsv()
+        relics = CsvReader.parseRelicCsv()
+        rewards = CsvReader.parseRewardCsv(relics: relics, items: items)
     }
-    
-    func populateRelicRewardTable() {
-        for reward in rewards {
-            if rewardsTable[reward.relic.key] != nil {
-                rewardsTable[reward.relic.key]!.append(reward)
-            } else {
-                rewardsTable[reward.relic.key] = [reward]
-            }
-        }
-    }
+
 }
 

@@ -10,7 +10,7 @@ import Foundation
 
 class CsvReader {
     
-    static func parseItemCSV() -> Dictionary<String, Item> {
+    static func parseItemCsv() -> Dictionary<String, Item> {
         var items = Dictionary<String, Item>()
         let path = Bundle.main.path(forResource: "Items", ofType: "csv")
         
@@ -33,7 +33,7 @@ class CsvReader {
         return items
     }
     
-    static func parseRelicCSV() -> Dictionary<Relic.Key, Relic> {
+    static func parseRelicCsv() -> Dictionary<Relic.Key, Relic> {
         var relics = Dictionary<Relic.Key, Relic>()
         let path = Bundle.main.path(forResource: "Relics", ofType: "csv")
         
@@ -57,7 +57,7 @@ class CsvReader {
         return relics
     }
     
-    static func parseRewardCSV(relics: Dictionary<Relic.Key, Relic>, items: Dictionary<String, Item>) -> [Reward] {
+    static func parseRewardCsv(relics: Dictionary<Relic.Key, Relic>, items: Dictionary<String, Item>) -> [Reward] {
         var rewards = [Reward]()
         let path = Bundle.main.path(forResource: "Rewards", ofType: "csv")
         
