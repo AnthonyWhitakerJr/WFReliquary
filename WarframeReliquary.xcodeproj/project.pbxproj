@@ -31,6 +31,8 @@
 		92DA46261DAD8E7300D9D3E0 /* Tier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA46251DAD8E7300D9D3E0 /* Tier.swift */; };
 		92DE3D9A1DAEEB9E003DAC19 /* CsvReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE3D991DAEEB9E003DAC19 /* CsvReaderTests.swift */; };
 		92DE3D9C1DAEEF95003DAC19 /* RewardsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE3D9B1DAEEF95003DAC19 /* RewardsUtils.swift */; };
+		92DE3D9F1DAF1877003DAC19 /* FissureRelicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE3D9D1DAF1877003DAC19 /* FissureRelicCell.swift */; };
+		92DE3DA01DAF1877003DAC19 /* FissureRelicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92DE3D9E1DAF1877003DAC19 /* FissureRelicCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		92DA46251DAD8E7300D9D3E0 /* Tier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tier.swift; sourceTree = "<group>"; };
 		92DE3D991DAEEB9E003DAC19 /* CsvReaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CsvReaderTests.swift; path = ../WarframeReliquary/CsvReaderTests.swift; sourceTree = "<group>"; };
 		92DE3D9B1DAEEF95003DAC19 /* RewardsUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsUtils.swift; sourceTree = "<group>"; };
+		92DE3D9D1DAF1877003DAC19 /* FissureRelicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FissureRelicCell.swift; sourceTree = "<group>"; };
+		92DE3D9E1DAF1877003DAC19 /* FissureRelicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FissureRelicCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +193,8 @@
 			children = (
 				92DA45F81DAD690900D9D3E0 /* LaunchScreen.storyboard */,
 				92DA45F31DAD690900D9D3E0 /* Main.storyboard */,
+				92DE3D9D1DAF1877003DAC19 /* FissureRelicCell.swift */,
+				92DE3D9E1DAF1877003DAC19 /* FissureRelicCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -329,6 +335,7 @@
 				92DA45FA1DAD690900D9D3E0 /* LaunchScreen.storyboard in Resources */,
 				924CDFC31DADEC8200F5D982 /* Items.csv in Resources */,
 				92DA45F71DAD690900D9D3E0 /* Assets.xcassets in Resources */,
+				92DE3DA01DAF1877003DAC19 /* FissureRelicCell.xib in Resources */,
 				924CDFC41DADEC8200F5D982 /* Rarity.csv in Resources */,
 				924CDFC51DADEC8200F5D982 /* Relics.csv in Resources */,
 				92DA45F51DAD690900D9D3E0 /* Main.storyboard in Resources */,
@@ -369,6 +376,7 @@
 				924063381DAD94A000398571 /* Reward.swift in Sources */,
 				924063361DAD940D00398571 /* Item.swift in Sources */,
 				92DA45EE1DAD690900D9D3E0 /* AppDelegate.swift in Sources */,
+				92DE3D9F1DAF1877003DAC19 /* FissureRelicCell.swift in Sources */,
 				92DA45F01DAD690900D9D3E0 /* FirstViewController.swift in Sources */,
 				924CDFCA1DAE959800F5D982 /* CSV.swift in Sources */,
 			);
