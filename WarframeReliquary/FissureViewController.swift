@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class FissureViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var relicTierControl: UISegmentedControl!
     @IBOutlet weak var relicCollectionView: UICollectionView!
@@ -36,7 +36,7 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
         
         parseCsvFiles()
         rewardsByRelic = RewardUtils.groupByRelic(rewards: rewards)
-        relicsByTier = RewardUtils.groupByTier(relics: relics)
+        relicsByTier = RelicUtils.groupByTier(relics: relics)
     }
     
     override func didReceiveMemoryWarning() {

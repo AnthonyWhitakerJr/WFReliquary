@@ -18,8 +18,9 @@
 		924CDFC71DADEC8200F5D982 /* Tier.csv in Resources */ = {isa = PBXBuildFile; fileRef = 924CDFC21DADEC8200F5D982 /* Tier.csv */; };
 		924CDFCA1DAE959800F5D982 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924CDFC91DAE959800F5D982 /* CSV.swift */; };
 		924CDFCC1DAE99AD00F5D982 /* CsvReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924CDFCB1DAE99AD00F5D982 /* CsvReader.swift */; };
+		927B6AA71DB1323800E1A031 /* RelicUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927B6AA61DB1323800E1A031 /* RelicUtils.swift */; };
 		92DA45EE1DAD690900D9D3E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA45ED1DAD690900D9D3E0 /* AppDelegate.swift */; };
-		92DA45F01DAD690900D9D3E0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA45EF1DAD690900D9D3E0 /* FirstViewController.swift */; };
+		92DA45F01DAD690900D9D3E0 /* FissureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA45EF1DAD690900D9D3E0 /* FissureViewController.swift */; };
 		92DA45F21DAD690900D9D3E0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA45F11DAD690900D9D3E0 /* SecondViewController.swift */; };
 		92DA45F51DAD690900D9D3E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DA45F31DAD690900D9D3E0 /* Main.storyboard */; };
 		92DA45F71DAD690900D9D3E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92DA45F61DAD690900D9D3E0 /* Assets.xcassets */; };
@@ -30,7 +31,7 @@
 		92DA46241DAD8E0F00D9D3E0 /* Relic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA46231DAD8E0F00D9D3E0 /* Relic.swift */; };
 		92DA46261DAD8E7300D9D3E0 /* Tier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA46251DAD8E7300D9D3E0 /* Tier.swift */; };
 		92DE3D9A1DAEEB9E003DAC19 /* CsvReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE3D991DAEEB9E003DAC19 /* CsvReaderTests.swift */; };
-		92DE3D9C1DAEEF95003DAC19 /* RewardsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE3D9B1DAEEF95003DAC19 /* RewardsUtils.swift */; };
+		92DE3D9C1DAEEF95003DAC19 /* RewardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE3D9B1DAEEF95003DAC19 /* RewardUtils.swift */; };
 		92DE3D9F1DAF1877003DAC19 /* FissureRelicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE3D9D1DAF1877003DAC19 /* FissureRelicCell.swift */; };
 		92DE3DA01DAF1877003DAC19 /* FissureRelicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92DE3D9E1DAF1877003DAC19 /* FissureRelicCell.xib */; };
 /* End PBXBuildFile section */
@@ -64,9 +65,10 @@
 		924CDFC21DADEC8200F5D982 /* Tier.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tier.csv; sourceTree = "<group>"; };
 		924CDFC91DAE959800F5D982 /* CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
 		924CDFCB1DAE99AD00F5D982 /* CsvReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CsvReader.swift; sourceTree = "<group>"; };
+		927B6AA61DB1323800E1A031 /* RelicUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelicUtils.swift; sourceTree = "<group>"; };
 		92DA45EA1DAD690900D9D3E0 /* WarframeReliquary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarframeReliquary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DA45ED1DAD690900D9D3E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92DA45EF1DAD690900D9D3E0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		92DA45EF1DAD690900D9D3E0 /* FissureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FissureViewController.swift; sourceTree = "<group>"; };
 		92DA45F11DAD690900D9D3E0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		92DA45F41DAD690900D9D3E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92DA45F61DAD690900D9D3E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,7 +84,7 @@
 		92DA46231DAD8E0F00D9D3E0 /* Relic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relic.swift; sourceTree = "<group>"; };
 		92DA46251DAD8E7300D9D3E0 /* Tier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tier.swift; sourceTree = "<group>"; };
 		92DE3D991DAEEB9E003DAC19 /* CsvReaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CsvReaderTests.swift; path = ../WarframeReliquary/CsvReaderTests.swift; sourceTree = "<group>"; };
-		92DE3D9B1DAEEF95003DAC19 /* RewardsUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsUtils.swift; sourceTree = "<group>"; };
+		92DE3D9B1DAEEF95003DAC19 /* RewardUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardUtils.swift; sourceTree = "<group>"; };
 		92DE3D9D1DAF1877003DAC19 /* FissureRelicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FissureRelicCell.swift; sourceTree = "<group>"; };
 		92DE3D9E1DAF1877003DAC19 /* FissureRelicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FissureRelicCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,7 +131,8 @@
 			children = (
 				924CDFC91DAE959800F5D982 /* CSV.swift */,
 				924CDFCB1DAE99AD00F5D982 /* CsvReader.swift */,
-				92DE3D9B1DAEEF95003DAC19 /* RewardsUtils.swift */,
+				92DE3D9B1DAEEF95003DAC19 /* RewardUtils.swift */,
+				927B6AA61DB1323800E1A031 /* RelicUtils.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -216,7 +219,7 @@
 		92DA461F1DAD6A4000D9D3E0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				92DA45EF1DAD690900D9D3E0 /* FirstViewController.swift */,
+				92DA45EF1DAD690900D9D3E0 /* FissureViewController.swift */,
 				92DA45F11DAD690900D9D3E0 /* SecondViewController.swift */,
 			);
 			name = Controller;
@@ -366,7 +369,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				92DA45F21DAD690900D9D3E0 /* SecondViewController.swift in Sources */,
-				92DE3D9C1DAEEF95003DAC19 /* RewardsUtils.swift in Sources */,
+				92DE3D9C1DAEEF95003DAC19 /* RewardUtils.swift in Sources */,
+				927B6AA71DB1323800E1A031 /* RelicUtils.swift in Sources */,
 				92DA46241DAD8E0F00D9D3E0 /* Relic.swift in Sources */,
 				92DA46221DAD8AFF00D9D3E0 /* WarframeReliquary.xcdatamodeld in Sources */,
 				9240633A1DAD952E00398571 /* Rarity.swift in Sources */,
@@ -377,7 +381,7 @@
 				924063361DAD940D00398571 /* Item.swift in Sources */,
 				92DA45EE1DAD690900D9D3E0 /* AppDelegate.swift in Sources */,
 				92DE3D9F1DAF1877003DAC19 /* FissureRelicCell.swift in Sources */,
-				92DA45F01DAD690900D9D3E0 /* FirstViewController.swift in Sources */,
+				92DA45F01DAD690900D9D3E0 /* FissureViewController.swift in Sources */,
 				924CDFCA1DAE959800F5D982 /* CSV.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
