@@ -13,6 +13,8 @@ enum Rarity : String, Comparable {
     case Uncommon
     case Rare
     
+    static let values = [Common, Uncommon, Rare]
+    
     static func < (lhs: Rarity, rhs: Rarity) -> Bool {
         return lhs.rawValue < rhs.rawValue
     }

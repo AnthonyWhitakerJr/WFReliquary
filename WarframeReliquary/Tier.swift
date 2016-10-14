@@ -14,6 +14,8 @@ enum Tier : String, Comparable {
     case Neo
     case Axi
     
+    static let values = [Lith, Meso, Neo, Axi]
+    
     static func < (lhs: Tier, rhs: Tier) -> Bool {
             return lhs.rawValue < rhs.rawValue
     }
