@@ -18,15 +18,6 @@ class RarirtyTests: XCTestCase {
         XCTAssertTrue(Rarity.values.contains(.Rare))
         
         XCTAssertEqual(3, Rarity.values.count) // Test for additional values
-        
-        let rarity = Rarity.Common // Test for additional cases
-        switch rarity {
-        case .Common: break
-        case .Uncommon: break
-        case .Rare: break
-        default: assertionFailure("This should never happen.")
-        }
-        
     }
     
 }

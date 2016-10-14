@@ -19,16 +19,6 @@ class TierTests: XCTestCase {
         XCTAssertTrue(Tier.values.contains(.Axi))
 
         XCTAssertEqual(4, Tier.values.count) // Test for additional values
-        
-        let tier = Tier.Lith // Test for additional cases
-        switch tier {
-        case .Lith: break
-        case .Meso: break
-        case .Neo: break
-        case .Axi: break
-        default: assertionFailure("This should never happen.")
-        }
-        
     }
     
 }
