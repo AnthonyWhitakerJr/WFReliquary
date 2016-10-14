@@ -8,30 +8,69 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    @IBOutlet weak var relicTierControl: UISegmentedControl!
+    @IBOutlet weak var relicCollectionView: UICollectionView!
     
     var items = Dictionary<String, Item>()
     var relics = Dictionary<Relic.Key, Relic>()
     var rewards = [Reward]()
-    var rewardsTable = Dictionary<Relic.Key, [Reward]>()
-
+    var rewardsByRelic = Dictionary<Relic.Key, [Reward]>()
+    var relicsByTier = Dictionary<Tier, [Relic]>()
+    
+    var selectedTier: Tier? {
+        let selectedTierTitle = relicTierControl.titleForSegment(at: relicTierControl.selectedSegmentIndex)
+        if let selectedTier = selectedTierTitle?.capitalized {
+            return Tier(rawValue: selectedTier)
+        }
+        
+        return nil
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        relicCollectionView.delegate = self
+        relicCollectionView.dataSource = self
+        
         parseCsvFiles()
-        rewardsTable = RewardUtils.groupByRelic(rewards: rewards)
+        rewardsByRelic = RewardUtils.groupByRelic(rewards: rewards)
+        relicsByTier = RewardUtils.groupByTier(relics: relics)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     func parseCsvFiles() {
         items = CsvReader.parseItemCsv()
         relics = CsvReader.parseRelicCsv()
         rewards = CsvReader.parseRewardCsv(relics: relics, items: items)
     }
-
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if let selectedTier = selectedTier {
+            return relicsByTier[selectedTier]!.count
+        }
+        
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let selectedTier = selectedTier {
+            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RelicCell", for: indexPath) as? FissureRelicCell {
+                
+                let relic = relicsByTier[selectedTier]![indexPath.row]
+                cell.configureCell(relic: relic)
+                
+                return cell
+            }
+        }
+        
+        return UICollectionViewCell()
+    }
+    
 }
 

@@ -36,6 +36,11 @@
                 </subviews>
             </view>
             <size key="customSize" width="382" height="337"/>
+            <connections>
+                <outlet property="relicCountLabel" destination="EUH-pP-kiL" id="AzD-tK-IWn"/>
+                <outlet property="relicImageView" destination="toV-nz-Yay" id="6fb-cE-T6k"/>
+                <outlet property="relicTitleLabel" destination="zVg-Y1-mWq" id="Iv6-9Y-IvE"/>
+            </connections>
             <point key="canvasLocation" x="84" y="101.5"/>
         </collectionViewCell>
     </objects>

@@ -32,4 +32,16 @@ class RewardUtils {
         return rewardsTable
     }
     
+    static func groupByTier(relics: Dictionary<Relic.Key, Relic>) -> Dictionary<Tier, [Relic]> {
+        var relicTable = Dictionary<Tier, [Relic]>()
+        for (key, relic) in relics {
+            if relicTable[key.tier] != nil {
+                relicTable[key.tier]!.append(relic)
+            } else {
+                relicTable[key.tier] = [relic]
+            }
+        }
+        return relicTable
+    }
+    
 }

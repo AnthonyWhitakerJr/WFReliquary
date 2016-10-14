@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,9 +19,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pf3-0w-swy">
-                                <frame key="frameInset" minX="16" minY="20" width="343" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pzp-eI-cc4">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jgN-Or-Cpy">
+                                    <size key="itemSize" width="97" height="94"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RelicCell" id="h8s-rJ-i3W" customClass="FissureRelicCell" customModule="WarframeReliquary" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="97" height="94"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="97" height="94"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pf3-0w-swy">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="ehs-vW-1aF"/>
+                                </constraints>
                                 <segments>
                                     <segment title="LITH"/>
                                     <segment title="MESO"/>
@@ -28,31 +49,23 @@
                                     <segment title="AXI"/>
                                 </segments>
                             </segmentedControl>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pzp-eI-cc4">
-                                <frame key="frameInset" minX="16" minY="56" width="343" height="554"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jgN-Or-Cpy">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="h8s-rJ-i3W">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Pzp-eI-cc4" secondAttribute="bottom" constant="8" id="3CI-FM-XrE"/>
+                            <constraint firstItem="pf3-0w-swy" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="KRy-dr-Awy"/>
+                            <constraint firstItem="Pzp-eI-cc4" firstAttribute="top" secondItem="pf3-0w-swy" secondAttribute="bottom" constant="8" id="QcZ-GU-vPh"/>
+                            <constraint firstItem="Pzp-eI-cc4" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="SZJ-uq-hkn"/>
+                            <constraint firstItem="pf3-0w-swy" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="dOt-Ju-AQn"/>
+                            <constraint firstItem="pf3-0w-swy" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="eIm-ad-4SI"/>
+                            <constraint firstItem="Pzp-eI-cc4" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="eiP-36-6ul"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Fissure" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Fissure" image="voidFissureIcon" selectedImage="voidFissureIcon" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="relicCollectionView" destination="Pzp-eI-cc4" id="O8x-Ee-YpN"/>
+                        <outlet property="relicTierControl" destination="pf3-0w-swy" id="pIR-Au-8tG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,7 +130,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
+        <image name="voidFissureIcon" width="16" height="32"/>
     </resources>
 </document>
