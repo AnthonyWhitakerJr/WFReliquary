@@ -16,6 +16,6 @@ enum Rarity : String, Comparable {
     static let values = [Common, Uncommon, Rare]
     
     static func < (lhs: Rarity, rhs: Rarity) -> Bool {
-        return lhs.rawValue < rhs.rawValue
+        return Rarity.values.index(of: lhs)! < Rarity.values.index(of: rhs)!
     }
 }

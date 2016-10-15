@@ -36,7 +36,6 @@
 		92DE3D9A1DAEEB9E003DAC19 /* CsvReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE3D991DAEEB9E003DAC19 /* CsvReaderTests.swift */; };
 		92DE3D9C1DAEEF95003DAC19 /* RewardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE3D9B1DAEEF95003DAC19 /* RewardUtils.swift */; };
 		92DE3D9F1DAF1877003DAC19 /* FissureRelicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE3D9D1DAF1877003DAC19 /* FissureRelicCell.swift */; };
-		92DE3DA01DAF1877003DAC19 /* FissureRelicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92DE3D9E1DAF1877003DAC19 /* FissureRelicCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,7 +91,6 @@
 		92DE3D991DAEEB9E003DAC19 /* CsvReaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CsvReaderTests.swift; path = ../WarframeReliquary/CsvReaderTests.swift; sourceTree = "<group>"; };
 		92DE3D9B1DAEEF95003DAC19 /* RewardUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardUtils.swift; sourceTree = "<group>"; };
 		92DE3D9D1DAF1877003DAC19 /* FissureRelicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FissureRelicCell.swift; sourceTree = "<group>"; };
-		92DE3D9E1DAF1877003DAC19 /* FissureRelicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FissureRelicCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,7 +204,6 @@
 				92DA45F81DAD690900D9D3E0 /* LaunchScreen.storyboard */,
 				92DA45F31DAD690900D9D3E0 /* Main.storyboard */,
 				92DE3D9D1DAF1877003DAC19 /* FissureRelicCell.swift */,
-				92DE3D9E1DAF1877003DAC19 /* FissureRelicCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -347,7 +344,6 @@
 				92DA45FA1DAD690900D9D3E0 /* LaunchScreen.storyboard in Resources */,
 				924CDFC31DADEC8200F5D982 /* Items.csv in Resources */,
 				92DA45F71DAD690900D9D3E0 /* Assets.xcassets in Resources */,
-				92DE3DA01DAF1877003DAC19 /* FissureRelicCell.xib in Resources */,
 				924CDFC41DADEC8200F5D982 /* Rarity.csv in Resources */,
 				924CDFC51DADEC8200F5D982 /* Relics.csv in Resources */,
 				92DA45F51DAD690900D9D3E0 /* Main.storyboard in Resources */,

@@ -17,7 +17,7 @@ enum Tier : String, Comparable {
     static let values = [Lith, Meso, Neo, Axi]
     
     static func < (lhs: Tier, rhs: Tier) -> Bool {
-            return lhs.rawValue < rhs.rawValue
+        return Tier.values.index(of: lhs)! < Tier.values.index(of: rhs)!
     }
 
 }

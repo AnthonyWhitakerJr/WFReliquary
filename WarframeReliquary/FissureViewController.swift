@@ -61,7 +61,6 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let selectedTier = selectedTier {
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RelicCell", for: indexPath) as? FissureRelicCell {
-                
                 let relic = relicsByTier[selectedTier]![indexPath.row]
                 cell.configureCell(relic: relic)
                 

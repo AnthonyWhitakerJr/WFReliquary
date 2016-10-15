@@ -9,7 +9,7 @@
 import UIKit
 
 class FissureRelicCell: UICollectionViewCell {
-
+    
     @IBOutlet weak var relicCountLabel: UILabel!
     @IBOutlet weak var relicImageView: UIImageView!
     @IBOutlet weak var relicTitleLabel: UILabel!
@@ -27,7 +27,7 @@ class FissureRelicCell: UICollectionViewCell {
     func configureCell(relic: Relic) {
         self.relic = relic
         
-        relicTitleLabel.text = self.relic.description
+        relicTitleLabel.text = relic.description
         relicImageView.image = image(for: relic)
     }
     
@@ -55,5 +55,5 @@ class FissureRelicCell: UICollectionViewCell {
             relicCountLabel.text = "\(relicCount) IN USE"
         }
     }
-
+    
 }

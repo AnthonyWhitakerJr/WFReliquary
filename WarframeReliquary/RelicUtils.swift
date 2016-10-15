@@ -19,6 +19,12 @@ class RelicUtils {
                 relicTable[relic.key.tier] = [relic]
             }
         }
+        
+        for (tier, _) in relicTable {
+            relicTable[tier]?.sort()
+        }
+        
         return relicTable
     }
+
 }
