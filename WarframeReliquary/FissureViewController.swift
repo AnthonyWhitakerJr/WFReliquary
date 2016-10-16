@@ -71,5 +71,12 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
         return UICollectionViewCell()
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        let relic = relicsByTier[selectedTier!]![indexPath.row]
+        
+        let relicCell = collectionView.cellForItem(at: indexPath) as! FissureRelicCell
+        relicCell.tapped()
+    }
+    
 }
 

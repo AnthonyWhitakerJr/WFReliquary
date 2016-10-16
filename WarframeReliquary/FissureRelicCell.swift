@@ -22,6 +22,13 @@ class FissureRelicCell: UICollectionViewCell {
         // Initialization code
         
         layer.cornerRadius = 5.0
+        
+        relicCountLabel.layer.cornerRadius = 5.0
+        relicCountLabel.layer.masksToBounds = true
+        
+        relicTitleLabel.layer.cornerRadius = 5.0
+        relicTitleLabel.layer.masksToBounds = true
+
     }
     
     func configureCell(relic: Relic) {
@@ -51,7 +58,9 @@ class FissureRelicCell: UICollectionViewCell {
         switch relicCount {
         case 0:
             relicCountLabel.text = ""
+            relicCountLabel.isHidden = true
         default:
+            relicCountLabel.isHidden = false
             relicCountLabel.text = "\(relicCount) IN USE"
         }
     }
