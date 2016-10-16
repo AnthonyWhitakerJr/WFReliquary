@@ -53,8 +53,8 @@ class FissureRelicCell: UICollectionViewCell {
         return image
     }
     
-    func tapped() {
-        relicCount = (relicCount + 1) % 5
+    func update(count: Int) {
+        relicCount = count
         switch relicCount {
         case 0:
             relicCountLabel.text = ""

@@ -18,6 +18,9 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
     var rewards = [Reward]()
     var rewardsByRelic = Dictionary<Relic.Key, [Reward]>()
     var relicsByTier = Dictionary<Tier, [Relic]>()
+    var selectedRelicCount = 0
+    
+    let maxRelicCount = 4
     
     var selectedTier: Tier? {
         let selectedTierTitle = relicTierControl.titleForSegment(at: relicTierControl.selectedSegmentIndex)
@@ -72,10 +75,17 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let relic = relicsByTier[selectedTier!]![indexPath.row]
-        
         let relicCell = collectionView.cellForItem(at: indexPath) as! FissureRelicCell
-        relicCell.tapped()
+
+        if selectedRelicCount == maxRelicCount {
+            selectedRelicCount = selectedRelicCount - relicCell.relicCount
+            relicCell.update(count: 0)
+        } else {
+            selectedRelicCount = selectedRelicCount + 1
+            let relicCount = relicCell.relicCount + 1
+            relicCell.update(count: relicCount)
+        }
+
     }
     
 }
