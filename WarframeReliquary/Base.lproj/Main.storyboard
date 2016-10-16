@@ -90,6 +90,9 @@
                                     <segment title="AXI"/>
                                 </segments>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="tierChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="1DT-MP-TXD"/>
+                                </connections>
                             </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rol-5Q-KUP">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="0.59607769691780821" colorSpace="calibratedWhite"/>

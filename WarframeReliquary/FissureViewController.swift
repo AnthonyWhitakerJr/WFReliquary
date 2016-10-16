@@ -52,7 +52,14 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
         relics = CsvReader.parseRelicCsv()
         rewards = CsvReader.parseRewardCsv(relics: relics, items: items)
     }
+    // MARK: - Segmented Control
+    @IBAction func tierChanged(_ sender: UISegmentedControl) {
+        selectedRelicCount = 0
+        relicCollectionView.reloadData()
+    }
     
+    
+    // MARK: - Collection View
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if let selectedTier = selectedTier {
             return relicsByTier[selectedTier]!.count

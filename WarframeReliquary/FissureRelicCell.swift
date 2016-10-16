@@ -34,6 +34,10 @@ class FissureRelicCell: UICollectionViewCell {
     func configureCell(relic: Relic) {
         self.relic = relic
         
+        relicCount = 0
+        relicCountLabel.text = ""
+        relicCountLabel.isHidden = true
+        
         relicTitleLabel.text = relic.description
         relicImageView.image = image(for: relic)
     }
