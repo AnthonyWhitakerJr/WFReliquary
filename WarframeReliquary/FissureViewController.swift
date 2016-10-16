@@ -118,7 +118,6 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
             // Remove relic from selected relics
         }
         
-        print(selectedRelics)
         selectedRelicCollectionView.reloadData()
     }
     
