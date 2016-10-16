@@ -16,6 +16,8 @@ class FissureRelicCell: RelicCell {
     
     var relicCount: Int = 0
     
+    let labelBackgroundColor = UIColor(red: 219.0/255, green: 221.0/255, blue: 221.0/255, alpha: 0.8)
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -39,6 +41,12 @@ class FissureRelicCell: RelicCell {
         
         relicTitleLabel.text = relic.description
         relicImageView.image = image(for: relic)
+        
+        if relic.isRetired! {
+            relicTitleLabel.backgroundColor = vaultedRelicColor
+        } else {
+            relicTitleLabel.backgroundColor = labelBackgroundColor
+        }
     }
     
     func update(count: Int) {

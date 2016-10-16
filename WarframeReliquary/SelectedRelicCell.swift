@@ -28,5 +28,11 @@ class SelectedRelicCell: RelicCell {
         
         relicTitleLabel.text = relic.description
         relicImageView.image = image(for: relic)
+        
+        if relic.isRetired! {
+            relicTitleLabel.backgroundColor = vaultedRelicColor
+        } else {
+            relicTitleLabel.backgroundColor = UIColor.clear
+        }
     }
 }

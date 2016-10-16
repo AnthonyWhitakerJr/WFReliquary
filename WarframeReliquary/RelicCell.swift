@@ -11,6 +11,8 @@ import UIKit
 class RelicCell : UICollectionViewCell {
     var relic: Relic!
     
+    let vaultedRelicColor = UIColor(red: 154.0/255, green: 86.0/255, blue: 0, alpha: 0.8)
+
     func configureCell(relic: Relic) {
         self.relic = relic
     }
