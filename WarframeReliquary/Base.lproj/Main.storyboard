@@ -56,9 +56,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Lith_Intact" translatesAutoresizingMaskIntoConstraints="NO" id="dDO-wc-FI7">
-                                                    <frame key="frameInset" minX="2" minY="2" width="70" height="70"/>
-                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lith_Intact" translatesAutoresizingMaskIntoConstraints="NO" id="dDO-wc-FI7"/>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiK-iC-5tj">
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="12" id="34y-EV-bdz"/>

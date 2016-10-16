@@ -11,7 +11,7 @@ import Foundation
 class Relic : Comparable, CustomStringConvertible {
     
     // MARK: Properties
-    private(set) var isRetired: Bool!
+    private(set) var isVaulted: Bool!
     let key: Key!
     
     var description: String {
@@ -45,13 +45,13 @@ class Relic : Comparable, CustomStringConvertible {
     }
     
     // MARK: - Initializers
-    init(tier: Tier, name: String, isRetired: Bool = false) {
+    init(tier: Tier, name: String, isVaulted: Bool = false) {
         self.key = Key(tier: tier, name: name)
-        self.isRetired = isRetired
+        self.isVaulted = isVaulted
     }
     
-    convenience init(key: Key, isRetired: Bool = false) {
-        self.init(tier: key.tier, name: key.name, isRetired: isRetired)
+    convenience init(key: Key, isVaulted: Bool = false) {
+        self.init(tier: key.tier, name: key.name, isVaulted: isVaulted)
     }
     
     // MARK: - Comparable
