@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		921DEE5C1DB31D3000606458 /* RelicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921DEE5B1DB31D3000606458 /* RelicCell.swift */; };
+		921DEE5E1DB31D5A00606458 /* SelectedRelicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921DEE5D1DB31D5A00606458 /* SelectedRelicCell.swift */; };
 		924063361DAD940D00398571 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924063351DAD940D00398571 /* Item.swift */; };
 		924063381DAD94A000398571 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924063371DAD94A000398571 /* Reward.swift */; };
 		9240633A1DAD952E00398571 /* Rarity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924063391DAD952E00398571 /* Rarity.swift */; };
@@ -56,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		921DEE5B1DB31D3000606458 /* RelicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelicCell.swift; sourceTree = "<group>"; };
+		921DEE5D1DB31D5A00606458 /* SelectedRelicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedRelicCell.swift; sourceTree = "<group>"; };
 		924063351DAD940D00398571 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		924063371DAD94A000398571 /* Reward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
 		924063391DAD952E00398571 /* Rarity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rarity.swift; sourceTree = "<group>"; };
@@ -204,6 +208,8 @@
 				92DA45F81DAD690900D9D3E0 /* LaunchScreen.storyboard */,
 				92DA45F31DAD690900D9D3E0 /* Main.storyboard */,
 				92DE3D9D1DAF1877003DAC19 /* FissureRelicCell.swift */,
+				921DEE5B1DB31D3000606458 /* RelicCell.swift */,
+				921DEE5D1DB31D5A00606458 /* SelectedRelicCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -382,7 +388,9 @@
 				92DA46261DAD8E7300D9D3E0 /* Tier.swift in Sources */,
 				924CDFCC1DAE99AD00F5D982 /* CsvReader.swift in Sources */,
 				9240633C1DAD9C2600398571 /* Extensions.swift in Sources */,
+				921DEE5C1DB31D3000606458 /* RelicCell.swift in Sources */,
 				924063381DAD94A000398571 /* Reward.swift in Sources */,
+				921DEE5E1DB31D5A00606458 /* SelectedRelicCell.swift in Sources */,
 				924063361DAD940D00398571 /* Item.swift in Sources */,
 				92DA45EE1DAD690900D9D3E0 /* AppDelegate.swift in Sources */,
 				92DE3D9F1DAF1877003DAC19 /* FissureRelicCell.swift in Sources */,

@@ -8,13 +8,12 @@
 
 import UIKit
 
-class FissureRelicCell: UICollectionViewCell {
+class FissureRelicCell: RelicCell {
     
     @IBOutlet weak var relicCountLabel: UILabel!
     @IBOutlet weak var relicImageView: UIImageView!
     @IBOutlet weak var relicTitleLabel: UILabel!
     
-    var relic: Relic!
     var relicCount: Int = 0
     
     override func awakeFromNib() {
@@ -31,8 +30,8 @@ class FissureRelicCell: UICollectionViewCell {
 
     }
     
-    func configureCell(relic: Relic) {
-        self.relic = relic
+    override func configureCell(relic: Relic) {
+        super.configureCell(relic: relic)
         
         relicCount = 0
         relicCountLabel.text = ""
@@ -40,21 +39,6 @@ class FissureRelicCell: UICollectionViewCell {
         
         relicTitleLabel.text = relic.description
         relicImageView.image = image(for: relic)
-    }
-    
-    func image(for relic: Relic) -> UIImage {
-        var image: UIImage
-        switch relic.key.tier! {
-        case .Lith:
-            image = #imageLiteral(resourceName: "Lith_Intact")
-        case .Meso:
-            image = #imageLiteral(resourceName: "Meso_Intact")
-        case .Neo:
-            image = #imageLiteral(resourceName: "Neo_Intact")
-        case .Axi:
-            image = #imageLiteral(resourceName: "Axi_Intact")
-        }
-        return image
     }
     
     func update(count: Int) {

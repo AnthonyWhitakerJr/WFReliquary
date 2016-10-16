@@ -21,6 +21,70 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg1" translatesAutoresizingMaskIntoConstraints="NO" id="WBX-os-VsF"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pf3-0w-swy">
+                                <color key="backgroundColor" red="0.17193329334259033" green="0.21827161312103271" blue="0.23272398114204407" alpha="0.68000000000000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="ehs-vW-1aF"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="LITH"/>
+                                    <segment title="MESO"/>
+                                    <segment title="NEO"/>
+                                    <segment title="AXI"/>
+                                </segments>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="tierChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="1DT-MP-TXD"/>
+                                </connections>
+                            </segmentedControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rol-5Q-KUP">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.59607769691780821" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="DIH-5j-vWa"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="h7F-mK-D9R">
+                                    <size key="itemSize" width="75" height="75"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelectedRelicCell" id="9V1-Lw-lWA" customClass="SelectedRelicCell" customModule="WarframeReliquary" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="4" width="75" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Lith_Intact" translatesAutoresizingMaskIntoConstraints="NO" id="dDO-wc-FI7">
+                                                    <frame key="frameInset" minX="2" minY="2" width="70" height="70"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiK-iC-5tj">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="12" id="34y-EV-bdz"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="dDO-wc-FI7" secondAttribute="trailing" id="3ob-iC-Cw5"/>
+                                            <constraint firstItem="dDO-wc-FI7" firstAttribute="leading" secondItem="9V1-Lw-lWA" secondAttribute="leadingMargin" id="5DQ-PF-5cO"/>
+                                            <constraint firstAttribute="trailing" secondItem="eiK-iC-5tj" secondAttribute="trailing" id="Nnv-NU-pAm"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="dDO-wc-FI7" secondAttribute="bottom" id="P9r-29-MRP"/>
+                                            <constraint firstItem="dDO-wc-FI7" firstAttribute="top" secondItem="9V1-Lw-lWA" secondAttribute="topMargin" id="mlU-wF-gim"/>
+                                            <constraint firstItem="eiK-iC-5tj" firstAttribute="leading" secondItem="9V1-Lw-lWA" secondAttribute="leading" id="s65-Ft-Fv2"/>
+                                            <constraint firstAttribute="bottom" secondItem="eiK-iC-5tj" secondAttribute="bottom" id="xka-cu-wbJ"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="relicImageView" destination="dDO-wc-FI7" id="S74-EC-hrV"/>
+                                            <outlet property="relicTitleLabel" destination="eiK-iC-5tj" id="dHI-al-k39"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pzp-eI-cc4">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jgN-Or-Cpy">
@@ -78,66 +142,6 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pf3-0w-swy">
-                                <color key="backgroundColor" red="0.17193329334259033" green="0.21827161312103271" blue="0.23272398114204407" alpha="0.68000000000000005" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="ehs-vW-1aF"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="LITH"/>
-                                    <segment title="MESO"/>
-                                    <segment title="NEO"/>
-                                    <segment title="AXI"/>
-                                </segments>
-                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="tierChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="1DT-MP-TXD"/>
-                                </connections>
-                            </segmentedControl>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rol-5Q-KUP">
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.59607769691780821" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="83" id="DIH-5j-vWa"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="h7F-mK-D9R">
-                                    <size key="itemSize" width="75" height="75"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9V1-Lw-lWA">
-                                        <rect key="frame" x="0.0" y="4" width="75" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Lith_Intact" translatesAutoresizingMaskIntoConstraints="NO" id="dDO-wc-FI7">
-                                                    <frame key="frameInset" minX="2" minY="2" width="70" height="70"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiK-iC-5tj">
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="12" id="34y-EV-bdz"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstAttribute="trailingMargin" secondItem="dDO-wc-FI7" secondAttribute="trailing" id="3ob-iC-Cw5"/>
-                                            <constraint firstItem="dDO-wc-FI7" firstAttribute="leading" secondItem="9V1-Lw-lWA" secondAttribute="leadingMargin" id="5DQ-PF-5cO"/>
-                                            <constraint firstAttribute="trailing" secondItem="eiK-iC-5tj" secondAttribute="trailing" id="Nnv-NU-pAm"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="dDO-wc-FI7" secondAttribute="bottom" id="P9r-29-MRP"/>
-                                            <constraint firstItem="dDO-wc-FI7" firstAttribute="top" secondItem="9V1-Lw-lWA" secondAttribute="topMargin" id="mlU-wF-gim"/>
-                                            <constraint firstItem="eiK-iC-5tj" firstAttribute="leading" secondItem="9V1-Lw-lWA" secondAttribute="leading" id="s65-Ft-Fv2"/>
-                                            <constraint firstAttribute="bottom" secondItem="eiK-iC-5tj" secondAttribute="bottom" id="xka-cu-wbJ"/>
-                                        </constraints>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -161,6 +165,7 @@
                     <connections>
                         <outlet property="relicCollectionView" destination="Pzp-eI-cc4" id="O8x-Ee-YpN"/>
                         <outlet property="relicTierControl" destination="pf3-0w-swy" id="pIR-Au-8tG"/>
+                        <outlet property="selectedRelicCollectionView" destination="rol-5Q-KUP" id="BX5-5s-G7g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
