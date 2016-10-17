@@ -13,6 +13,7 @@ class RewardsViewController: UITableViewController {
     @IBOutlet weak var rewardsTableView: UITableView!
     
     var rewardsByRelic = Dictionary<Relic.Key, [Reward]>()
+    var rewardsByRarity = Dictionary<Rarity, [Reward]> ()
     var rewardsAll = [Reward]()
     var rewards = [Reward]()
     var relics = Dictionary<Relic.Key, Relic>()
@@ -33,8 +34,8 @@ class RewardsViewController: UITableViewController {
             if relicsFour.count == 4 { break }
         }
         
-        rewards = rewards(for: relicsFour)
-        
+        rewards = RewardUtils.rewards(for: relicsFour, from: rewardsByRelic)
+        rewardsByRarity = RewardUtils.groupByRariry(rewards: rewards)
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -54,41 +55,57 @@ class RewardsViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func rewards(for relics: [Relic]) -> [Reward] {
-        var rewardSet = Set<Reward>()
-        for relic in relics {
-            print("\(relic) - \(rewardsByRelic[relic.key]!)")
-            for reward in rewardsByRelic[relic.key]! {
-                rewardSet.insert(reward)
-            }
-        }
-        return rewardSet.sorted()
-    }
+    
     
     
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
+        return rewardsByRarity.count
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return rewards.count
+        if let rarity = convertToRarity(from: section) {
+            return rewardsByRarity[rarity]!.count
+        }
+        return 0
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "RewardCell", for: indexPath) as? RewardTableViewCell {
-            
-            let reward = rewards[indexPath.row]
-            cell.configureCell(reward: reward)
-            
-            return cell
+            if let rarity = convertToRarity(from: indexPath.section) {
+                let reward = rewardsByRarity[rarity]![indexPath.row]
+                cell.configureCell(reward: reward)
+                
+                return cell
+            }
         }
         
         return UITableViewCell()
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if let rarity = convertToRarity(from: section) {
+            return rarity.rawValue
+        }
+        return ""
+    }
+    
+    func convertToRarity(from section: Int) -> Rarity? {
+        var rarity: Rarity?
+        switch section {
+        case 0:
+            rarity = .Rare
+        case 1:
+            rarity = .Uncommon
+        case 2:
+            rarity = .Common
+        default:
+            rarity = nil
+        }
+        
+        return rarity
     }
     
     

@@ -32,6 +32,28 @@ class RewardUtils {
         return rewardsTable
     }
     
+    static func groupByRariry(rewards : [Reward]) -> Dictionary<Rarity, [Reward]> {
+        var rewardsTable = Dictionary<Rarity, [Reward]>()
+        for reward in rewards {
+            if rewardsTable[reward.rarity] != nil {
+                rewardsTable[reward.rarity]!.append(reward)
+            } else {
+                rewardsTable[reward.rarity] = [reward]
+            }
+        }
+        return rewardsTable
+    }
+    
+    static func rewards(for relics: [Relic], from rewardsByRelic: Dictionary<Relic.Key, [Reward]>) -> [Reward] {
+        var rewardSet = Set<Reward>()
+        for relic in relics {
+            for reward in rewardsByRelic[relic.key]! {
+                rewardSet.insert(reward)
+            }
+        }
+        return rewardSet.sorted()
+    }
+    
 
     
 }
