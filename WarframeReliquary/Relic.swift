@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Relic : Comparable, CustomStringConvertible {
+class Relic : Comparable, CustomStringConvertible, Hashable{
     
     // MARK: Properties
     private(set) var isVaulted: Bool!
@@ -16,6 +16,10 @@ class Relic : Comparable, CustomStringConvertible {
     
     var description: String {
         return key.description
+    }
+    
+    var hashValue: Int {
+        return key.hashValue
     }
     
     // MARK: Key

@@ -20,6 +20,8 @@
 		924CDFC71DADEC8200F5D982 /* Tier.csv in Resources */ = {isa = PBXBuildFile; fileRef = 924CDFC21DADEC8200F5D982 /* Tier.csv */; };
 		924CDFCA1DAE959800F5D982 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924CDFC91DAE959800F5D982 /* CSV.swift */; };
 		924CDFCC1DAE99AD00F5D982 /* CsvReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924CDFCB1DAE99AD00F5D982 /* CsvReader.swift */; };
+		92673EAE1DB553B500B6C3AB /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92673EAD1DB553B500B6C3AB /* RewardsViewController.swift */; };
+		92673EB21DB5673500B6C3AB /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92673EB11DB5673500B6C3AB /* RewardTableViewCell.swift */; };
 		927B6AA71DB1323800E1A031 /* RelicUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927B6AA61DB1323800E1A031 /* RelicUtils.swift */; };
 		927B6AA91DB1349800E1A031 /* RelicUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927B6AA81DB1349800E1A031 /* RelicUtilsTests.swift */; };
 		927B6AAB1DB13D0700E1A031 /* TierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927B6AAA1DB13D0700E1A031 /* TierTests.swift */; };
@@ -71,6 +73,8 @@
 		924CDFC21DADEC8200F5D982 /* Tier.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tier.csv; sourceTree = "<group>"; };
 		924CDFC91DAE959800F5D982 /* CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
 		924CDFCB1DAE99AD00F5D982 /* CsvReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CsvReader.swift; sourceTree = "<group>"; };
+		92673EAD1DB553B500B6C3AB /* RewardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
+		92673EB11DB5673500B6C3AB /* RewardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
 		927B6AA61DB1323800E1A031 /* RelicUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelicUtils.swift; sourceTree = "<group>"; };
 		927B6AA81DB1349800E1A031 /* RelicUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelicUtilsTests.swift; sourceTree = "<group>"; };
 		927B6AAA1DB13D0700E1A031 /* TierTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TierTests.swift; sourceTree = "<group>"; };
@@ -210,6 +214,7 @@
 				92DE3D9D1DAF1877003DAC19 /* FissureRelicCell.swift */,
 				921DEE5B1DB31D3000606458 /* RelicCell.swift */,
 				921DEE5D1DB31D5A00606458 /* SelectedRelicCell.swift */,
+				92673EB11DB5673500B6C3AB /* RewardTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 			children = (
 				92DA45EF1DAD690900D9D3E0 /* FissureViewController.swift */,
 				92DA45F11DAD690900D9D3E0 /* SecondViewController.swift */,
+				92673EAD1DB553B500B6C3AB /* RewardsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -385,11 +391,13 @@
 				92DA46241DAD8E0F00D9D3E0 /* Relic.swift in Sources */,
 				92DA46221DAD8AFF00D9D3E0 /* WarframeReliquary.xcdatamodeld in Sources */,
 				9240633A1DAD952E00398571 /* Rarity.swift in Sources */,
+				92673EB21DB5673500B6C3AB /* RewardTableViewCell.swift in Sources */,
 				92DA46261DAD8E7300D9D3E0 /* Tier.swift in Sources */,
 				924CDFCC1DAE99AD00F5D982 /* CsvReader.swift in Sources */,
 				9240633C1DAD9C2600398571 /* Extensions.swift in Sources */,
 				921DEE5C1DB31D3000606458 /* RelicCell.swift in Sources */,
 				924063381DAD94A000398571 /* Reward.swift in Sources */,
+				92673EAE1DB553B500B6C3AB /* RewardsViewController.swift in Sources */,
 				921DEE5E1DB31D5A00606458 /* SelectedRelicCell.swift in Sources */,
 				924063361DAD940D00398571 /* Item.swift in Sources */,
 				92DA45EE1DAD690900D9D3E0 /* AppDelegate.swift in Sources */,

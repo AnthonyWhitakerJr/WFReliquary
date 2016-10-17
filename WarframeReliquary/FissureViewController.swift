@@ -127,5 +127,15 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
         }
     }
     
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "PokemonDetailVC" {
+//            if let detailsVC = segue.destination as? PokemonDetailViewController {
+//                if let pokemonCell = sender as? PokeCell {
+//                    detailsVC.pokemon = pokemonCell.pokemon
+//                }
+//            }
+//        }
+//    }
+    
 }
 

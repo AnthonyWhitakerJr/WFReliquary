@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Reward : Comparable, CustomStringConvertible {
+class Reward : Comparable, CustomStringConvertible, Hashable {
     
     private(set) var relic: Relic //Change to Relic.Key?
     private(set) var item: Item
@@ -16,6 +16,10 @@ class Reward : Comparable, CustomStringConvertible {
     
     var description: String {
         return "\(relic) - \(item) - \(rarity)"
+    }
+    
+    var hashValue: Int {
+        return rarity.hashValue ^ item.hashValue
     }
     
     init(relic: Relic, item: Item, rarity: Rarity) {

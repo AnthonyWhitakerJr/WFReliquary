@@ -8,13 +8,17 @@
 
 import Foundation
 
-class Item : Comparable, CustomStringConvertible {
+class Item : Comparable, CustomStringConvertible, Hashable {
 
     let name: String!
     private(set) var isRetired: Bool!
     
     var description: String {
         return name
+    }
+    
+    var hashValue: Int {
+        return name.hashValue
     }
     
     init(name: String, isRetired: Bool) {
