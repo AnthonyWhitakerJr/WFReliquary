@@ -45,8 +45,8 @@ class CsvReader {
                 let tier = Tier(rawValue: row["tier"]!)
                 let type = row["type"]!
                 let key = Relic.Key(tier: tier, name: type)
-                let isRetired = Bool.init(row["isRetired"]!.lowercased())!
-                let relic = Relic(key: key, isRetired: isRetired)
+                let isVaulted = Bool.init(row["isVaulted"]!.lowercased())!
+                let relic = Relic(key: key, isVaulted: isVaulted)
                 
                 relics[key] = relic
             }
