@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Reward : CustomStringConvertible {
+class Reward : Comparable, CustomStringConvertible {
     
     private(set) var relic: Relic //Change to Relic.Key?
     private(set) var item: Item
@@ -22,6 +22,19 @@ class Reward : CustomStringConvertible {
         self.relic = relic
         self.item = item
         self.rarity = rarity
+    }
+    
+    // MARK: - Comparable
+    static func < (lhs: Reward, rhs: Reward) -> Bool {
+        if lhs.rarity != rhs.rarity {
+            return lhs.rarity < rhs.rarity
+        } else {
+            return lhs.item < rhs.item
+        }
+    }
+    
+    static func == (lhs: Reward, rhs: Reward) -> Bool {
+        return lhs.rarity == rhs.rarity && lhs.item == rhs.item
     }
     
 }
