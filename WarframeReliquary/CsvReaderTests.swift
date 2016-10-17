@@ -61,4 +61,15 @@ class CsvReaderTests: XCTestCase {
         }
     }
     
+    func testParseDropChanceCsv() {
+        let dropChances = CsvReader.parseDropChanceCsv()
+        XCTAssertEqual(4, dropChances.count, "Incorrect number of Items read from file.")
+        
+        for quality in Quality.values {
+            XCTAssertNotNil(dropChances[quality]?.common, "Not set for \(quality)")
+            XCTAssertNotNil(dropChances[quality]?.uncommon, "Not set for \(quality)")
+            XCTAssertNotNil(dropChances[quality]?.rare, "Not set for \(quality)")
+        }
+    }
+    
 }

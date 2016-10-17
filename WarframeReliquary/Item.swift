@@ -11,7 +11,7 @@ import Foundation
 class Item : Comparable, CustomStringConvertible, Hashable {
 
     let name: String!
-    private(set) var isRetired: Bool!
+    private(set) var isVaulted: Bool!
     
     var description: String {
         return name
@@ -21,9 +21,9 @@ class Item : Comparable, CustomStringConvertible, Hashable {
         return name.hashValue
     }
     
-    init(name: String, isRetired: Bool) {
+    init(name: String, isVaulted: Bool) {
         self.name = name
-        self.isRetired = isRetired
+        self.isVaulted = isVaulted
     }
     
     // MARK: - Comparable

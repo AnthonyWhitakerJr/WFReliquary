@@ -20,8 +20,8 @@ class CsvReader {
             
             for row in rows {//Force upwrap to fail fast
                 let name = row["name"]!
-                let isRetired = Bool.init(row["isRetired"]!.lowercased())!
-                let item = Item(name: name, isRetired: isRetired)
+                let isVaulted = Bool.init(row["isVaulted"]!.lowercased())!
+                let item = Item(name: name, isVaulted: isVaulted)
                 
                 items[name] = item
                 
@@ -85,4 +85,29 @@ class CsvReader {
         
         return rewards
     }
+    
+    static func parseDropChanceCsv() -> Dictionary<Quality, DropChance> {
+        var dropChances = Dictionary<Quality, DropChance>()
+        let path = Bundle.main.path(forResource: "DropChances", ofType: "csv")
+        
+        do {
+            let csv = try CSV(contentsOfFile: path!)
+            let rows = csv.rows
+            
+            for row in rows {//Force upwrap to fail fast
+                let quality = Quality(rawValue: row["Quality"]!)
+                let common = Double(row["Common"]!)
+                let uncommon = Double(row["Uncommon"]!)
+                let rare = Double(row["Rare"]!)
+                let dropChance = DropChance(quality: quality!, common: common!, uncommon: uncommon!, rare: rare!)
+                
+                dropChances[quality!] = dropChance
+            }
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+        
+        return dropChances
+    }
+
 }
