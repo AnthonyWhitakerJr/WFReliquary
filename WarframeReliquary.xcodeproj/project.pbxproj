@@ -22,6 +22,8 @@
 		924CDFCC1DAE99AD00F5D982 /* CsvReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924CDFCB1DAE99AD00F5D982 /* CsvReader.swift */; };
 		92673EAE1DB553B500B6C3AB /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92673EAD1DB553B500B6C3AB /* RewardsViewController.swift */; };
 		92673EB21DB5673500B6C3AB /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92673EB11DB5673500B6C3AB /* RewardTableViewCell.swift */; };
+		92673EB41DB5773500B6C3AB /* Quality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92673EB31DB5773500B6C3AB /* Quality.swift */; };
+		92673EB61DB57D0F00B6C3AB /* DropChances.csv in Resources */ = {isa = PBXBuildFile; fileRef = 92673EB51DB57D0F00B6C3AB /* DropChances.csv */; };
 		927B6AA71DB1323800E1A031 /* RelicUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927B6AA61DB1323800E1A031 /* RelicUtils.swift */; };
 		927B6AA91DB1349800E1A031 /* RelicUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927B6AA81DB1349800E1A031 /* RelicUtilsTests.swift */; };
 		927B6AAB1DB13D0700E1A031 /* TierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927B6AAA1DB13D0700E1A031 /* TierTests.swift */; };
@@ -75,6 +77,8 @@
 		924CDFCB1DAE99AD00F5D982 /* CsvReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CsvReader.swift; sourceTree = "<group>"; };
 		92673EAD1DB553B500B6C3AB /* RewardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
 		92673EB11DB5673500B6C3AB /* RewardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
+		92673EB31DB5773500B6C3AB /* Quality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quality.swift; sourceTree = "<group>"; };
+		92673EB51DB57D0F00B6C3AB /* DropChances.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DropChances.csv; sourceTree = "<group>"; };
 		927B6AA61DB1323800E1A031 /* RelicUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelicUtils.swift; sourceTree = "<group>"; };
 		927B6AA81DB1349800E1A031 /* RelicUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelicUtilsTests.swift; sourceTree = "<group>"; };
 		927B6AAA1DB13D0700E1A031 /* TierTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TierTests.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 		924CDFBD1DADEC4C00F5D982 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				92673EB51DB57D0F00B6C3AB /* DropChances.csv */,
 				924CDFBE1DADEC8200F5D982 /* Items.csv */,
 				924CDFBF1DADEC8200F5D982 /* Rarity.csv */,
 				924CDFC01DADEC8200F5D982 /* Relics.csv */,
@@ -229,6 +234,7 @@
 				924063371DAD94A000398571 /* Reward.swift */,
 				924063391DAD952E00398571 /* Rarity.swift */,
 				9240633B1DAD9C2600398571 /* Extensions.swift */,
+				92673EB31DB5773500B6C3AB /* Quality.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -357,6 +363,7 @@
 				924CDFC31DADEC8200F5D982 /* Items.csv in Resources */,
 				92DA45F71DAD690900D9D3E0 /* Assets.xcassets in Resources */,
 				924CDFC41DADEC8200F5D982 /* Rarity.csv in Resources */,
+				92673EB61DB57D0F00B6C3AB /* DropChances.csv in Resources */,
 				924CDFC51DADEC8200F5D982 /* Relics.csv in Resources */,
 				92DA45F51DAD690900D9D3E0 /* Main.storyboard in Resources */,
 				924CDFC71DADEC8200F5D982 /* Tier.csv in Resources */,
@@ -402,6 +409,7 @@
 				924063361DAD940D00398571 /* Item.swift in Sources */,
 				92DA45EE1DAD690900D9D3E0 /* AppDelegate.swift in Sources */,
 				92DE3D9F1DAF1877003DAC19 /* FissureRelicCell.swift in Sources */,
+				92673EB41DB5773500B6C3AB /* Quality.swift in Sources */,
 				92DA45F01DAD690900D9D3E0 /* FissureViewController.swift in Sources */,
 				924CDFCA1DAE959800F5D982 /* CSV.swift in Sources */,
 			);
