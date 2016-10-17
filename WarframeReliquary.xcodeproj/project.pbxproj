@@ -150,8 +150,8 @@
 			children = (
 				924CDFC91DAE959800F5D982 /* CSV.swift */,
 				924CDFCB1DAE99AD00F5D982 /* CsvReader.swift */,
-				92DE3D9B1DAEEF95003DAC19 /* RewardUtils.swift */,
 				927B6AA61DB1323800E1A031 /* RelicUtils.swift */,
+				92DE3D9B1DAEEF95003DAC19 /* RewardUtils.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -220,8 +220,8 @@
 				92DA45F31DAD690900D9D3E0 /* Main.storyboard */,
 				92DE3D9D1DAF1877003DAC19 /* FissureRelicCell.swift */,
 				921DEE5B1DB31D3000606458 /* RelicCell.swift */,
-				921DEE5D1DB31D5A00606458 /* SelectedRelicCell.swift */,
 				92673EB11DB5673500B6C3AB /* RewardTableViewCell.swift */,
+				921DEE5D1DB31D5A00606458 /* SelectedRelicCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -230,14 +230,14 @@
 			isa = PBXGroup;
 			children = (
 				92DA46201DAD8AFF00D9D3E0 /* WarframeReliquary.xcdatamodeld */,
-				92DA46231DAD8E0F00D9D3E0 /* Relic.swift */,
-				92DA46251DAD8E7300D9D3E0 /* Tier.swift */,
-				924063351DAD940D00398571 /* Item.swift */,
-				924063371DAD94A000398571 /* Reward.swift */,
-				924063391DAD952E00398571 /* Rarity.swift */,
-				9240633B1DAD9C2600398571 /* Extensions.swift */,
-				92673EB31DB5773500B6C3AB /* Quality.swift */,
 				92673EB71DB57D6F00B6C3AB /* DropChance.swift */,
+				9240633B1DAD9C2600398571 /* Extensions.swift */,
+				924063351DAD940D00398571 /* Item.swift */,
+				92673EB31DB5773500B6C3AB /* Quality.swift */,
+				924063391DAD952E00398571 /* Rarity.swift */,
+				92DA46231DAD8E0F00D9D3E0 /* Relic.swift */,
+				924063371DAD94A000398571 /* Reward.swift */,
+				92DA46251DAD8E7300D9D3E0 /* Tier.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
