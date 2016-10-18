@@ -13,6 +13,7 @@ class Relic : Comparable, CustomStringConvertible, Hashable{
     // MARK: Properties
     private(set) var isVaulted: Bool!
     let key: Key!
+    var quality = Quality.Intact
     
     var description: String {
         return key.description

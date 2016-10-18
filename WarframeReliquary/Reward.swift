@@ -13,7 +13,8 @@ class Reward : Comparable, CustomStringConvertible, Hashable {
     private(set) var relic: Relic //Change to Relic.Key?
     private(set) var item: Item
     private(set) var rarity: Rarity
-    
+    private(set) var dropOdds: Double?
+
     var description: String {
         return "\(relic) - \(item) - \(rarity)"
     }
@@ -26,6 +27,16 @@ class Reward : Comparable, CustomStringConvertible, Hashable {
         self.relic = relic
         self.item = item
         self.rarity = rarity
+    }
+    
+    func setDropOdds(dropChance: DropChance) {
+        dropOdds = dropChance.chance(for: rarity) / Double(rarity.amountPerRelic)
+    }
+    
+    func updateDropOdds(reward: Reward) {
+        guard self == reward else { return }
+        
+        
     }
     
     // MARK: - Comparable

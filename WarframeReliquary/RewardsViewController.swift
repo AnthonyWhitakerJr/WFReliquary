@@ -35,6 +35,7 @@ class RewardsViewController: UITableViewController {
         }
         
         rewards = RewardUtils.rewards(for: relicsFour, from: rewardsByRelic)
+        RewardUtils.setDropOdds(for: &rewards)
         rewardsByRarity = RewardUtils.groupByRariry(rewards: rewards)
         
         // Uncomment the following line to preserve selection between presentations
@@ -43,6 +44,8 @@ class RewardsViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    
     
     func parseCsvFiles() {
         let items = CsvReader.parseItemCsv()
@@ -54,9 +57,6 @@ class RewardsViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    
     
     // MARK: - Table view data source
     

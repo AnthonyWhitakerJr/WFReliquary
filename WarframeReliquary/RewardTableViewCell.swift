@@ -9,8 +9,6 @@
 import UIKit
 
 class RewardTableViewCell: UITableViewCell {
-
-//    @IBOutlet weak var rewardNameLabel: UILabel!
     
     var reward: Reward!
     
@@ -27,8 +25,8 @@ class RewardTableViewCell: UITableViewCell {
     
     func configureCell(reward: Reward) {
         self.reward = reward
-//        rewardNameLabel.text = reward.item.description
         self.textLabel?.text = reward.item.description
+        self.detailTextLabel?.text = "\(Int(round(reward.dropOdds!*100)))%"
         
         var rarityColor: UIColor
         switch reward.rarity {
@@ -40,7 +38,6 @@ class RewardTableViewCell: UITableViewCell {
             rarityColor = .yellow
         }
         
-//        rewardNameLabel.textColor = rarityColor
         self.textLabel?.textColor = rarityColor
     }
 

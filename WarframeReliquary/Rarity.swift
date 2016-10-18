@@ -13,6 +13,17 @@ enum Rarity : String, Comparable {
     case Uncommon
     case Rare
     
+    var amountPerRelic: Int {
+        switch self {
+        case .Common:
+            return 3
+        case .Uncommon:
+            return 2
+        case .Rare:
+            return 1
+        }
+    }
+    
     static let values = [Common, Uncommon, Rare]
     
     static func < (lhs: Rarity, rhs: Rarity) -> Bool {

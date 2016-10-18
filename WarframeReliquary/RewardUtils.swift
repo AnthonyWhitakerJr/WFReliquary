@@ -16,6 +16,8 @@ class RewardUtils {
         case Rarity
     }
     
+//    private static var dropChances = Dictionary<Quality, DropChance>()
+    
     static func createRewardsTable(groupedBy option: RewardGroupOtions, rewards: [Reward]) {
         
     }
@@ -52,6 +54,15 @@ class RewardUtils {
             }
         }
         return rewardSet.sorted()
+    }
+    
+    static func setDropOdds(for rewards: inout [Reward]) {
+        let dropChances = CsvReader.parseDropChanceCsv()
+        for reward in rewards {
+            let relicQuality = reward.relic.quality
+            let dropChance = dropChances[relicQuality]
+            reward.setDropOdds(dropChance: dropChance!)
+        }
     }
     
 

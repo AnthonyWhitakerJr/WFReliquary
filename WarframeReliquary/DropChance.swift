@@ -25,4 +25,17 @@ class DropChance: CustomStringConvertible {
         self.uncommon = uncommon
         self.rare = rare
     }
+    
+    func chance(for rarity: Rarity) -> Double {
+        var chance: Double
+        switch rarity {
+        case .Common:
+            chance = common
+        case .Uncommon:
+            chance = uncommon
+        case .Rare:
+            chance = rare
+        }
+        return chance
+    }
 }
