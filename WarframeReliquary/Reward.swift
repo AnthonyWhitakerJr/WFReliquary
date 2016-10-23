@@ -29,6 +29,19 @@ class Reward : Comparable, CustomStringConvertible, Hashable {
         self.rarity = rarity
     }
     
+    convenience init(from csv: Dictionary<String, String>, relics: Dictionary<Relic.Key, Relic>, items: Dictionary<String, Item>) {
+        let itemName = csv["item"]!.capitalized
+        let tier = Tier(rawValue: csv["tier"]!.capitalized)
+        let type = csv["type"]!
+        let key = Relic.Key(tier: tier, name: type)
+        let rarity = Rarity(rawValue: csv["rarity"]!.capitalized)
+        
+        let relic = relics[key]!
+        let item = items[itemName]!
+        
+        self.init(relic: relic, item: item, rarity: rarity!)
+    }
+    
     func setDropOdds(dropChance: DropChance) {
         dropOdds = dropChance.chance(for: rarity) / Double(rarity.amountPerRelic)
     }
