@@ -31,11 +31,11 @@ class RewardTableViewCell: UITableViewCell {
         var rarityColor: UIColor
         switch reward.rarity {
         case .Common:
-            rarityColor = .brown
+            rarityColor = Constants.bronze
         case .Uncommon:
-            rarityColor = .lightGray
+            rarityColor = Constants.silver
         case .Rare:
-            rarityColor = .yellow
+            rarityColor = Constants.gold
         }
         
         self.textLabel?.textColor = rarityColor
