@@ -30,6 +30,9 @@
 		927B6AAB1DB13D0700E1A031 /* TierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927B6AAA1DB13D0700E1A031 /* TierTests.swift */; };
 		927B6AAD1DB13D1300E1A031 /* RarirtyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927B6AAC1DB13D1300E1A031 /* RarirtyTests.swift */; };
 		92CBA3A71DB6502F0049DDDE /* RewardUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBA3A61DB6502F0049DDDE /* RewardUtilsTests.swift */; };
+		92CE01771DBD44FC0058ECC8 /* WeaponsParts.json in Resources */ = {isa = PBXBuildFile; fileRef = 92CE01761DBD44FC0058ECC8 /* WeaponsParts.json */; };
+		92CE01791DBD450B0058ECC8 /* ExportManifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 92CE01781DBD450B0058ECC8 /* ExportManifest.json */; };
+		92CE017B1DBD70A10058ECC8 /* JsonParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CE017A1DBD70A10058ECC8 /* JsonParserTests.swift */; };
 		92DA45EE1DAD690900D9D3E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA45ED1DAD690900D9D3E0 /* AppDelegate.swift */; };
 		92DA45F01DAD690900D9D3E0 /* FissureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA45EF1DAD690900D9D3E0 /* FissureViewController.swift */; };
 		92DA45F21DAD690900D9D3E0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA45F11DAD690900D9D3E0 /* SecondViewController.swift */; };
@@ -44,6 +47,8 @@
 		92DE3D9A1DAEEB9E003DAC19 /* CsvReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE3D991DAEEB9E003DAC19 /* CsvReaderTests.swift */; };
 		92DE3D9C1DAEEF95003DAC19 /* RewardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE3D9B1DAEEF95003DAC19 /* RewardUtils.swift */; };
 		92DE3D9F1DAF1877003DAC19 /* FissureRelicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE3D9D1DAF1877003DAC19 /* FissureRelicCell.swift */; };
+		92F23AB01DB6856E003E300E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F23AAF1DB6856E003E300E /* Constants.swift */; };
+		92F23AB21DB6A00C003E300E /* JsonReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F23AB11DB6A00C003E300E /* JsonReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +92,9 @@
 		927B6AAA1DB13D0700E1A031 /* TierTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TierTests.swift; sourceTree = "<group>"; };
 		927B6AAC1DB13D1300E1A031 /* RarirtyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RarirtyTests.swift; sourceTree = "<group>"; };
 		92CBA3A61DB6502F0049DDDE /* RewardUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardUtilsTests.swift; sourceTree = "<group>"; };
+		92CE01761DBD44FC0058ECC8 /* WeaponsParts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WeaponsParts.json; sourceTree = "<group>"; };
+		92CE01781DBD450B0058ECC8 /* ExportManifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ExportManifest.json; sourceTree = "<group>"; };
+		92CE017A1DBD70A10058ECC8 /* JsonParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParserTests.swift; sourceTree = "<group>"; };
 		92DA45EA1DAD690900D9D3E0 /* WarframeReliquary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarframeReliquary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DA45ED1DAD690900D9D3E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92DA45EF1DAD690900D9D3E0 /* FissureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FissureViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +115,8 @@
 		92DE3D991DAEEB9E003DAC19 /* CsvReaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CsvReaderTests.swift; path = ../WarframeReliquary/CsvReaderTests.swift; sourceTree = "<group>"; };
 		92DE3D9B1DAEEF95003DAC19 /* RewardUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardUtils.swift; sourceTree = "<group>"; };
 		92DE3D9D1DAF1877003DAC19 /* FissureRelicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FissureRelicCell.swift; sourceTree = "<group>"; };
+		92F23AAF1DB6856E003E300E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		92F23AB11DB6A00C003E300E /* JsonReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,11 +148,13 @@
 			isa = PBXGroup;
 			children = (
 				92673EB51DB57D0F00B6C3AB /* DropChances.csv */,
+				92CE01781DBD450B0058ECC8 /* ExportManifest.json */,
 				924CDFBE1DADEC8200F5D982 /* Items.csv */,
 				924CDFBF1DADEC8200F5D982 /* Rarity.csv */,
 				924CDFC01DADEC8200F5D982 /* Relics.csv */,
 				924CDFC11DADEC8200F5D982 /* Rewards.csv */,
 				924CDFC21DADEC8200F5D982 /* Tier.csv */,
+				92CE01761DBD44FC0058ECC8 /* WeaponsParts.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -154,6 +166,7 @@
 				924CDFCB1DAE99AD00F5D982 /* CsvReader.swift */,
 				927B6AA61DB1323800E1A031 /* RelicUtils.swift */,
 				92DE3D9B1DAEEF95003DAC19 /* RewardUtils.swift */,
+				92F23AB11DB6A00C003E300E /* JsonReader.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -203,6 +216,7 @@
 				927B6AAA1DB13D0700E1A031 /* TierTests.swift */,
 				92DA46041DAD690900D9D3E0 /* WarframeReliquaryTests.swift */,
 				92DA46061DAD690900D9D3E0 /* Info.plist */,
+				92CE017A1DBD70A10058ECC8 /* JsonParserTests.swift */,
 			);
 			path = WarframeReliquaryTests;
 			sourceTree = "<group>";
@@ -233,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				92DA46201DAD8AFF00D9D3E0 /* WarframeReliquary.xcdatamodeld */,
+				92F23AAF1DB6856E003E300E /* Constants.swift */,
 				92673EB71DB57D6F00B6C3AB /* DropChance.swift */,
 				9240633B1DAD9C2600398571 /* Extensions.swift */,
 				924063351DAD940D00398571 /* Item.swift */,
@@ -366,9 +381,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				92DA45FA1DAD690900D9D3E0 /* LaunchScreen.storyboard in Resources */,
+				92CE01791DBD450B0058ECC8 /* ExportManifest.json in Resources */,
 				924CDFC31DADEC8200F5D982 /* Items.csv in Resources */,
 				92DA45F71DAD690900D9D3E0 /* Assets.xcassets in Resources */,
 				924CDFC41DADEC8200F5D982 /* Rarity.csv in Resources */,
+				92CE01771DBD44FC0058ECC8 /* WeaponsParts.json in Resources */,
 				92673EB61DB57D0F00B6C3AB /* DropChances.csv in Resources */,
 				924CDFC51DADEC8200F5D982 /* Relics.csv in Resources */,
 				92DA45F51DAD690900D9D3E0 /* Main.storyboard in Resources */,
@@ -399,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92DA45F21DAD690900D9D3E0 /* SecondViewController.swift in Sources */,
+				92F23AB01DB6856E003E300E /* Constants.swift in Sources */,
 				92DE3D9C1DAEEF95003DAC19 /* RewardUtils.swift in Sources */,
 				927B6AA71DB1323800E1A031 /* RelicUtils.swift in Sources */,
 				92DA46241DAD8E0F00D9D3E0 /* Relic.swift in Sources */,
@@ -419,6 +437,7 @@
 				92673EB41DB5773500B6C3AB /* Quality.swift in Sources */,
 				92DA45F01DAD690900D9D3E0 /* FissureViewController.swift in Sources */,
 				924CDFCA1DAE959800F5D982 /* CSV.swift in Sources */,
+				92F23AB21DB6A00C003E300E /* JsonReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +451,7 @@
 				927B6AAD1DB13D1300E1A031 /* RarirtyTests.swift in Sources */,
 				92DE3D9A1DAEEB9E003DAC19 /* CsvReaderTests.swift in Sources */,
 				927B6AA91DB1349800E1A031 /* RelicUtilsTests.swift in Sources */,
+				92CE017B1DBD70A10058ECC8 /* JsonParserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
