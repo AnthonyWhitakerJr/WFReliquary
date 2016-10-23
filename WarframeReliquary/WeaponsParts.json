@@ -1,0 +1,474 @@
+{
+  "Manifest": [
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/VorsPistolReceiver",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunReceiver.png",
+      "fileTime": 131122555198027040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/VorsPistolBarrel",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunBarrel.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/VastoPrimeReceiver",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeReceiver.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/VastoPrimeBarrel",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeBarrel.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/SomaPrimeStock",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeStock.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/SomaPrimeReceiver",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeReceiver.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/SomaPrimeBarrel",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeBarrel.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/SicarusPrimeReceiver",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeReceiver.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/SicarusPrimeBarrel",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeBarrel.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmSystems",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmCerebrum",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeWyrmCarapace",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeScytheHandle",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeHilt.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeScytheBlade",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeBlade.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeScindoHandle",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeHilt.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeScindoBlade",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeBlade.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimePolearmHandle",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeHilt.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimePolearmBlade",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeBlade.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeNikanaHandle",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeHilt.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeNikanaBlade",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeBlade.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLiDaggerHolster",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericComponentPrimeLatch.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeLiDaggerBlade",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeBlade.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHikouStars",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeBlade.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeHikouHolster",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericComponentPrimeLatch.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeFangHandle",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeHilt.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeFangBlade",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeBlade.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDualKamasHandle",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeHilt.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeDualKamasBlade",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeBlade.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCronusLongSwordHandle",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeHilt.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCronusLongSwordBlade",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeBlade.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierSystems",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierCerebrum",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeCarrierCarapace",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBowUpperLimb",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeBlade.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBowString",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeStock.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBowLowerLimb",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeBlade.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBowGrip",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericComponentPrimeLatch.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBoOrnament",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericComponentPrimePlug.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/PrimeBoHandle",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponHilt.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/MiterHandle",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunReceiver.png",
+      "fileTime": 131122555198027040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/MiterChassis",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunStock.png",
+      "fileTime": 131122555198027040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/MiterBlade",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponBlade.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/MiterBarrel",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunBarrel.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeReceiver",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeReceiver.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/LexPrimeBarrel",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeBarrel.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/LatronPrimeStock",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeStock.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/LatronPrimeReceiver",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeReceiver.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/LatronPrimeBarrel",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeBarrel.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/GlaivePrimeDisc",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeBlade.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/GlaivePrimeBlade",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeBlade.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/FragorPrimeHead",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeBlade.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/FragorPrimeHandle",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeHilt.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/DetronReceiver",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunReceiver.png",
+      "fileTime": 131122555198027040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/DetronBarrel",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunBarrel.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/BurstonPrimeStock",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeStock.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/BurstonPrimeReceiver",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeReceiver.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/BurstonPrimeBarrel",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeBarrel.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeReceiver",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeReceiver.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/BroncoPrimeBarrel",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeBarrel.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/BratonPrimeStock",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeStock.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/BratonPrimeReceiver",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeReceiver.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/BratonPrimeBarrel",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeBarrel.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/BrakkReceiver",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunReceiver.png",
+      "fileTime": 131122555198027040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/BrakkBarrel",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunBarrel.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/BoltorPrimeStock",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeStock.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/BoltorPrimeReceiver",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeReceiver.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/BoltorPrimeBarrel",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeBarrel.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/BoarPrimeStock",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeStock.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/BoarPrimeReceiver",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeReceiver.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/BoarPrimeBarrel",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeBarrel.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchSwordShieldHandle",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponHilt.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchSwordShieldBlade",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponBlade.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchSwordShieldAegis",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericComponentLatch.png",
+      "fileTime": 131122555197715040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRocketCrossbowStock",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunStock.png",
+      "fileTime": 131122555198027040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRocketCrossbowReceiver",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunReceiver.png",
+      "fileTime": 131122555198027040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRocketCrossbowBarrel",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunBarrel.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunStock",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunStock.png",
+      "fileTime": 131122555198027040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunReceiver",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunReceiver.png",
+      "fileTime": 131122555198027040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchRailgunBarrel",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunBarrel.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHeavyPistolsReceiver",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunReceiver.png",
+      "fileTime": 131122555198027040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHeavyPistolsBarrel",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunBarrel.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHammerHead",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeBlade.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchHammerHandle",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponHilt.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchCannonStock",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunStock.png",
+      "fileTime": 131122555198027040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchCannonReceiver",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunReceiver.png",
+      "fileTime": 131122555198027040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchCannonBarrel",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunBarrel.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchAxeHandle",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponHilt.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/ArchAxeBlade",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponBlade.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/AnkyrosPrimeGauntlet",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeBlade.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/AnkyrosPrimeBlade",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWeaponPrimeBlade.png",
+      "fileTime": 131122555199119060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkstilettoPrimeReceiver",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeReceiver.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkstilettoPrimeLink",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericComponentPrimePlug.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkstilettoPrimeBarrel",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericGunPrimeBarrel.png",
+      "fileTime": 131122555197871040
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/Weapons/WeaponParts/AkbroncoPrimeLink",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericComponentPrimePlug.png",
+      "fileTime": 131122555197871040
+    }
+  ]
+}
