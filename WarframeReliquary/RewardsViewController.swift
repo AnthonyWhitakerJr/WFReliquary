@@ -18,6 +18,9 @@ class RewardsViewController: UITableViewController {
     var rewards = [Reward]()
     var relics = Dictionary<Relic.Key, Relic>()
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
