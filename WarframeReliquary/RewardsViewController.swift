@@ -56,6 +56,13 @@ class RewardsViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - Table view delegate
+    
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let headerView: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
+        headerView.textLabel!.textColor = .white
+    }
+    
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
