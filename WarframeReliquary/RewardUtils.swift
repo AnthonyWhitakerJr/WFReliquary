@@ -50,7 +50,7 @@ class RewardUtils {
     static func rewards(for relics: [Relic], from rewardsByRelic: Dictionary<Relic.Key, [Reward]>) -> [Reward] {
         var rewardSet = Set<Reward>()
         for relic in relics {
-            for reward in rewardsByRelic[relic.key]! {
+            for reward in rewardsByRelic[relic.key]! { //TODO: Update reward odds for duplicate relics
                 rewardSet.insert(reward)
             }
         }
