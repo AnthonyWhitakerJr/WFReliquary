@@ -181,7 +181,7 @@
         <scene sceneID="eRN-e1-CJW">
             <objects>
                 <tableViewController id="d4j-4a-3D1" customClass="RewardsViewController" customModule="WarframeReliquary" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="TeL-Ib-AhC">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="TeL-Ib-AhC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.013290839269757271" green="0.057691104710102081" blue="0.063405893743038177" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
