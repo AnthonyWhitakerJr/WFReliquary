@@ -67,6 +67,22 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pf3-0w-swy">
+                                <color key="backgroundColor" red="0.17193329334259033" green="0.21827161312103271" blue="0.23272398114204407" alpha="0.68000000000000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="ehs-vW-1aF"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="LITH"/>
+                                    <segment title="MESO"/>
+                                    <segment title="NEO"/>
+                                    <segment title="AXI"/>
+                                </segments>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="tierChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="1DT-MP-TXD"/>
+                                </connections>
+                            </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pzp-eI-cc4">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jgN-Or-Cpy">
@@ -124,22 +140,6 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pf3-0w-swy">
-                                <color key="backgroundColor" red="0.17193329334259033" green="0.21827161312103271" blue="0.23272398114204407" alpha="0.68000000000000005" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="ehs-vW-1aF"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="LITH"/>
-                                    <segment title="MESO"/>
-                                    <segment title="NEO"/>
-                                    <segment title="AXI"/>
-                                </segments>
-                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="tierChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="1DT-MP-TXD"/>
-                                </connections>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -147,7 +147,7 @@
                             <constraint firstItem="rol-5Q-KUP" firstAttribute="top" secondItem="pf3-0w-swy" secondAttribute="bottom" constant="8" id="4Yc-u2-wrd"/>
                             <constraint firstItem="rol-5Q-KUP" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="NvJ-ev-I08"/>
                             <constraint firstItem="Pzp-eI-cc4" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="SZJ-uq-hkn"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="WBX-os-VsF" secondAttribute="bottom" id="X0R-Yc-FS6"/>
+                            <constraint firstAttribute="bottom" secondItem="WBX-os-VsF" secondAttribute="bottom" id="c4G-iv-cBV"/>
                             <constraint firstItem="WBX-os-VsF" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="cae-qi-FRH"/>
                             <constraint firstItem="pf3-0w-swy" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="dOt-Ju-AQn"/>
                             <constraint firstItem="rol-5Q-KUP" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="dnh-r9-9r0"/>
@@ -160,7 +160,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kbm-sq-rYO">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="KKz-wE-Sl4">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="KKz-wE-Sl4">
                             <connections>
                                 <segue destination="d4j-4a-3D1" kind="show" identifier="RewardsViewController" id="VJg-JY-LfW"/>
                             </connections>
@@ -268,8 +268,8 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -289,7 +289,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a6C-6G-ZOc" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Fissure" image="voidFissureIcon" selectedImage="voidFissureIcon" id="acW-dT-cKf"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E91-q6-Icg">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="E91-q6-Icg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
