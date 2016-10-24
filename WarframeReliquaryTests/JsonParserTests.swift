@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import WarframeReliquary
 
 class JsonParserTests: XCTestCase {
     
@@ -20,10 +21,11 @@ class JsonParserTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        let path = Bundle.main.path(forResource: "WeaponParts", ofType: "json")
+    func _testExample() {
+        let path = Bundle.init(for: JsonReader.self).path(forResource: "WeaponsParts", ofType: "json")
         let data: Data? = path?.data(using: .utf8)
         let json = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments)
+        XCTAssertNotNil(json, "json is nil.")
         if let json = json as! [Dictionary<String, Any>]? {
             print("True")
             print("\(json)")
