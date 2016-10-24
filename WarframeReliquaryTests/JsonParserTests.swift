@@ -21,15 +21,8 @@ class JsonParserTests: XCTestCase {
         super.tearDown()
     }
     
-    func _testExample() {
-        let path = Bundle.init(for: JsonReader.self).path(forResource: "WeaponsParts", ofType: "json")
-        let data: Data? = path?.data(using: .utf8)
-        let json = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments)
-        XCTAssertNotNil(json, "json is nil.")
-        if let json = json as! [Dictionary<String, Any>]? {
-            print("True")
-            print("\(json)")
-        }
+    func testExample() {
+        JsonReader.parseJson()
     }
     
     func testPerformanceExample() {
