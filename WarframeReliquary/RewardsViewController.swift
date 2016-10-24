@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// Set selectedRelics with relevant relics before loading this controller
 class RewardsViewController: UITableViewController {
     
     @IBOutlet weak var rewardsTableView: UITableView!
@@ -16,7 +17,7 @@ class RewardsViewController: UITableViewController {
     var rewardsByRarity = Dictionary<Rarity, [Reward]> ()
     var rewardsAll = [Reward]()
     var rewards = [Reward]()
-    var relics = Dictionary<Relic.Key, Relic>()
+    var selectedRelics = [Relic]()
     
     override var prefersStatusBarHidden: Bool {
         return true
@@ -31,13 +32,7 @@ class RewardsViewController: UITableViewController {
         parseCsvFiles()
         rewardsByRelic = RewardUtils.groupByRelic(rewards: rewardsAll)
         
-        var relicsFour = [Relic]()
-        for (_, relic) in relics {
-            relicsFour.append(relic)
-            if relicsFour.count == 4 { break }
-        }
-        
-        rewards = RewardUtils.rewards(for: relicsFour, from: rewardsByRelic)
+        rewards = RewardUtils.rewards(for: selectedRelics, from: rewardsByRelic)
         RewardUtils.setDropOdds(for: &rewards)
         rewardsByRarity = RewardUtils.groupByRariry(rewards: rewards)
         
@@ -52,7 +47,7 @@ class RewardsViewController: UITableViewController {
     
     func parseCsvFiles() {
         let items = CsvReader.parseItemCsv()
-        relics = CsvReader.parseRelicCsv()
+        let relics = CsvReader.parseRelicCsv()
         rewardsAll = CsvReader.parseRewardCsv(relics: relics, items: items)
     }
     

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d4j-4a-3D1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Fissure-->
+        <!--Fissure View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FissureViewController" customModule="WarframeReliquary" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,22 +21,6 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg1" translatesAutoresizingMaskIntoConstraints="NO" id="WBX-os-VsF"/>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pf3-0w-swy">
-                                <color key="backgroundColor" red="0.17193329334259033" green="0.21827161312103271" blue="0.23272398114204407" alpha="0.68000000000000005" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="ehs-vW-1aF"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="LITH"/>
-                                    <segment title="MESO"/>
-                                    <segment title="NEO"/>
-                                    <segment title="AXI"/>
-                                </segments>
-                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="tierChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="1DT-MP-TXD"/>
-                                </connections>
-                            </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rol-5Q-KUP">
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="0.59607769691780821" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -50,7 +34,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelectedRelicCell" id="9V1-Lw-lWA" customClass="SelectedRelicCell" customModule="WarframeReliquary" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        <rect key="frame" x="0.0" y="4" width="75" height="75"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
@@ -109,7 +93,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LITH A2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfZ-zF-tjk">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RELIC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfZ-zF-tjk">
                                                     <color key="backgroundColor" red="0.86001867055892944" green="0.86652296781539917" blue="0.86661714315414429" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="18w-Zq-UYZ"/>
@@ -140,12 +124,27 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pf3-0w-swy">
+                                <color key="backgroundColor" red="0.17193329334259033" green="0.21827161312103271" blue="0.23272398114204407" alpha="0.68000000000000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="ehs-vW-1aF"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="LITH"/>
+                                    <segment title="MESO"/>
+                                    <segment title="NEO"/>
+                                    <segment title="AXI"/>
+                                </segments>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="tierChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="1DT-MP-TXD"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Pzp-eI-cc4" secondAttribute="bottom" constant="8" id="3CI-FM-XrE"/>
                             <constraint firstItem="rol-5Q-KUP" firstAttribute="top" secondItem="pf3-0w-swy" secondAttribute="bottom" constant="8" id="4Yc-u2-wrd"/>
-                            <constraint firstItem="pf3-0w-swy" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="KRy-dr-Awy"/>
                             <constraint firstItem="rol-5Q-KUP" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="NvJ-ev-I08"/>
                             <constraint firstItem="Pzp-eI-cc4" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="SZJ-uq-hkn"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="WBX-os-VsF" secondAttribute="bottom" id="X0R-Yc-FS6"/>
@@ -156,10 +155,17 @@
                             <constraint firstItem="Pzp-eI-cc4" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="eiP-36-6ul"/>
                             <constraint firstItem="Pzp-eI-cc4" firstAttribute="top" secondItem="rol-5Q-KUP" secondAttribute="bottom" constant="8" id="hKa-Em-thb"/>
                             <constraint firstAttribute="trailing" secondItem="WBX-os-VsF" secondAttribute="trailing" id="i60-sX-vyA"/>
+                            <constraint firstItem="pf3-0w-swy" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="qdy-Q2-MGo"/>
                             <constraint firstItem="WBX-os-VsF" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="wDb-0o-x5V"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Fissure" image="voidFissureIcon" selectedImage="voidFissureIcon" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="kbm-sq-rYO">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="KKz-wE-Sl4">
+                            <connections>
+                                <segue destination="d4j-4a-3D1" kind="show" identifier="RewardsViewController" id="VJg-JY-LfW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
                     <connections>
                         <outlet property="relicCollectionView" destination="Pzp-eI-cc4" id="O8x-Ee-YpN"/>
@@ -169,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="746.39999999999998" y="-322.48875562218893"/>
+            <point key="canvasLocation" x="1685.5999999999999" y="-322.48875562218893"/>
         </scene>
         <!--Rewards View Controller-->
         <scene sceneID="eRN-e1-CJW">
@@ -182,21 +188,21 @@
                         <color key="separatorColor" red="0.078849010169506073" green="0.15100100636482239" blue="0.18303415179252625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RewardCell" textLabel="ukk-8g-SNO" detailTextLabel="IRd-uS-M6G" style="IBUITableViewCellStyleValue1" id="PF8-dL-X2i" customClass="RewardTableViewCell" customModule="WarframeReliquary" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PF8-dL-X2i" id="Vbe-ua-Egw">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" id="ukk-8g-SNO">
-                                            <frame key="frameInset" minX="15" minY="12" width="33.5" height="20.5"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Part Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" id="ukk-8g-SNO">
+                                            <frame key="frameInset" minX="15" minY="11" width="81" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IRd-uS-M6G">
-                                            <frame key="frameInset" minX="316" minY="12" width="44" height="20.5"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Drop %" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IRd-uS-M6G">
+                                            <frame key="frameInset" minX="305" minY="11" width="55" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -218,7 +224,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="33o-Ft-fun" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1615" y="-322"/>
+            <point key="canvasLocation" x="2552.8000000000002" y="-322.48875562218893"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -269,13 +275,32 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="a6C-6G-ZOc" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Fissure-->
+        <scene sceneID="uN9-V3-lim">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a6C-6G-ZOc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Fissure" image="voidFissureIcon" selectedImage="voidFissureIcon" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E91-q6-Icg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="BYM-5m-asc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kJp-Hs-aWj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="746.39999999999998" y="-322.48875562218893"/>
         </scene>
     </scenes>
     <resources>
