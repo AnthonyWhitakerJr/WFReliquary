@@ -44,7 +44,7 @@ import Foundation
         }
     }
     
-    static func < (lhs: Tier, rhs: Tier) -> Bool {
+    public static func < (lhs: Tier, rhs: Tier) -> Bool {
         return Tier.values.index(of: lhs)! < Tier.values.index(of: rhs)!
     }
 

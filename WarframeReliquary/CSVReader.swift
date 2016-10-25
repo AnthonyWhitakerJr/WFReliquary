@@ -12,10 +12,10 @@ class CsvReader {
     
     static let items = parseItemCsv()
     static let relics = parseRelicCsv()
-    static let rewards = parseRewardCsv(relics: relics, items: items)
+    static let rewards = parseRewardCsv(relics: relics, primeParts: items)
     
-    static func parseItemCsv() -> Dictionary<String, Item> {
-        var items = Dictionary<String, Item>()
+    static func parseItemCsv() -> Dictionary<String, PrimePart> {
+        var primeParts = Dictionary<String, PrimePart>()
         let path = Bundle.main.path(forResource: "Items", ofType: "csv")
         
         do {
@@ -25,16 +25,16 @@ class CsvReader {
             for row in rows {//Force upwrap to fail fast
                 let name = row["name"]!
                 let isVaulted = Bool.init(row["isVaulted"]!.lowercased())!
-                let item = Item(name: name, isVaulted: isVaulted)
+                let part = PrimePart(name: name, isVaulted: isVaulted)
                 
-                items[name] = item
+                primeParts[name] = part
                 
             }
         } catch let err as NSError {
             print(err.debugDescription)
         }
         
-        return items
+        return primeParts
     }
     
     static func parseRelicCsv() -> Dictionary<Relic.Key, Relic> {
@@ -46,7 +46,7 @@ class CsvReader {
             let rows = csv.rows
             
             for row in rows {//Force upwrap to fail fast
-                let tier = Tier(rawValue: row["tier"]!)
+                let tier = Tier(string: row["tier"]!)
                 let type = row["type"]!
                 let key = Relic.Key(tier: tier, name: type)
                 let isVaulted = Bool.init(row["isVaulted"]!.lowercased())!
@@ -61,7 +61,7 @@ class CsvReader {
         return relics
     }
     
-    static func parseRewardCsv(relics: Dictionary<Relic.Key, Relic>, items: Dictionary<String, Item>) -> [Reward] {
+    static func parseRewardCsv(relics: Dictionary<Relic.Key, Relic>, primeParts: Dictionary<String, PrimePart>) -> [Reward] {
         var rewards = [Reward]()
         let path = Bundle.main.path(forResource: "Rewards", ofType: "csv")
         
@@ -70,16 +70,16 @@ class CsvReader {
             let rows = csv.rows
             
             for row in rows {//Force upwrap to fail fast
-                let itemName = row["item"]!.capitalized
-                let tier = Tier(rawValue: row["tier"]!.capitalized)
+                let partName = row["item"]!.capitalized
+                let tier = Tier(string: row["tier"]!.capitalized)
                 let type = row["type"]!
                 let key = Relic.Key(tier: tier, name: type)
                 let rarity = Rarity(string: row["rarity"]!.capitalized)
                 
                 let relic = relics[key]!
-                let item = items[itemName]!
+                let part = primeParts[partName]!
                 
-                let reward = Reward(relic: relic, item: item, rarity: rarity!)
+                let reward = Reward(relic: relic, primePart: part, rarity: rarity!)
                 
                 rewards.append(reward)
             }
@@ -99,7 +99,7 @@ class CsvReader {
             let rows = csv.rows
             
             for row in rows {//Force upwrap to fail fast
-                let quality = Quality(rawValue: row["Quality"]!)
+                let quality = Quality(string: row["Quality"]!)
                 let common = Double(row["Common"]!)
                 let uncommon = Double(row["Uncommon"]!)
                 let rare = Double(row["Rare"]!)

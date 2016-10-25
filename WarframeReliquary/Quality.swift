@@ -44,7 +44,7 @@ import Foundation
         }
     }
     
-    static func < (lhs: Quality, rhs: Quality) -> Bool {
+    public static func < (lhs: Quality, rhs: Quality) -> Bool {
         return Quality.values.index(of: lhs)! < Quality.values.index(of: rhs)!
     }
 }
