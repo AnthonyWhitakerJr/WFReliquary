@@ -22,21 +22,21 @@ public class Reward: NSManagedObject, Comparable {
     
     init(relic: Relic, primePart: PrimePart, rarity: Rarity) {
         self.relic = relic
-        self.item = item
+        self.primePart = primePart
         self.rarity = rarity
     }
     
-    convenience init(from csv: Dictionary<String, String>, relics: Dictionary<Relic.Key, Relic>, items: Dictionary<String, Item>) {
-        let itemName = csv["item"]!.capitalized
-        let tier = Tier(rawValue: csv["tier"]!.capitalized)
+    convenience init(from csv: Dictionary<String, String>, relics: Dictionary<Relic.Key, Relic>, primeParts: Dictionary<String, PrimePart>) {
+        let partName = csv["item"]!.capitalized
+        let tier = Tier(string: csv["tier"]!.capitalized)
         let type = csv["type"]!
         let key = Relic.Key(tier: tier, name: type)
         let rarity = Rarity(string: csv["rarity"]!.capitalized)
         
         let relic = relics[key]!
-        let item = items[itemName]!
+        let primePart = primeParts[partName]!
         
-        self.init(relic: relic, item: item, rarity: rarity!)
+        self.init(relic: relic, primePart: primePart, rarity: rarity!)
     }
     
     func setDropOdds(dropChance: DropChance) {
