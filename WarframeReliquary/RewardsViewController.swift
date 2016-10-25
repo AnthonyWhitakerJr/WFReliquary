@@ -84,7 +84,7 @@ class RewardsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if let rarity = convertToRarity(from: section) {
-            return rarity.rawValue
+            return rarity.description
         }
         return ""
     }

@@ -8,31 +8,31 @@
 
 import Foundation
 
-class Item : Comparable, CustomStringConvertible, Hashable {
-
-    let name: String!
-    private(set) var isVaulted: Bool!
-    var isFavorite = false
-    
-    var description: String {
-        return name
-    }
-    
-    var hashValue: Int {
-        return name.hashValue
-    }
-    
-    init(name: String, isVaulted: Bool) {
-        self.name = name
-        self.isVaulted = isVaulted
-    }
-    
-    // MARK: - Comparable
-    static func < (lhs: Item, rhs: Item) -> Bool {
-        return lhs.name < rhs.name
-    }
-    
-    static func == (lhs: Item, rhs: Item) -> Bool {
-        return lhs.name == rhs.name
-    }
-}
+//class Item : Comparable, CustomStringConvertible, Hashable {
+//
+//    let name: String!
+//    private(set) var isVaulted: Bool!
+//    var isFavorite = false
+//    
+//    var description: String {
+//        return name
+//    }
+//    
+//    var hashValue: Int {
+//        return name.hashValue
+//    }
+//    
+//    init(name: String, isVaulted: Bool) {
+//        self.name = name
+//        self.isVaulted = isVaulted
+//    }
+//    
+//    // MARK: - Comparable
+//    static func < (lhs: Item, rhs: Item) -> Bool {
+//        return lhs.name < rhs.name
+//    }
+//    
+//    static func == (lhs: Item, rhs: Item) -> Bool {
+//        return lhs.name == rhs.name
+//    }
+//}

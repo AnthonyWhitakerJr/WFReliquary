@@ -8,10 +8,12 @@
 
 import Foundation
 
-enum Rarity : String, Comparable {
+@objc public enum Rarity : Int16, Comparable, CustomStringConvertible {
     case Common
     case Uncommon
     case Rare
+    
+    public static let values = [Common, Uncommon, Rare]
     
     var amountPerRelic: Int {
         switch self {
@@ -24,9 +26,31 @@ enum Rarity : String, Comparable {
         }
     }
     
-    static let values = [Common, Uncommon, Rare]
+    public var description: String {
+        switch self {
+        case .Common:
+            return "Common"
+        case .Uncommon:
+            return "Uncommon"
+        case .Rare:
+            return "Rare"
+        }
+    }
     
-    static func < (lhs: Rarity, rhs: Rarity) -> Bool {
+    init?(string: String) {
+        switch string {
+        case "Common":
+            self.init(rawValue: 0)
+        case "Uncommon":
+            self.init(rawValue: 1)
+        case "Rare":
+            self.init(rawValue: 2)
+        default:
+            return nil
+        }
+    }
+    
+    public static func < (lhs: Rarity, rhs: Rarity) -> Bool {
         return Rarity.values.index(of: lhs)! < Rarity.values.index(of: rhs)!
     }
 }

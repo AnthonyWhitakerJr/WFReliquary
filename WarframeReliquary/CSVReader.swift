@@ -74,7 +74,7 @@ class CsvReader {
                 let tier = Tier(rawValue: row["tier"]!.capitalized)
                 let type = row["type"]!
                 let key = Relic.Key(tier: tier, name: type)
-                let rarity = Rarity(rawValue: row["rarity"]!.capitalized)
+                let rarity = Rarity(string: row["rarity"]!.capitalized)
                 
                 let relic = relics[key]!
                 let item = items[itemName]!
