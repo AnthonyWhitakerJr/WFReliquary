@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16A323" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16B2555" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="PrimePart" representedClassName=".PrimePart" syncable="YES">
         <attribute name="isFavorite" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="isVaulted" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
@@ -9,7 +9,7 @@
     <entity name="Relic" representedClassName=".Relic" syncable="YES">
         <attribute name="isVaulted" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" attributeType="String" minValueString="1" syncable="YES"/>
-        <attribute name="quality" transient="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="quality" transient="YES" attributeType="Integer 16" minValueString="0" maxValueString="3" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="tier" attributeType="Integer 16" minValueString="0" maxValueString="3" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="rewards" optional="YES" toMany="YES" minCount="6" maxCount="6" deletionRule="Nullify" destinationEntity="Reward" inverseName="relic" inverseEntity="Reward" syncable="YES"/>
     </entity>
@@ -20,7 +20,7 @@
     </entity>
     <elements>
         <element name="PrimePart" positionX="-90" positionY="-117" width="128" height="105"/>
-        <element name="Relic" positionX="-92" positionY="81" width="128" height="118"/>
+        <element name="Relic" positionX="-92" positionY="81" width="128" height="120"/>
         <element name="Reward" positionX="412" positionY="-27" width="128" height="88"/>
     </elements>
 </model>
