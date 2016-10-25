@@ -10,6 +10,10 @@ import Foundation
 
 class CsvReader {
     
+    static let items = parseItemCsv()
+    static let relics = parseRelicCsv()
+    static let rewards = parseRewardCsv(relics: relics, items: items)
+    
     static func parseItemCsv() -> Dictionary<String, Item> {
         var items = Dictionary<String, Item>()
         let path = Bundle.main.path(forResource: "Items", ofType: "csv")

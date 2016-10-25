@@ -29,7 +29,7 @@ class RewardsViewController: UITableViewController {
         rewardsTableView.delegate = self
         rewardsTableView.dataSource = self
         
-        parseCsvFiles()
+        rewardsAll = CsvReader.rewards
         rewardsByRelic = RewardUtils.groupByRelic(rewards: rewardsAll)
         
         rewards = RewardUtils.rewards(for: selectedRelics, from: rewardsByRelic)
@@ -41,14 +41,6 @@ class RewardsViewController: UITableViewController {
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
-    
-    
-    
-    func parseCsvFiles() {
-        let items = CsvReader.parseItemCsv()
-        let relics = CsvReader.parseRelicCsv()
-        rewardsAll = CsvReader.parseRewardCsv(relics: relics, items: items)
     }
     
     override func didReceiveMemoryWarning() {
