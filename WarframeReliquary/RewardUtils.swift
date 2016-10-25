@@ -60,7 +60,9 @@ class RewardUtils {
     static func setDropOdds(for rewards: inout [Reward]) {
         for reward in rewards {
             let relicQuality = reward.relic.quality
-            let dropChance = dropChances[relicQuality]
+            let rewardRarity = reward.rarity
+            let key = DropChance.Key(quality: relicQuality, rarity: rewardRarity)
+            let dropChance = dropChances[key]
             reward.setDropOdds(dropChance: dropChance!)
         }
     }

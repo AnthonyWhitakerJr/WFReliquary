@@ -43,7 +43,7 @@ class Reward : Comparable, CustomStringConvertible, Hashable {
     }
     
     func setDropOdds(dropChance: DropChance) {
-        dropOdds = dropChance.chance(for: rarity) / Double(rarity.amountPerRelic)
+        dropOdds = dropChance.chance / Double(rarity.amountPerRelic)
     }
     
     func updateDropOdds(reward: Reward) {

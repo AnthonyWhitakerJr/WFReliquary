@@ -90,8 +90,8 @@ class CsvReader {
         return rewards
     }
     
-    static func parseDropChanceCsv() -> Dictionary<Quality, DropChance> {
-        var dropChances = Dictionary<Quality, DropChance>()
+    static func parseDropChanceCsv() -> Dictionary<DropChance.Key, DropChance> {
+        var dropChances = Dictionary<DropChance.Key, DropChance>()
         let path = Bundle.main.path(forResource: "DropChances", ofType: "csv")
         
         do {
@@ -103,9 +103,14 @@ class CsvReader {
                 let common = Double(row["Common"]!)
                 let uncommon = Double(row["Uncommon"]!)
                 let rare = Double(row["Rare"]!)
-                let dropChance = DropChance(quality: quality!, common: common!, uncommon: uncommon!, rare: rare!)
                 
-                dropChances[quality!] = dropChance
+                let commonChance = DropChance(quality: quality!, rarity: .Common, chance: common!)
+                let uncommonChance = DropChance(quality: quality!, rarity: .Uncommon, chance: uncommon!)
+                let rareChance = DropChance(quality: quality!, rarity: .Rare, chance: rare!)
+
+                dropChances[commonChance.key] = commonChance
+                dropChances[uncommonChance.key] = uncommonChance
+                dropChances[rareChance.key] = rareChance
             }
         } catch let err as NSError {
             print(err.debugDescription)
