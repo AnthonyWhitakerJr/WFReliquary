@@ -8,34 +8,51 @@
 
 import Foundation
 
-class DropChance: CustomStringConvertible {
+class DropChance: CustomStringConvertible, Equatable, Hashable {
     
-    let quality: Quality
-    let common: Double
-    let uncommon: Double
-    let rare: Double
+    let chance: Double
+    let key: Key
+    
+    var quality: Quality {
+        return key.quality
+    }
+    var rarity: Rarity {
+        return key.rarity
+    }
     
     var description : String {
-        return "\(quality): \(common*100)%, \(uncommon*100)%, \(rare*100)%"
+        return "\(key): \(chance*100)%"
     }
     
-    init(quality: Quality, common: Double, uncommon: Double, rare: Double) {
-        self.quality = quality
-        self.common = common
-        self.uncommon = uncommon
-        self.rare = rare
+    var hashValue: Int {
+        return key.hashValue
     }
     
-    func chance(for rarity: Rarity) -> Double {
-        var chance: Double
-        switch rarity {
-        case .Common:
-            chance = common
-        case .Uncommon:
-            chance = uncommon
-        case .Rare:
-            chance = rare
+    init(quality: Quality, rarity: Rarity, chance: Double) {
+        self.key = Key(quality: quality, rarity: rarity)
+        self.chance = chance
+    }
+    
+    static func == (lhs: DropChance, rhs: DropChance) -> Bool {
+        return lhs.key == rhs.key
+    }
+    
+    // MARK: Key
+    struct Key : CustomStringConvertible, Equatable, Hashable {
+        let quality: Quality!
+        let rarity: Rarity!
+        
+        var description: String {
+            return "\(quality), \(rarity)"
         }
-        return chance
+        
+        static func == (lhs: Key, rhs: Key) -> Bool {
+            return lhs.quality == rhs.quality && lhs.rarity == rhs.rarity
+        }
+        
+        var hashValue: Int {
+            return quality.hashValue ^ rarity.hashValue
+        }
     }
+
 }
