@@ -10,6 +10,9 @@ import UIKit
 
 class PrimePartTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var partNameLabel: UILabel!
+    @IBOutlet weak var favoriteSwitch: UISwitch!
+    
     var item: Item!
 
     override func awakeFromNib() {
@@ -25,7 +28,8 @@ class PrimePartTableViewCell: UITableViewCell {
     
     func configureCell(item: Item) {
         self.item = item
-        self.textLabel?.text = item.description
+        partNameLabel.text = item.description
+        favoriteSwitch.setOn(item.isFavorite, animated: false)
     }
 
 }
