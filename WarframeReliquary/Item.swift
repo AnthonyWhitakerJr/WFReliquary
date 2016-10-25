@@ -12,6 +12,7 @@ class Item : Comparable, CustomStringConvertible, Hashable {
 
     let name: String!
     private(set) var isVaulted: Bool!
+    var isFavorite = false
     
     var description: String {
         return name

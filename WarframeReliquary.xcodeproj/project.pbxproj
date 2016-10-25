@@ -29,13 +29,14 @@
 		927B6AA91DB1349800E1A031 /* RelicUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927B6AA81DB1349800E1A031 /* RelicUtilsTests.swift */; };
 		927B6AAB1DB13D0700E1A031 /* TierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927B6AAA1DB13D0700E1A031 /* TierTests.swift */; };
 		927B6AAD1DB13D1300E1A031 /* RarirtyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927B6AAC1DB13D1300E1A031 /* RarirtyTests.swift */; };
+		929119E31DBED36200260156 /* PrimePartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929119E21DBED36200260156 /* PrimePartTableViewController.swift */; };
+		929119E51DBED3E400260156 /* PrimePartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929119E41DBED3E400260156 /* PrimePartTableViewCell.swift */; };
 		92CBA3A71DB6502F0049DDDE /* RewardUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBA3A61DB6502F0049DDDE /* RewardUtilsTests.swift */; };
 		92CE01771DBD44FC0058ECC8 /* WeaponsParts.json in Resources */ = {isa = PBXBuildFile; fileRef = 92CE01761DBD44FC0058ECC8 /* WeaponsParts.json */; };
 		92CE01791DBD450B0058ECC8 /* ExportManifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 92CE01781DBD450B0058ECC8 /* ExportManifest.json */; };
 		92CE017B1DBD70A10058ECC8 /* JsonParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CE017A1DBD70A10058ECC8 /* JsonParserTests.swift */; };
 		92DA45EE1DAD690900D9D3E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA45ED1DAD690900D9D3E0 /* AppDelegate.swift */; };
 		92DA45F01DAD690900D9D3E0 /* FissureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA45EF1DAD690900D9D3E0 /* FissureViewController.swift */; };
-		92DA45F21DAD690900D9D3E0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DA45F11DAD690900D9D3E0 /* SecondViewController.swift */; };
 		92DA45F51DAD690900D9D3E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DA45F31DAD690900D9D3E0 /* Main.storyboard */; };
 		92DA45F71DAD690900D9D3E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92DA45F61DAD690900D9D3E0 /* Assets.xcassets */; };
 		92DA45FA1DAD690900D9D3E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DA45F81DAD690900D9D3E0 /* LaunchScreen.storyboard */; };
@@ -91,6 +92,8 @@
 		927B6AA81DB1349800E1A031 /* RelicUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelicUtilsTests.swift; sourceTree = "<group>"; };
 		927B6AAA1DB13D0700E1A031 /* TierTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TierTests.swift; sourceTree = "<group>"; };
 		927B6AAC1DB13D1300E1A031 /* RarirtyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RarirtyTests.swift; sourceTree = "<group>"; };
+		929119E21DBED36200260156 /* PrimePartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimePartTableViewController.swift; sourceTree = "<group>"; };
+		929119E41DBED3E400260156 /* PrimePartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimePartTableViewCell.swift; sourceTree = "<group>"; };
 		92CBA3A61DB6502F0049DDDE /* RewardUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardUtilsTests.swift; sourceTree = "<group>"; };
 		92CE01761DBD44FC0058ECC8 /* WeaponsParts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WeaponsParts.json; sourceTree = "<group>"; };
 		92CE01781DBD450B0058ECC8 /* ExportManifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ExportManifest.json; sourceTree = "<group>"; };
@@ -98,7 +101,6 @@
 		92DA45EA1DAD690900D9D3E0 /* WarframeReliquary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarframeReliquary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DA45ED1DAD690900D9D3E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92DA45EF1DAD690900D9D3E0 /* FissureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FissureViewController.swift; sourceTree = "<group>"; };
-		92DA45F11DAD690900D9D3E0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		92DA45F41DAD690900D9D3E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92DA45F61DAD690900D9D3E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92DA45F91DAD690900D9D3E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				921DEE5B1DB31D3000606458 /* RelicCell.swift */,
 				92673EB11DB5673500B6C3AB /* RewardTableViewCell.swift */,
 				921DEE5D1DB31D5A00606458 /* SelectedRelicCell.swift */,
+				929119E41DBED3E400260156 /* PrimePartTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -265,7 +268,7 @@
 			children = (
 				92DA45EF1DAD690900D9D3E0 /* FissureViewController.swift */,
 				92673EAD1DB553B500B6C3AB /* RewardsViewController.swift */,
-				92DA45F11DAD690900D9D3E0 /* SecondViewController.swift */,
+				929119E21DBED36200260156 /* PrimePartTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -415,7 +418,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92DA45F21DAD690900D9D3E0 /* SecondViewController.swift in Sources */,
 				92F23AB01DB6856E003E300E /* Constants.swift in Sources */,
 				92DE3D9C1DAEEF95003DAC19 /* RewardUtils.swift in Sources */,
 				927B6AA71DB1323800E1A031 /* RelicUtils.swift in Sources */,
@@ -426,9 +428,11 @@
 				92DA46261DAD8E7300D9D3E0 /* Tier.swift in Sources */,
 				924CDFCC1DAE99AD00F5D982 /* CsvReader.swift in Sources */,
 				9240633C1DAD9C2600398571 /* Extensions.swift in Sources */,
+				929119E31DBED36200260156 /* PrimePartTableViewController.swift in Sources */,
 				921DEE5C1DB31D3000606458 /* RelicCell.swift in Sources */,
 				924063381DAD94A000398571 /* Reward.swift in Sources */,
 				92673EAE1DB553B500B6C3AB /* RewardsViewController.swift in Sources */,
+				929119E51DBED3E400260156 /* PrimePartTableViewCell.swift in Sources */,
 				921DEE5E1DB31D5A00606458 /* SelectedRelicCell.swift in Sources */,
 				92673EB81DB57D6F00B6C3AB /* DropChance.swift in Sources */,
 				924063361DAD940D00398571 /* Item.swift in Sources */,
