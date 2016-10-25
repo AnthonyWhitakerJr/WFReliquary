@@ -13,7 +13,7 @@ class PrimePartTableViewCell: UITableViewCell {
     @IBOutlet weak var partNameLabel: UILabel!
     @IBOutlet weak var favoriteSwitch: UISwitch!
     
-    var item: Item!
+    var primePart: PrimePart!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,10 +26,10 @@ class PrimePartTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configureCell(item: Item) {
-        self.item = item
-        partNameLabel.text = item.description
-        favoriteSwitch.setOn(item.isFavorite, animated: false)
+    func configureCell(primePart: PrimePart) {
+        self.primePart = primePart
+        partNameLabel.text = primePart.description
+        favoriteSwitch.setOn(primePart.isFavorite, animated: false)
     }
 
 }

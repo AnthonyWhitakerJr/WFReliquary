@@ -42,7 +42,7 @@ class FissureRelicCell: RelicCell {
         relicTitleLabel.text = relic.description
         relicImageView.image = image(for: relic)
         
-        if relic.isVaulted! {
+        if relic.isVaulted {
             relicTitleLabel.backgroundColor = vaultedRelicColor
         } else {
             relicTitleLabel.backgroundColor = labelBackgroundColor

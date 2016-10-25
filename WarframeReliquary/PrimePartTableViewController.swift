@@ -12,7 +12,7 @@ class PrimePartTableViewController: UITableViewController {
     
     @IBOutlet weak var primePartTableView: UITableView!
 
-    var items = [Item]()
+    var primeParts = [PrimePart]()
     
     override var prefersStatusBarHidden: Bool {
         return true
@@ -24,7 +24,7 @@ class PrimePartTableViewController: UITableViewController {
         primePartTableView.delegate = self
         primePartTableView.dataSource = self
         
-        items = Array(CsvReader.items.values).sorted()
+        primeParts = Array(CsvReader.items.values).sorted()
         
 
         // Uncomment the following line to preserve selection between presentations
@@ -48,13 +48,13 @@ class PrimePartTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return items.count
+        return primeParts.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PrimePartCell", for: indexPath) as? PrimePartTableViewCell {
-            let item = items[indexPath.row]
-            cell.configureCell(item: item)
+            let part = primeParts[indexPath.row]
+            cell.configureCell(primePart: part)
             
             return cell
         }

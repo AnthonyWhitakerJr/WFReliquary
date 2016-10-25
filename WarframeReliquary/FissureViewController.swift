@@ -14,7 +14,7 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
     @IBOutlet weak var relicCollectionView: UICollectionView!
     @IBOutlet weak var selectedRelicCollectionView: UICollectionView!
     
-    var items = Dictionary<String, Item>()
+    var primeParts = Dictionary<String, PrimePart>()
     var relics = Dictionary<Relic.Key, Relic>()
     var rewards = [Reward]()
     var rewardsByRelic = Dictionary<Relic.Key, [Reward]>()
@@ -26,7 +26,7 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
     var selectedTier: Tier? {
         let selectedTierTitle = relicTierControl.titleForSegment(at: relicTierControl.selectedSegmentIndex)
         if let selectedTier = selectedTierTitle?.capitalized {
-            return Tier(rawValue: selectedTier)
+            return Tier(string: selectedTier)
         }
         
         return nil
@@ -56,9 +56,9 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func parseCsvFiles() {
-        items = CsvReader.parseItemCsv()
+        primeParts = CsvReader.parseItemCsv()
         relics = CsvReader.parseRelicCsv()
-        rewards = CsvReader.parseRewardCsv(relics: relics, items: items)
+        rewards = CsvReader.parseRewardCsv(relics: relics, primeParts: primeParts)
     }
     
     // MARK: - Segmented Control
