@@ -15,16 +15,14 @@ public class Relic: NSManagedObject, Comparable {
     public private(set) var key: Key!
     
     // MARK: - Initializers
-    convenience init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?,
-                     tier: Tier, name: String, isVaulted: Bool) {
-        self.init(entity: entity, insertInto: context)
+    convenience init(tier: Tier, name: String, isVaulted: Bool, insertInto context: NSManagedObjectContext) {
+        self.init(context: context)
         self.key = Key(tier: tier, name: name)
         self.isVaulted = isVaulted
     }
     
-    convenience init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?,
-        key: Key, isVaulted: Bool = false) {
-        self.init(entity: entity, insertInto: context, tier: key.tier, name: key.name, isVaulted: isVaulted)
+    convenience init(key: Key, isVaulted: Bool, insertInto context: NSManagedObjectContext) {
+        self.init(tier: key.tier, name: key.name, isVaulted: isVaulted, insertInto: context)
     }
     
     // MARK: - Comparable

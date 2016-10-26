@@ -17,9 +17,8 @@ public class Reward: NSManagedObject, Comparable {
         return "\(relic) - \(key)"
     }
     
-    convenience init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?,
-                     relic: Relic, primePart: PrimePart, rarity: Rarity) {
-        self.init(entity: entity, insertInto: context)
+    convenience init(relic: Relic, primePart: PrimePart, rarity: Rarity, insertInto context: NSManagedObjectContext) {
+        self.init(context: context)
         self.key = Key(rarity: rarity, primePart: primePart)
         self.relic = relic
         self.primePart = primePart
