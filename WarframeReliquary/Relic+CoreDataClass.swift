@@ -18,6 +18,8 @@ public class Relic: NSManagedObject, Comparable {
     convenience init(tier: Tier, name: String, isVaulted: Bool, insertInto context: NSManagedObjectContext) {
         self.init(context: context)
         self.key = Key(tier: tier, name: name)
+        self.tier = tier
+        self.name = name
         self.isVaulted = isVaulted
     }
     
