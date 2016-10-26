@@ -7,16 +7,14 @@
 //
 
 import Foundation
+import CoreData
 
 class CsvReader {
     
-    static let items = parseItemCsv()
-    static let relics = parseRelicCsv()
-    static let rewards = parseRewardCsv(relics: relics, primeParts: items)
-    
-    static func parseItemCsv() -> Dictionary<String, PrimePart> {
+    static func parseItemCsv(into context: NSManagedObjectContext) -> Dictionary<String, PrimePart> {
         var primeParts = Dictionary<String, PrimePart>()
         let path = Bundle.main.path(forResource: "Items", ofType: "csv")
+        let entity = NSEntityDescription.entity(forEntityName: "PrimePart", in: context)!
         
         do {
             let csv = try CSV(contentsOfFile: path!)
@@ -25,7 +23,8 @@ class CsvReader {
             for row in rows {//Force upwrap to fail fast
                 let name = row["name"]!
                 let isVaulted = Bool.init(row["isVaulted"]!.lowercased())!
-                let part = PrimePart(name: name, isVaulted: isVaulted)
+//                let part = NSEntityDescription.insertNewObject(forEntityName: "PrimePart", into: managedObjectContext) as! PrimePart //TODO: Delete me after testing
+                let part = PrimePart(entity: entity, insertInto: context, name: name, isVaulted: isVaulted)
                 
                 primeParts[name] = part
                 
@@ -37,9 +36,10 @@ class CsvReader {
         return primeParts
     }
     
-    static func parseRelicCsv() -> Dictionary<Relic.Key, Relic> {
+    static func parseRelicCsv(into context: NSManagedObjectContext) -> Dictionary<Relic.Key, Relic> {
         var relics = Dictionary<Relic.Key, Relic>()
         let path = Bundle.main.path(forResource: "Relics", ofType: "csv")
+        let entity = NSEntityDescription.entity(forEntityName: "Relic", in: context)!
         
         do {
             let csv = try CSV(contentsOfFile: path!)
@@ -50,7 +50,7 @@ class CsvReader {
                 let type = row["type"]!
                 let key = Relic.Key(tier: tier, name: type)
                 let isVaulted = Bool.init(row["isVaulted"]!.lowercased())!
-                let relic = Relic(key: key, isVaulted: isVaulted)
+                let relic = Relic(entity: entity, insertInto: context, key: key, isVaulted: isVaulted)
                 
                 relics[key] = relic
             }
@@ -61,9 +61,10 @@ class CsvReader {
         return relics
     }
     
-    static func parseRewardCsv(relics: Dictionary<Relic.Key, Relic>, primeParts: Dictionary<String, PrimePart>) -> [Reward] {
+    static func parseRewardCsv(relics: Dictionary<Relic.Key, Relic>, primeParts: Dictionary<String, PrimePart>, into context: NSManagedObjectContext) -> [Reward] {
         var rewards = [Reward]()
         let path = Bundle.main.path(forResource: "Rewards", ofType: "csv")
+        let entity = NSEntityDescription.entity(forEntityName: "Reward", in: context)!
         
         do {
             let csv = try CSV(contentsOfFile: path!)
@@ -79,7 +80,7 @@ class CsvReader {
                 let relic = relics[key]!
                 let part = primeParts[partName]!
                 
-                let reward = Reward(relic: relic, primePart: part, rarity: rarity!)
+                let reward = Reward(entity: entity, insertInto: context, relic: relic, primePart: part, rarity: rarity!)
                 
                 rewards.append(reward)
             }
@@ -118,5 +119,5 @@ class CsvReader {
         
         return dropChances
     }
-
+    
 }
