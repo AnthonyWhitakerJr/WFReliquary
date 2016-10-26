@@ -38,19 +38,19 @@ class DropChance: CustomStringConvertible, Equatable, Hashable {
     }
     
     // MARK: Key
-    struct Key : CustomStringConvertible, Equatable, Hashable {
-        let quality: Quality!
-        let rarity: Rarity!
+    public struct Key : CustomStringConvertible, Equatable, Hashable {
+        public let quality: Quality!
+        public let rarity: Rarity!
         
-        var description: String {
+        public var description: String {
             return "\(quality), \(rarity)"
         }
         
-        static func == (lhs: Key, rhs: Key) -> Bool {
+        public static func == (lhs: Key, rhs: Key) -> Bool {
             return lhs.quality == rhs.quality && lhs.rarity == rhs.rarity
         }
         
-        var hashValue: Int {
+        public var hashValue: Int {
             return quality.hashValue ^ rarity.hashValue
         }
     }

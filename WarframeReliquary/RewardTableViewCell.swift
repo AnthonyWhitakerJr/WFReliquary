@@ -25,7 +25,7 @@ class RewardTableViewCell: UITableViewCell {
     
     func configureCell(reward: Reward) {
         self.reward = reward
-        self.textLabel?.text = reward.item.description
+        self.textLabel?.text = reward.primePart.name
         self.detailTextLabel?.text = "\(Int(round(reward.dropOdds!*100)))%" //TODO: add a single decimal place but only where applicable (no .0)
         
         var rarityColor: UIColor

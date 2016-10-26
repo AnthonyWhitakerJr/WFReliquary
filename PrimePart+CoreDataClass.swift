@@ -11,14 +11,6 @@ import CoreData
 
 public class PrimePart: NSManagedObject, Comparable {
     
-    override public var description: String {
-        return name
-    }
-    
-    override public var hashValue: Int {
-        return name.hashValue
-    }
-    
     init(name: String, isVaulted: Bool) {
         self.name = name
         self.isVaulted = isVaulted

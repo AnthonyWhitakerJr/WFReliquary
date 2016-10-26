@@ -28,7 +28,7 @@ class PrimePartTableViewCell: UITableViewCell {
     
     func configureCell(primePart: PrimePart) {
         self.primePart = primePart
-        partNameLabel.text = primePart.description
+        partNameLabel.text = primePart.name
         favoriteSwitch.setOn(primePart.isFavorite, animated: false)
     }
 

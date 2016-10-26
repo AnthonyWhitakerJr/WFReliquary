@@ -39,7 +39,7 @@ class FissureRelicCell: RelicCell {
         relicCountLabel.text = ""
         relicCountLabel.isHidden = true
         
-        relicTitleLabel.text = relic.description
+        relicTitleLabel.text = relic.key.description
         relicImageView.image = image(for: relic)
         
         if relic.isVaulted {

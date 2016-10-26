@@ -26,7 +26,7 @@ class SelectedRelicCell: RelicCell {
     override func configureCell(relic: Relic) {
         super.configureCell(relic: relic)
         
-        relicTitleLabel.text = relic.description
+        relicTitleLabel.text = relic.key.description
         relicImageView.image = image(for: relic)
         
         if relic.isVaulted {

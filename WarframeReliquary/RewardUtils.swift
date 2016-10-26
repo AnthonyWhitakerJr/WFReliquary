@@ -48,13 +48,18 @@ class RewardUtils {
     
     /// Returns a sorted array of the unique rewards from the given relics.
     static func rewards(for relics: [Relic], from rewardsByRelic: Dictionary<Relic.Key, [Reward]>) -> [Reward] {
-        var rewardSet = Set<Reward>()
+        var rewardSet = Dictionary<Reward.Key, Reward>()
         for relic in relics {
-            for reward in rewardsByRelic[relic.key]! { //TODO: Update reward odds for duplicate relics
-                rewardSet.insert(reward)
+            for reward in rewardsByRelic[relic.key]! {
+                
+                if rewardSet[reward.key] != nil {
+                    rewardSet[reward.key]!.updateDropOdds(reward: reward)
+                } else {
+                    rewardSet[reward.key] = reward
+                }
             }
         }
-        return rewardSet.sorted()
+        return Array(rewardSet.values).sorted()
     }
     
     static func setDropOdds(for rewards: inout [Reward]) {
@@ -67,6 +72,6 @@ class RewardUtils {
         }
     }
     
-
+    
     
 }

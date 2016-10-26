@@ -12,41 +12,7 @@ import CoreData
 public class Relic: NSManagedObject, Comparable {
     
     // MARK: Properties
-    private(set) var key: Key!
-    
-    override public var description: String {
-        return key.description
-    }
-    
-    override public var hashValue: Int {
-        return key.hashValue
-    }
-    
-    // MARK: Key
-    struct Key : Comparable, Hashable, CustomStringConvertible {
-        let tier: Tier!
-        let name: String!
-        
-        var description: String {
-            return "\(tier!) \(name!)"
-        }
-        
-        static func < (lhs: Key, rhs: Key) -> Bool {
-            if lhs.tier != rhs.tier {
-                return lhs.tier < rhs.tier
-            } else {
-                return lhs.name < rhs.name
-            }
-        }
-        
-        static func == (lhs: Key, rhs: Key) -> Bool {
-            return lhs.tier == rhs.tier && lhs.name == rhs.name
-        }
-        
-        var hashValue: Int {
-            return tier.hashValue ^ name.hashValue
-        }
-    }
+    public private(set) var key: Key!
     
     // MARK: - Initializers
     init(tier: Tier, name: String, isVaulted: Bool = false) {
@@ -65,5 +31,31 @@ public class Relic: NSManagedObject, Comparable {
     
     public static func == (lhs: Relic, rhs: Relic) -> Bool {
         return lhs.key == rhs.key
+    }
+    
+    // MARK: Key
+    public struct Key : Comparable, Hashable, CustomStringConvertible {
+        public let tier: Tier!
+        public let name: String!
+        
+        public var description: String {
+            return "\(tier!) \(name!)"
+        }
+        
+        public static func < (lhs: Key, rhs: Key) -> Bool {
+            if lhs.tier != rhs.tier {
+                return lhs.tier < rhs.tier
+            } else {
+                return lhs.name < rhs.name
+            }
+        }
+        
+        public static func == (lhs: Key, rhs: Key) -> Bool {
+            return lhs.tier == rhs.tier && lhs.name == rhs.name
+        }
+        
+        public var hashValue: Int {
+            return tier.hashValue ^ name.hashValue
+        }
     }
 }
