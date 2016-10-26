@@ -23,10 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let context = persistentContainer.viewContext
             parseCsvs(into: context)
             
-            print("First launch, setting UserDefault.")
             UserDefaults.standard.set(true, forKey: "launchedBefore")
-        } else {
-            print("Not first launch.")
         }
         
         return true
