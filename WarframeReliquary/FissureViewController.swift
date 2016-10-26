@@ -16,7 +16,7 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
     @IBOutlet weak var selectedRelicCollectionView: UICollectionView!
     
     var relicsAll = Dictionary<Relic.Key, Relic>()
-    var relicsByTier = Dictionary<Tier, [Relic]>()
+    var relicsByTier = Dictionary<Tier, [Relic]>() // TODO: Refactor to pull directly from context
     var selectedRelics = [Relic]()
     
     let maxRelicCount = 4
