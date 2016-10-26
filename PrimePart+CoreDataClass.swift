@@ -11,7 +11,9 @@ import CoreData
 
 public class PrimePart: NSManagedObject, Comparable {
     
-    init(name: String, isVaulted: Bool) {
+    convenience init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?,
+         name: String, isVaulted: Bool) {
+        self.init(entity: entity, insertInto: context)
         self.name = name
         self.isVaulted = isVaulted
     }
