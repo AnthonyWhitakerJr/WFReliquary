@@ -43,7 +43,7 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
         selectedRelicCollectionView.delegate = self
         selectedRelicCollectionView.dataSource = self
         
-        
+        populateRelics()
         relicsByTier = RelicUtils.groupByTier(relics: relicsAll)
     }
     
