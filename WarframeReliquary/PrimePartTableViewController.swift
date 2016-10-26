@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class PrimePartTableViewController: UITableViewController {
     
@@ -24,7 +25,7 @@ class PrimePartTableViewController: UITableViewController {
         primePartTableView.delegate = self
         primePartTableView.dataSource = self
         
-        primeParts = Array(CsvReader.items.values).sorted()
+        populatePrimeParts()
         
 
         // Uncomment the following line to preserve selection between presentations
@@ -34,6 +35,20 @@ class PrimePartTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
+    func populatePrimeParts() {
+        let app = UIApplication.shared.delegate as! AppDelegate
+        let context = app.persistentContainer.viewContext
+        let fetchRequest: NSFetchRequest<PrimePart> = PrimePart.fetchRequest()
+        
+        do {
+            let results = try context.fetch(fetchRequest)
+            self.primeParts = results.sorted()
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

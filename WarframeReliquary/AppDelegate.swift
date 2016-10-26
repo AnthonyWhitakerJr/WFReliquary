@@ -17,7 +17,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        if !launchedBefore  {
+            let context = persistentContainer.viewContext
+            parseCsvs(into: context)
+            
+            print("First launch, setting UserDefault.")
+            UserDefaults.standard.set(true, forKey: "launchedBefore")
+        } else {
+            print("Not first launch.")
+        }
+        
         return true
+    }
+
+    func parseCsvs(into context: NSManagedObjectContext) {
+        let relics = CsvReader.parseRelicCsv(into: context)
+        let primeParts = CsvReader.parsePrimePartCsv(into: context)
+        _ = CsvReader.parseRewardCsv(relics: relics, primeParts: primeParts, into: context)
+        
+        do {
+            try context.save()
+        } catch {
+            fatalError("Failure to save context: \(error)")
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

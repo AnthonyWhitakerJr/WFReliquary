@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 /// Set selectedRelics with relevant relics before loading this controller
 class RewardsViewController: UITableViewController {
@@ -29,7 +30,7 @@ class RewardsViewController: UITableViewController {
         rewardsTableView.delegate = self
         rewardsTableView.dataSource = self
         
-        rewardsAll = CsvReader.rewards
+        populateRewardsAll()
         rewardsByRelic = RewardUtils.groupByRelic(rewards: rewardsAll)
         
         rewards = RewardUtils.rewards(for: selectedRelics, from: rewardsByRelic)
@@ -41,6 +42,20 @@ class RewardsViewController: UITableViewController {
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    func populateRewardsAll() {
+        let app = UIApplication.shared.delegate as! AppDelegate
+        let context = app.persistentContainer.viewContext
+        let fetchRequest: NSFetchRequest<Reward> = Reward.fetchRequest()
+        
+        do {
+            let results = try context.fetch(fetchRequest)
+            self.rewardsAll = results
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {

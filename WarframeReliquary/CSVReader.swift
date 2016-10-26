@@ -11,7 +11,7 @@ import CoreData
 
 class CsvReader {
     
-    static func parseItemCsv(into context: NSManagedObjectContext) -> Dictionary<String, PrimePart> {
+    static func parsePrimePartCsv(into context: NSManagedObjectContext) -> Dictionary<String, PrimePart> {
         var primeParts = Dictionary<String, PrimePart>()
         let path = Bundle.main.path(forResource: "Items", ofType: "csv")
         

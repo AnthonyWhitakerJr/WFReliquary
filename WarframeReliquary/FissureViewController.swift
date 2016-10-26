@@ -43,7 +43,7 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
         selectedRelicCollectionView.delegate = self
         selectedRelicCollectionView.dataSource = self
         
-        populateRelics()
+        populateRelicsAll()
         relicsByTier = RelicUtils.groupByTier(relics: relicsAll)
     }
     
@@ -52,8 +52,8 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
         // Dispose of any resources that can be recreated.
     }
     
-    /// Populates relicsAll property. Attempts to retrieve relics from database; otherwise parses them from csv and saves them to database.
-    func populateRelics() {
+    /// Populates relicsAll property. Attempts to retrieve relics from database.
+    func populateRelicsAll() {
         let app = UIApplication.shared.delegate as! AppDelegate
         let context = app.persistentContainer.viewContext
         let fetchRequest: NSFetchRequest<Relic> = Relic.fetchRequest()
@@ -64,20 +64,7 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
         } catch let err as NSError {
             print(err.debugDescription)
         }
-        
-        if relicsAll.isEmpty {
-            parseCsv(into: context)
-        }
-    }
-    
-    func parseCsv(into context: NSManagedObjectContext) {
-        relicsAll = CsvReader.parseRelicCsv(into: context)
-        
-        do {
-            try context.save()
-        } catch {
-            fatalError("Failure to save context: \(error)")
-        }
+
     }
     
     // MARK: - Segmented Control
