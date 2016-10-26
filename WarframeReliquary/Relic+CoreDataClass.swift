@@ -12,12 +12,13 @@ import CoreData
 public class Relic: NSManagedObject, Comparable {
     
     // MARK: Properties
-    public private(set) var key: Key!
+    public var key: Key {
+        return Key(tier: tier, name: name)
+    }
     
     // MARK: - Initializers
     convenience init(tier: Tier, name: String, isVaulted: Bool, insertInto context: NSManagedObjectContext) {
         self.init(context: context)
-        self.key = Key(tier: tier, name: name)
         self.tier = tier
         self.name = name
         self.isVaulted = isVaulted

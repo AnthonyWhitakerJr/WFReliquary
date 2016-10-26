@@ -11,7 +11,9 @@ import CoreData
 
 public class Reward: NSManagedObject, Comparable {
     public private(set) var dropOdds: Double?
-    public private(set) var key: Key!
+    public var key: Key {
+        return Key(rarity: rarity, primePart: primePart)
+    }
     
     public var printable: String {
         return "\(relic) - \(key)"
@@ -19,7 +21,6 @@ public class Reward: NSManagedObject, Comparable {
     
     convenience init(relic: Relic, primePart: PrimePart, rarity: Rarity, insertInto context: NSManagedObjectContext) {
         self.init(context: context)
-        self.key = Key(rarity: rarity, primePart: primePart)
         self.relic = relic
         self.primePart = primePart
         self.rarity = rarity
