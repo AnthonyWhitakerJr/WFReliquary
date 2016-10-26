@@ -13,6 +13,7 @@
 		920CD4581DBFA68600FD61DA /* PrimePart+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920CD4521DBFA68600FD61DA /* PrimePart+CoreDataProperties.swift */; };
 		920CD45F1DBFAEEC00FD61DA /* Relic+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920CD45D1DBFAEEC00FD61DA /* Relic+CoreDataClass.swift */; };
 		920CD4601DBFAEEC00FD61DA /* Relic+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920CD45E1DBFAEEC00FD61DA /* Relic+CoreDataProperties.swift */; };
+		92141C851DC132C600FFC3CA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92141C841DC132C600FFC3CA /* Extensions.swift */; };
 		921DEE5C1DB31D3000606458 /* RelicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921DEE5B1DB31D3000606458 /* RelicCell.swift */; };
 		921DEE5E1DB31D5A00606458 /* SelectedRelicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921DEE5D1DB31D5A00606458 /* SelectedRelicCell.swift */; };
 		924063361DAD940D00398571 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924063351DAD940D00398571 /* Item.swift */; };
@@ -81,6 +82,7 @@
 		920CD4521DBFA68600FD61DA /* PrimePart+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PrimePart+CoreDataProperties.swift"; path = "../PrimePart+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		920CD45D1DBFAEEC00FD61DA /* Relic+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Relic+CoreDataClass.swift"; sourceTree = "<group>"; };
 		920CD45E1DBFAEEC00FD61DA /* Relic+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Relic+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		92141C841DC132C600FFC3CA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		921DEE5B1DB31D3000606458 /* RelicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelicCell.swift; sourceTree = "<group>"; };
 		921DEE5D1DB31D5A00606458 /* SelectedRelicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedRelicCell.swift; sourceTree = "<group>"; };
 		924063351DAD940D00398571 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			children = (
 				924CDFC91DAE959800F5D982 /* CSV.swift */,
 				924CDFCB1DAE99AD00F5D982 /* CsvReader.swift */,
+				92141C841DC132C600FFC3CA /* Extensions.swift */,
 				927B6AA61DB1323800E1A031 /* RelicUtils.swift */,
 				92DE3D9B1DAEEF95003DAC19 /* RewardUtils.swift */,
 				92F23AB11DB6A00C003E300E /* JsonReader.swift */,
@@ -466,6 +469,7 @@
 				92DA45EE1DAD690900D9D3E0 /* AppDelegate.swift in Sources */,
 				92DE3D9F1DAF1877003DAC19 /* FissureRelicCell.swift in Sources */,
 				92673EB41DB5773500B6C3AB /* Quality.swift in Sources */,
+				92141C851DC132C600FFC3CA /* Extensions.swift in Sources */,
 				92DA45F01DAD690900D9D3E0 /* FissureViewController.swift in Sources */,
 				920CD4571DBFA68600FD61DA /* PrimePart+CoreDataClass.swift in Sources */,
 				924CDFCA1DAE959800F5D982 /* CSV.swift in Sources */,

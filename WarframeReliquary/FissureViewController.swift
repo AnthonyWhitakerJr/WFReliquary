@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class FissureViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -14,10 +15,7 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
     @IBOutlet weak var relicCollectionView: UICollectionView!
     @IBOutlet weak var selectedRelicCollectionView: UICollectionView!
     
-    var primeParts = Dictionary<String, PrimePart>()
-    var relics = Dictionary<Relic.Key, Relic>()
-    var rewards = [Reward]()
-    var rewardsByRelic = Dictionary<Relic.Key, [Reward]>()
+    var relicsAll = Dictionary<Relic.Key, Relic>()
     var relicsByTier = Dictionary<Tier, [Relic]>()
     var selectedRelics = [Relic]()
     
@@ -45,9 +43,8 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
         selectedRelicCollectionView.delegate = self
         selectedRelicCollectionView.dataSource = self
         
-        parseCsvFiles()
-        rewardsByRelic = RewardUtils.groupByRelic(rewards: rewards)
-        relicsByTier = RelicUtils.groupByTier(relics: relics)
+        
+        relicsByTier = RelicUtils.groupByTier(relics: relicsAll)
     }
     
     override func didReceiveMemoryWarning() {
@@ -55,10 +52,32 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
         // Dispose of any resources that can be recreated.
     }
     
-    func parseCsvFiles() {
-        primeParts = CsvReader.parseItemCsv()
-        relics = CsvReader.parseRelicCsv()
-        rewards = CsvReader.parseRewardCsv(relics: relics, primeParts: primeParts)
+    /// Populates relicsAll property. Attempts to retrieve relics from database; otherwise parses them from csv and saves them to database.
+    func populateRelics() {
+        let app = UIApplication.shared.delegate as! AppDelegate
+        let context = app.persistentContainer.viewContext
+        let fetchRequest: NSFetchRequest<Relic> = Relic.fetchRequest()
+        
+        do {
+            let results = try context.fetch(fetchRequest)
+            self.relicsAll = results.toDictionary{ $0.key }
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+        
+        if relicsAll.isEmpty {
+            parseCsv(into: context)
+        }
+    }
+    
+    func parseCsv(into context: NSManagedObjectContext) {
+        relicsAll = CsvReader.parseRelicCsv(into: context)
+        
+        do {
+            try context.save()
+        } catch {
+            fatalError("Failure to save context: \(error)")
+        }
     }
     
     // MARK: - Segmented Control
