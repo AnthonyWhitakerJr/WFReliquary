@@ -32,4 +32,14 @@ class PrimePartTableViewCell: UITableViewCell {
         favoriteSwitch.setOn(primePart.isFavorite, animated: false)
     }
 
+    @IBAction func valueChanged(_ sender: UISwitch) {
+        primePart.isFavorite = sender.isOn
+        
+        do {
+            try primePart.managedObjectContext?.save()
+        } catch {
+            fatalError("Failure to save context: \(error)")
+        }
+        
+    }
 }
