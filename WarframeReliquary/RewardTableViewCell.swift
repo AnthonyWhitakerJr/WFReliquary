@@ -26,8 +26,9 @@ class RewardTableViewCell: UITableViewCell {
     func configureCell(reward: Reward) {
         self.reward = reward
         self.textLabel?.text = reward.primePart.name
-        self.detailTextLabel?.text = "\(Int(round(reward.dropOdds!*100)))%" //TODO: add a single decimal place but only where applicable (no .0)
-        
+        let odds = reward.dropOdds!*100
+        let oddsString = odds.truncatingRemainder(dividingBy: 1) == 0 ? "\(Int(round(odds)))%" : "\(round(odds * 10) / 10)%" // Add a single decimal place but only where applicable (no .0)
+        self.detailTextLabel?.text = oddsString
         var rarityColor: UIColor
         switch reward.rarity {
         case .Common:
