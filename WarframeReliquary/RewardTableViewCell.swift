@@ -12,6 +12,10 @@ class RewardTableViewCell: UITableViewCell {
     
     var reward: Reward!
     
+    @IBOutlet weak var partImage: UIImageView!
+    @IBOutlet weak var partLabel: UILabel!
+    @IBOutlet weak var dropPercentageLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -25,10 +29,12 @@ class RewardTableViewCell: UITableViewCell {
     
     func configureCell(reward: Reward) {
         self.reward = reward
-        self.textLabel?.text = reward.primePart.name
+        self.partLabel.text = reward.primePart.name
+        
         let odds = reward.dropOdds!*100
         let oddsString = odds.truncatingRemainder(dividingBy: 1) == 0 ? "\(Int(round(odds)))%" : "\(round(odds * 10) / 10)%" // Add a single decimal place but only where applicable (no .0)
-        self.detailTextLabel?.text = oddsString
+        self.dropPercentageLabel.text = oddsString
+        
         var rarityColor: UIColor
         switch reward.rarity {
         case .Common:
@@ -39,7 +45,7 @@ class RewardTableViewCell: UITableViewCell {
             rarityColor = Constants.gold
         }
         
-        self.textLabel?.textColor = rarityColor
+        self.partLabel.textColor = rarityColor
     }
 
 }

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -187,30 +188,49 @@
                         <color key="backgroundColor" red="0.013290839269757271" green="0.057691104710102081" blue="0.063405893743038177" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" red="0.078849010169506073" green="0.15100100636482239" blue="0.18303415179252625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RewardCell" textLabel="ukk-8g-SNO" detailTextLabel="IRd-uS-M6G" style="IBUITableViewCellStyleValue1" id="PF8-dL-X2i" customClass="RewardTableViewCell" customModule="WarframeReliquary" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RewardCell" id="PF8-dL-X2i" customClass="RewardTableViewCell" customModule="WarframeReliquary" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PF8-dL-X2i" id="Vbe-ua-Egw">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Part Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" id="ukk-8g-SNO">
-                                            <frame key="frameInset" minX="15" minY="12" width="81" height="20.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Drop %" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IRd-uS-M6G">
-                                            <frame key="frameInset" minX="305" minY="12" width="55" height="20.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Drop %" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKZ-15-zNg">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="55" id="sNI-vI-hg1"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Lith_Intact" translatesAutoresizingMaskIntoConstraints="NO" id="cMX-vS-yQ6">
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="cMX-vS-yQ6" secondAttribute="height" multiplier="64:43" id="ehv-vE-8ut"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Part Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="sB4-Bp-FsJ">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="cMX-vS-yQ6" secondAttribute="bottom" id="0N2-10-rYd"/>
+                                        <constraint firstItem="cMX-vS-yQ6" firstAttribute="leading" secondItem="Vbe-ua-Egw" secondAttribute="leading" id="Mdh-Mm-tbF"/>
+                                        <constraint firstItem="yKZ-15-zNg" firstAttribute="trailing" secondItem="Vbe-ua-Egw" secondAttribute="trailingMargin" id="UNZ-A7-gNw"/>
+                                        <constraint firstItem="cMX-vS-yQ6" firstAttribute="top" secondItem="Vbe-ua-Egw" secondAttribute="top" id="a9o-Tz-7aT"/>
+                                        <constraint firstItem="yKZ-15-zNg" firstAttribute="leading" secondItem="sB4-Bp-FsJ" secondAttribute="trailing" constant="8" id="dYk-VA-seE"/>
+                                        <constraint firstItem="sB4-Bp-FsJ" firstAttribute="leading" secondItem="cMX-vS-yQ6" secondAttribute="trailing" constant="8" id="e3x-lQ-6x2"/>
+                                        <constraint firstItem="sB4-Bp-FsJ" firstAttribute="centerY" secondItem="Vbe-ua-Egw" secondAttribute="centerY" id="hSJ-jn-R8q"/>
+                                        <constraint firstItem="yKZ-15-zNg" firstAttribute="centerY" secondItem="Vbe-ua-Egw" secondAttribute="centerY" id="nv6-Gl-lsP"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.010000701062381268" green="0.057615719735622406" blue="0.063428670167922974" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dropPercentageLabel" destination="yKZ-15-zNg" id="qlV-QI-HH5"/>
+                                    <outlet property="partImage" destination="cMX-vS-yQ6" id="aRp-JX-73Q"/>
+                                    <outlet property="partLabel" destination="sB4-Bp-FsJ" id="PV8-zd-Q5y"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -239,7 +259,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PfK-fZ-apG" id="RUx-9V-dz1">
-                                    <frame key="frameInset" width="375" height="44"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="EjZ-Cm-euf">
