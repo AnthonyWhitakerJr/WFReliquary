@@ -15,6 +15,7 @@ class RewardTableViewCell: UITableViewCell {
     @IBOutlet weak var partImage: UIImageView!
     @IBOutlet weak var partLabel: UILabel!
     @IBOutlet weak var dropPercentageLabel: UILabel!
+    @IBOutlet weak var favoriteBackground: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -46,6 +47,8 @@ class RewardTableViewCell: UITableViewCell {
         }
         
         self.partLabel.textColor = rarityColor
+        
+        self.favoriteBackground.isHidden = !self.reward.primePart.isFavorite
     }
 
 }
