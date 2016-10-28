@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16B2555" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DropChance" representedClassName="DropChance" syncable="YES">
+        <attribute name="chance" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="quality" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rarity" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
     <entity name="PrimePart" representedClassName=".PrimePart" syncable="YES">
         <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="isFavorite" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
@@ -32,9 +37,10 @@
     </entity>
     <elements>
         <element name="PrimePart" positionX="-90" positionY="-117" width="128" height="135"/>
-        <element name="Relic" positionX="-92" positionY="81" width="128" height="120"/>
-        <element name="Reward" positionX="412" positionY="-27" width="128" height="88"/>
         <element name="PrimeSet" positionX="117" positionY="27" width="128" height="90"/>
         <element name="PrimeSetComponent" positionX="126" positionY="36" width="128" height="90"/>
+        <element name="Relic" positionX="-92" positionY="81" width="128" height="120"/>
+        <element name="Reward" positionX="412" positionY="-27" width="128" height="88"/>
+        <element name="DropChance" positionX="117" positionY="27" width="128" height="30"/>
     </elements>
 </model>

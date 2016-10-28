@@ -35,6 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ = CsvReader.parseRewardCsv(relics: relics, primeParts: primeParts, into: context)
         let primeSets = CsvReader.parsePrimeSetCsv(into: context)
         CsvReader.parsePrimeSetComponentsCsv(primeSets: primeSets, primeParts: primeParts, into: context)
+        CsvReader.parseDropChanceCsv(into: context)
         
         do {
             try context.save()

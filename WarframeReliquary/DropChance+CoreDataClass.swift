@@ -1,40 +1,26 @@
 //
-//  DropChance.swift
+//  DropChance+CoreDataClass.swift
 //  WarframeReliquary
 //
-//  Created by Anthony Whitaker on 10/17/16.
+//  Created by Anthony Whitaker on 10/28/16.
 //  Copyright © 2016 Anthony Whitaker. All rights reserved.
 //
 
 import Foundation
+import CoreData
 
-class DropChance: CustomStringConvertible, Equatable, Hashable {
-    
-    let chance: Double
-    let key: Key
-    
-    var quality: Quality {
-        return key.quality
-    }
-    var rarity: Rarity {
-        return key.rarity
+@objc(DropChance)
+public class DropChance: NSManagedObject {
+
+    public var key: Key {
+        return Key(quality: quality, rarity: rarity)
     }
     
-    var description : String {
-        return "\(key): \(chance*100)%"
-    }
-    
-    var hashValue: Int {
-        return key.hashValue
-    }
-    
-    init(quality: Quality, rarity: Rarity, chance: Double) {
-        self.key = Key(quality: quality, rarity: rarity)
+    convenience init(quality: Quality, rarity: Rarity, chance: Double, into context: NSManagedObjectContext) {
+        self.init(context: context)
+        self.quality = quality
+        self.rarity = rarity
         self.chance = chance
-    }
-    
-    static func == (lhs: DropChance, rhs: DropChance) -> Bool {
-        return lhs.key == rhs.key
     }
     
     // MARK: Key
@@ -54,5 +40,4 @@ class DropChance: CustomStringConvertible, Equatable, Hashable {
             return quality.hashValue ^ rarity.hashValue
         }
     }
-
 }

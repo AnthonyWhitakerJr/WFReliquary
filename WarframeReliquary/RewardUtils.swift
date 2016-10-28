@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreData
 
 class RewardUtils {
     
@@ -15,8 +16,6 @@ class RewardUtils {
         case Item
         case Rarity
     }
-    
-    private static let dropChances = CsvReader.parseDropChanceCsv()
     
     static func createRewardsTable(groupedBy option: RewardGroupOtions, rewards: [Reward]) {
         
@@ -71,7 +70,17 @@ class RewardUtils {
         return rewards
     }
     
-    static func setDropOdds(for rewards: [Reward]) -> [SelectedReward] {
+    static func setDropOdds(for rewards: [Reward], from context: NSManagedObjectContext) -> [SelectedReward] {
+        var dropChances = Dictionary<DropChance.Key, DropChance>()
+        let fetchRequest: NSFetchRequest<DropChance> = DropChance.fetchRequest()
+        
+        do {
+            let results = try context.fetch(fetchRequest)
+            dropChances = results.toDictionary{ $0.key }
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+        
         var selectedRewards = [SelectedReward]()
         for reward in rewards {
             let relicQuality = reward.relic.quality
@@ -84,7 +93,5 @@ class RewardUtils {
         
         return selectedRewards
     }
-    
-    
     
 }

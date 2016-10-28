@@ -28,7 +28,6 @@
 		92673EB21DB5673500B6C3AB /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92673EB11DB5673500B6C3AB /* RewardTableViewCell.swift */; };
 		92673EB41DB5773500B6C3AB /* Quality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92673EB31DB5773500B6C3AB /* Quality.swift */; };
 		92673EB61DB57D0F00B6C3AB /* DropChances.csv in Resources */ = {isa = PBXBuildFile; fileRef = 92673EB51DB57D0F00B6C3AB /* DropChances.csv */; };
-		92673EB81DB57D6F00B6C3AB /* DropChance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92673EB71DB57D6F00B6C3AB /* DropChance.swift */; };
 		927B6AA71DB1323800E1A031 /* RelicUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927B6AA61DB1323800E1A031 /* RelicUtils.swift */; };
 		927B6AA91DB1349800E1A031 /* RelicUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927B6AA81DB1349800E1A031 /* RelicUtilsTests.swift */; };
 		927B6AAB1DB13D0700E1A031 /* TierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927B6AAA1DB13D0700E1A031 /* TierTests.swift */; };
@@ -37,6 +36,8 @@
 		929119E51DBED3E400260156 /* PrimePartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929119E41DBED3E400260156 /* PrimePartTableViewCell.swift */; };
 		92924F6B1DC3369E00BE493D /* SelectedRelic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92924F6A1DC3369E00BE493D /* SelectedRelic.swift */; };
 		92924F6D1DC336B000BE493D /* SelectedReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92924F6C1DC336B000BE493D /* SelectedReward.swift */; };
+		92924F701DC346DD00BE493D /* DropChance+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92924F6E1DC346DD00BE493D /* DropChance+CoreDataClass.swift */; };
+		92924F711DC346DD00BE493D /* DropChance+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92924F6F1DC346DD00BE493D /* DropChance+CoreDataProperties.swift */; };
 		92CBA3A71DB6502F0049DDDE /* RewardUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBA3A61DB6502F0049DDDE /* RewardUtilsTests.swift */; };
 		92CE01771DBD44FC0058ECC8 /* WeaponsParts.json in Resources */ = {isa = PBXBuildFile; fileRef = 92CE01761DBD44FC0058ECC8 /* WeaponsParts.json */; };
 		92CE01791DBD450B0058ECC8 /* ExportManifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 92CE01781DBD450B0058ECC8 /* ExportManifest.json */; };
@@ -102,7 +103,6 @@
 		92673EB11DB5673500B6C3AB /* RewardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
 		92673EB31DB5773500B6C3AB /* Quality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quality.swift; sourceTree = "<group>"; };
 		92673EB51DB57D0F00B6C3AB /* DropChances.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DropChances.csv; sourceTree = "<group>"; };
-		92673EB71DB57D6F00B6C3AB /* DropChance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropChance.swift; sourceTree = "<group>"; };
 		927B6AA61DB1323800E1A031 /* RelicUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelicUtils.swift; sourceTree = "<group>"; };
 		927B6AA81DB1349800E1A031 /* RelicUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelicUtilsTests.swift; sourceTree = "<group>"; };
 		927B6AAA1DB13D0700E1A031 /* TierTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TierTests.swift; sourceTree = "<group>"; };
@@ -111,6 +111,8 @@
 		929119E41DBED3E400260156 /* PrimePartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimePartTableViewCell.swift; sourceTree = "<group>"; };
 		92924F6A1DC3369E00BE493D /* SelectedRelic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedRelic.swift; sourceTree = "<group>"; };
 		92924F6C1DC336B000BE493D /* SelectedReward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedReward.swift; sourceTree = "<group>"; };
+		92924F6E1DC346DD00BE493D /* DropChance+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DropChance+CoreDataClass.swift"; sourceTree = "<group>"; };
+		92924F6F1DC346DD00BE493D /* DropChance+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DropChance+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		92CBA3A61DB6502F0049DDDE /* RewardUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardUtilsTests.swift; sourceTree = "<group>"; };
 		92CE01761DBD44FC0058ECC8 /* WeaponsParts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WeaponsParts.json; sourceTree = "<group>"; };
 		92CE01781DBD450B0058ECC8 /* ExportManifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ExportManifest.json; sourceTree = "<group>"; };
@@ -274,8 +276,9 @@
 		92DA461E1DAD6A3800D9D3E0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				92924F6E1DC346DD00BE493D /* DropChance+CoreDataClass.swift */,
+				92924F6F1DC346DD00BE493D /* DropChance+CoreDataProperties.swift */,
 				92F23AAF1DB6856E003E300E /* Constants.swift */,
-				92673EB71DB57D6F00B6C3AB /* DropChance.swift */,
 				920CD4511DBFA68600FD61DA /* PrimePart+CoreDataClass.swift */,
 				920CD4521DBFA68600FD61DA /* PrimePart+CoreDataProperties.swift */,
 				92D3B1E41DC2D60700AACF51 /* PrimeSet+CoreDataClass.swift */,
@@ -469,6 +472,8 @@
 				92D3B1EB1DC2D60700AACF51 /* PrimeSet+CoreDataProperties.swift in Sources */,
 				924CDFCC1DAE99AD00F5D982 /* CsvReader.swift in Sources */,
 				929119E31DBED36200260156 /* PrimePartTableViewController.swift in Sources */,
+				92924F701DC346DD00BE493D /* DropChance+CoreDataClass.swift in Sources */,
+				92924F711DC346DD00BE493D /* DropChance+CoreDataProperties.swift in Sources */,
 				920CD45F1DBFAEEC00FD61DA /* Relic+CoreDataClass.swift in Sources */,
 				921DEE5C1DB31D3000606458 /* RelicCell.swift in Sources */,
 				92673EAE1DB553B500B6C3AB /* RewardsViewController.swift in Sources */,
@@ -476,7 +481,6 @@
 				929119E51DBED3E400260156 /* PrimePartTableViewCell.swift in Sources */,
 				921DEE5E1DB31D5A00606458 /* SelectedRelicCell.swift in Sources */,
 				92D3B1ED1DC2D60700AACF51 /* PrimeSetComponent+CoreDataProperties.swift in Sources */,
-				92673EB81DB57D6F00B6C3AB /* DropChance.swift in Sources */,
 				92DA45EE1DAD690900D9D3E0 /* AppDelegate.swift in Sources */,
 				92D3B1EC1DC2D60700AACF51 /* PrimeSetComponent+CoreDataClass.swift in Sources */,
 				92DE3D9F1DAF1877003DAC19 /* FissureRelicCell.swift in Sources */,

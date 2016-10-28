@@ -128,8 +128,7 @@ class CsvReader {
         return rewards
     }
     
-    static func parseDropChanceCsv() -> Dictionary<DropChance.Key, DropChance> {
-        var dropChances = Dictionary<DropChance.Key, DropChance>()
+    static func parseDropChanceCsv(into context: NSManagedObjectContext) {
         let path = Bundle.main.path(forResource: "DropChances", ofType: "csv")
         
         do {
@@ -142,19 +141,13 @@ class CsvReader {
                 let uncommon = Double(row["Uncommon"]!)
                 let rare = Double(row["Rare"]!)
                 
-                let commonChance = DropChance(quality: quality!, rarity: .Common, chance: common!)
-                let uncommonChance = DropChance(quality: quality!, rarity: .Uncommon, chance: uncommon!)
-                let rareChance = DropChance(quality: quality!, rarity: .Rare, chance: rare!)
-
-                dropChances[commonChance.key] = commonChance
-                dropChances[uncommonChance.key] = uncommonChance
-                dropChances[rareChance.key] = rareChance
+                _ = DropChance(quality: quality!, rarity: .Common, chance: common!, into: context)
+                _ = DropChance(quality: quality!, rarity: .Uncommon, chance: uncommon!, into: context)
+                _ = DropChance(quality: quality!, rarity: .Rare, chance: rare!, into: context)
             }
         } catch let err as NSError {
             print(err.debugDescription)
         }
-        
-        return dropChances
     }
 
 }

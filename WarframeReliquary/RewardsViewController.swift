@@ -27,8 +27,11 @@ class RewardsViewController: UITableViewController {
         rewardsTableView.delegate = self
         rewardsTableView.dataSource = self
         
+        let app = UIApplication.shared.delegate as! AppDelegate
+        let context = app.persistentContainer.viewContext
+        
         let rewardsForSelectedRelics = RewardUtils.rewards(for: selectedRelics)
-        var selectedRewards = RewardUtils.setDropOdds(for: rewardsForSelectedRelics)
+        var selectedRewards = RewardUtils.setDropOdds(for: rewardsForSelectedRelics, from: context)
         selectedRewards = RewardUtils.unique(selectedRewards: selectedRewards)
         rewardsByRarity = RewardUtils.groupByRarity(selectedRewards: selectedRewards)
     }
