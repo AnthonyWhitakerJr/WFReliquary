@@ -21,55 +21,55 @@ class CsvReaderTests: XCTestCase {
         super.tearDown()
     }
     
-    func testParseItemCsv() {
-        let items = CsvReader.parseItemCsv()
-        XCTAssertEqual(122, items.count, "Incorrect number of Items read from file.")
-    }
-    
-    func testparseRelicCsv() {
-        let relics = CsvReader.parseRelicCsv()
-        XCTAssertEqual(42, relics.count, "Incorrect number of Relics read from file.")
-    }
-    
-    func testparseRewardCsv() {
-        let items = CsvReader.parseItemCsv()
-        let relics = CsvReader.parseRelicCsv()
-        let rewards = CsvReader.parseRewardCsv(relics: relics, items: items)
-        
-        let expectedRewardCount = relics.count * 6
-        XCTAssertEqual(expectedRewardCount, rewards.count, "Incorrect number of Rewards read from file.")
-        
-        let rewardsTable = RewardUtils.groupByRelic(rewards: rewards)
-        for (relicKey, relicRewards) in rewardsTable {
-            XCTAssertEqual(6, relicRewards.count, "Improper reward count for \(relicKey).")
-            
-            var common = 0, uncommon = 0, rare = 0
-            for reward in relicRewards {
-                switch reward.rarity {
-                case .Common:
-                    common += 1
-                case .Uncommon:
-                    uncommon += 1
-                case .Rare:
-                    rare += 1
-                }
-            }
-            
-            XCTAssertEqual(3, common, "Improper common count for \(relicKey).")
-            XCTAssertEqual(2, uncommon, "Improper uncommon count for \(relicKey).")
-            XCTAssertEqual(1, rare, "Improper rare count for \(relicKey).")
-        }
-    }
-    
-    func testParseDropChanceCsv() {
-        let dropChances = CsvReader.parseDropChanceCsv()
-        XCTAssertEqual(4, dropChances.count, "Incorrect number of Items read from file.")
-        
-        for quality in Quality.values {
-            XCTAssertNotNil(dropChances[quality]?.common, "Not set for \(quality)")
-            XCTAssertNotNil(dropChances[quality]?.uncommon, "Not set for \(quality)")
-            XCTAssertNotNil(dropChances[quality]?.rare, "Not set for \(quality)")
-        }
-    }
+//    func testParseItemCsv() {
+//        let items = CsvReader.parseItemCsv()
+//        XCTAssertEqual(122, items.count, "Incorrect number of Items read from file.")
+//    }
+//    
+//    func testparseRelicCsv() {
+//        let relics = CsvReader.parseRelicCsv()
+//        XCTAssertEqual(42, relics.count, "Incorrect number of Relics read from file.")
+//    }
+//    
+//    func testparseRewardCsv() {
+//        let items = CsvReader.parseItemCsv()
+//        let relics = CsvReader.parseRelicCsv()
+//        let rewards = CsvReader.parseRewardCsv(relics: relics, items: items)
+//        
+//        let expectedRewardCount = relics.count * 6
+//        XCTAssertEqual(expectedRewardCount, rewards.count, "Incorrect number of Rewards read from file.")
+//        
+//        let rewardsTable = RewardUtils.groupByRelic(rewards: rewards)
+//        for (relicKey, relicRewards) in rewardsTable {
+//            XCTAssertEqual(6, relicRewards.count, "Improper reward count for \(relicKey).")
+//            
+//            var common = 0, uncommon = 0, rare = 0
+//            for reward in relicRewards {
+//                switch reward.rarity {
+//                case .Common:
+//                    common += 1
+//                case .Uncommon:
+//                    uncommon += 1
+//                case .Rare:
+//                    rare += 1
+//                }
+//            }
+//            
+//            XCTAssertEqual(3, common, "Improper common count for \(relicKey).")
+//            XCTAssertEqual(2, uncommon, "Improper uncommon count for \(relicKey).")
+//            XCTAssertEqual(1, rare, "Improper rare count for \(relicKey).")
+//        }
+//    }
+//    
+//    func testParseDropChanceCsv() {
+//        let dropChances = CsvReader.parseDropChanceCsv()
+//        XCTAssertEqual(4, dropChances.count, "Incorrect number of Items read from file.")
+//        
+//        for quality in Quality.values {
+//            XCTAssertNotNil(dropChances[quality]?.common, "Not set for \(quality)")
+//            XCTAssertNotNil(dropChances[quality]?.uncommon, "Not set for \(quality)")
+//            XCTAssertNotNil(dropChances[quality]?.rare, "Not set for \(quality)")
+//        }
+//    }
     
 }

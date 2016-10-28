@@ -21,22 +21,22 @@ class RewardUtilsTests: XCTestCase {
         super.tearDown()
     }
     
-    func testSetDropOdds() {
-        let items = CsvReader.parseItemCsv()
-        let relics = CsvReader.parseRelicCsv()
-        let rewardsAll = CsvReader.parseRewardCsv(relics: relics, items: items)
-        
-        let rewardsByRelic = RewardUtils.groupByRelic(rewards: rewardsAll)
-        
-        var relicsFour = [Relic]()
-        for (_, relic) in relics {
-            relicsFour.append(relic)
-            if relicsFour.count == 4 { break }
-        }
-        
-        var rewards = RewardUtils.rewards(for: relicsFour, from: rewardsByRelic)
-        RewardUtils.setDropOdds(for: &rewards)
-    }
+//    func testSetDropOdds() {
+//        let items = CsvReader.parseItemCsv()
+//        let relics = CsvReader.parseRelicCsv()
+//        let rewardsAll = CsvReader.parseRewardCsv(relics: relics, items: items)
+//        
+//        let rewardsByRelic = RewardUtils.groupByRelic(rewards: rewardsAll)
+//        
+//        var relicsFour = [Relic]()
+//        for (_, relic) in relics {
+//            relicsFour.append(relic)
+//            if relicsFour.count == 4 { break }
+//        }
+//        
+//        var rewards = RewardUtils.rewards(for: relicsFour, from: rewardsByRelic)
+//        RewardUtils.setDropOdds(for: &rewards)
+//    }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
