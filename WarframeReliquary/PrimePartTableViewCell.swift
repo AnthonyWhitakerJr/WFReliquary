@@ -10,8 +10,9 @@ import UIKit
 
 class PrimePartTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var partNameLabel: UILabel!
     @IBOutlet weak var favoriteButton: UIButton!
+    @IBOutlet weak var partImageView: UIImageView!
+    @IBOutlet weak var partNameLabel: UILabel!
     
     var primePart: PrimePart!
 
@@ -30,6 +31,15 @@ class PrimePartTableViewCell: UITableViewCell {
         self.primePart = primePart
         partNameLabel.text = primePart.name
         favoriteButton.isSelected = primePart.isFavorite
+        
+        var imageName: String
+        if !primePart.imageName.isBlank {
+            imageName = primePart.imageName
+        } else {
+            imageName = primePart.component!.primeSet.imageName
+        }
+        
+        self.partImageView.image = UIImage(named: imageName)
     }
 
     @IBAction func favoriteButtonPressed(_ sender: UIButton) {
