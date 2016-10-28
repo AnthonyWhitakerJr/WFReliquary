@@ -19,14 +19,13 @@ class JsonReader {
     
     static func parseJson() -> [WeaponPart]{
         var weaponParts = [WeaponPart]()
-        if let path = Bundle.main.path(forResource: "WeaponsParts", ofType: "json") {
+        if let path = Bundle.main.path(forResource: "WeaponParts", ofType: "json") {
             do {
                 let jsonData = try NSData(contentsOfFile: path, options: NSData.ReadingOptions.mappedIfSafe)
                 do {
                     let jsonResult: NSDictionary = try JSONSerialization.jsonObject(with: jsonData as Data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
-                    print("jsonResult: \(jsonResult)")
-                    print("*****--------------*******")
-                    if let manifest = jsonResult["manifest"] as? [NSDictionary] {
+                    
+                    if let manifest = jsonResult["Manifest"] as? [NSDictionary] {
                         for part: NSDictionary in manifest {
                             let name = part["uniqueName"] as! String
                             let imagePath = part["textureLocation"] as! String

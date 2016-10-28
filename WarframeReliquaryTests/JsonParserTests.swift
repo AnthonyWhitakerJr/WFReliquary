@@ -21,7 +21,7 @@ class JsonParserTests: XCTestCase {
         super.tearDown()
     }
     
-    func _testExample() {
+    func testExample() {
         let parts = JsonReader.parseJson()
         print("\(parts)")
     }

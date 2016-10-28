@@ -39,7 +39,7 @@
 		92924F701DC346DD00BE493D /* DropChance+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92924F6E1DC346DD00BE493D /* DropChance+CoreDataClass.swift */; };
 		92924F711DC346DD00BE493D /* DropChance+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92924F6F1DC346DD00BE493D /* DropChance+CoreDataProperties.swift */; };
 		92CBA3A71DB6502F0049DDDE /* RewardUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBA3A61DB6502F0049DDDE /* RewardUtilsTests.swift */; };
-		92CE01771DBD44FC0058ECC8 /* WeaponsParts.json in Resources */ = {isa = PBXBuildFile; fileRef = 92CE01761DBD44FC0058ECC8 /* WeaponsParts.json */; };
+		92CE01771DBD44FC0058ECC8 /* WeaponParts.json in Resources */ = {isa = PBXBuildFile; fileRef = 92CE01761DBD44FC0058ECC8 /* WeaponParts.json */; };
 		92CE01791DBD450B0058ECC8 /* ExportManifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 92CE01781DBD450B0058ECC8 /* ExportManifest.json */; };
 		92CE017B1DBD70A10058ECC8 /* JsonParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CE017A1DBD70A10058ECC8 /* JsonParserTests.swift */; };
 		92D3B1EA1DC2D60700AACF51 /* PrimeSet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D3B1E41DC2D60700AACF51 /* PrimeSet+CoreDataClass.swift */; };
@@ -114,7 +114,7 @@
 		92924F6E1DC346DD00BE493D /* DropChance+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DropChance+CoreDataClass.swift"; sourceTree = "<group>"; };
 		92924F6F1DC346DD00BE493D /* DropChance+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DropChance+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		92CBA3A61DB6502F0049DDDE /* RewardUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardUtilsTests.swift; sourceTree = "<group>"; };
-		92CE01761DBD44FC0058ECC8 /* WeaponsParts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WeaponsParts.json; sourceTree = "<group>"; };
+		92CE01761DBD44FC0058ECC8 /* WeaponParts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WeaponParts.json; sourceTree = "<group>"; };
 		92CE01781DBD450B0058ECC8 /* ExportManifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ExportManifest.json; sourceTree = "<group>"; };
 		92CE017A1DBD70A10058ECC8 /* JsonParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParserTests.swift; sourceTree = "<group>"; };
 		92D3B1E41DC2D60700AACF51 /* PrimeSet+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PrimeSet+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 				924CDFC01DADEC8200F5D982 /* Relics.csv */,
 				924CDFC11DADEC8200F5D982 /* Rewards.csv */,
 				924CDFC21DADEC8200F5D982 /* Tier.csv */,
-				92CE01761DBD44FC0058ECC8 /* WeaponsParts.json */,
+				92CE01761DBD44FC0058ECC8 /* WeaponParts.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -425,7 +425,7 @@
 				924CDFC31DADEC8200F5D982 /* Items.csv in Resources */,
 				92DA45F71DAD690900D9D3E0 /* Assets.xcassets in Resources */,
 				924CDFC41DADEC8200F5D982 /* Rarity.csv in Resources */,
-				92CE01771DBD44FC0058ECC8 /* WeaponsParts.json in Resources */,
+				92CE01771DBD44FC0058ECC8 /* WeaponParts.json in Resources */,
 				92673EB61DB57D0F00B6C3AB /* DropChances.csv in Resources */,
 				924CDFC51DADEC8200F5D982 /* Relics.csv in Resources */,
 				92DA45F51DAD690900D9D3E0 /* Main.storyboard in Resources */,
