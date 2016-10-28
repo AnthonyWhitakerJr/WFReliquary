@@ -33,8 +33,8 @@ class RewardTableViewCell: UITableViewCell {
         self.partLabel.text = reward.primePart.name
         
         let odds = reward.dropOdds!*100
-        let oddsString = odds.truncatingRemainder(dividingBy: 1) == 0 ? "\(Int(round(odds)))%" : "\(round(odds * 10) / 10)%" // Add a single decimal place but only where applicable (no .0)
-        self.dropPercentageLabel.text = oddsString
+        let format = odds.truncatingRemainder(dividingBy: 1) == 0 ? "%.f%%" : "%.1f%%"        
+        self.dropPercentageLabel.text = String(format: format, odds)
         
         var rarityColor: UIColor
         switch reward.rarity {
