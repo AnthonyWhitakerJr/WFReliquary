@@ -30,9 +30,16 @@ public class Reward: NSManagedObject, Comparable {
         dropOdds = dropChance.chance / Double(rarity.amountPerRelic)
     }
     
-    //TODO: Update reward odds for duplicate relics
-    func updateDropOdds(reward: Reward) {
+    func combineDropOdds(with reward: Reward) {
+        if dropOdds == nil {
+            dropOdds = 0
+        }
         
+        if let otherOdds = reward.dropOdds {
+            print("\(key) \(dropOdds!) + (1 - \(dropOdds!)) * \(otherOdds)")
+            dropOdds = dropOdds! + (1 - dropOdds!) * otherOdds
+            print("New odds: \(dropOdds!)")
+        }
     }
     
     // MARK: - Comparable
@@ -50,7 +57,7 @@ public class Reward: NSManagedObject, Comparable {
         public let primePart: PrimePart!
         
         public var description: String {
-            return "\(rarity) - \(primePart)"
+            return "\(rarity!) - \(primePart.name)"
         }
         
          public static func < (lhs: Key, rhs: Key) -> Bool {

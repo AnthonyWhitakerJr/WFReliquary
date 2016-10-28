@@ -29,6 +29,7 @@ class RewardsViewController: UITableViewController {
         
         var rewardsForSelectedRelics = RewardUtils.rewards(for: selectedRelics)
         RewardUtils.setDropOdds(for: &rewardsForSelectedRelics)
+        rewardsForSelectedRelics = RewardUtils.unique(rewards: rewardsForSelectedRelics)
         rewardsByRarity = RewardUtils.groupByRariry(rewards: rewardsForSelectedRelics)
         
         // Uncomment the following line to preserve selection between presentations
