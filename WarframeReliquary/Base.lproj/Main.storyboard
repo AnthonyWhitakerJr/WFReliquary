@@ -195,7 +195,7 @@
                                     <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favoriteBg" translatesAutoresizingMaskIntoConstraints="NO" id="Gcv-Zb-ewy"/>
+                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FavoriteBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Gcv-Zb-ewy"/>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Drop %" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKZ-15-zNg">
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="55" id="sNI-vI-hg1"/>
@@ -348,9 +348,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="FavoriteBackground" width="640" height="360"/>
         <image name="Lith_Intact" width="512" height="342"/>
         <image name="bg1" width="3840" height="2160"/>
-        <image name="favoriteBg" width="640" height="360"/>
         <image name="first" width="30" height="30"/>
         <image name="voidFissureIcon" width="16" height="32"/>
     </resources>
