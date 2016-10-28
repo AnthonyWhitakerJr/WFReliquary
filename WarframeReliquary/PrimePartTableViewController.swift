@@ -13,7 +13,7 @@ class PrimePartTableViewController: UITableViewController {
     
     @IBOutlet weak var primePartTableView: UITableView!
 
-    var primeParts = [PrimePart]()
+    var primeSets = [PrimeSet]()
     
     override var prefersStatusBarHidden: Bool {
         return true
@@ -25,8 +25,7 @@ class PrimePartTableViewController: UITableViewController {
         primePartTableView.delegate = self
         primePartTableView.dataSource = self
         
-        populatePrimeParts()
-        
+        populatePrimeSets()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -35,14 +34,14 @@ class PrimePartTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
-    func populatePrimeParts() {
+    func populatePrimeSets() {
         let app = UIApplication.shared.delegate as! AppDelegate
         let context = app.persistentContainer.viewContext
-        let fetchRequest: NSFetchRequest<PrimePart> = PrimePart.fetchRequest()
+        let fetchRequest: NSFetchRequest<PrimeSet> = PrimeSet.fetchRequest()
         
         do {
             let results = try context.fetch(fetchRequest)
-            self.primeParts = results.sorted()
+            self.primeSets = results.sorted()
         } catch let err as NSError {
             print(err.debugDescription)
         }
@@ -54,27 +53,42 @@ class PrimePartTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // MARK: - Table view delegate
+    
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let headerView: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
+        headerView.textLabel!.textColor = .white
+        headerView.backgroundView?.backgroundColor = UIColor(red: 20/255.0, green: 39/255.0, blue: 47/255.0, alpha: 1)
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
+        return primeSets.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return primeParts.count
+        if let components = primeSets[section].primeSetComponents {
+            return components.count
+        }
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PrimePartCell", for: indexPath) as? PrimePartTableViewCell {
-            let part = primeParts[indexPath.row]
-            cell.configureCell(primePart: part)
-            
-            return cell
+            if let components: Set<PrimeSetComponent> = primeSets[indexPath.section].primeSetComponents as! Set<PrimeSetComponent>? {
+                let componentArray = components.sorted()
+                let part = componentArray[indexPath.row].primePart
+                cell.configureCell(primePart: part)
+                return cell
+            }
         }
 
         return UITableViewCell()
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return primeSets[section].name
     }
 
     /*

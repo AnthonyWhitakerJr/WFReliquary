@@ -14,10 +14,9 @@ class RewardsViewController: UITableViewController {
     
     @IBOutlet weak var rewardsTableView: UITableView!
     
-    var rewardsByRelic = Dictionary<Relic.Key, [Reward]>()
     var rewardsByRarity = Dictionary<Rarity, [Reward]> ()
     var rewardsAll = [Reward]()
-    var rewards = [Reward]()
+    var rewardsForSelectedRelics = [Reward]()
     var selectedRelics = [Relic]()
     
     override var prefersStatusBarHidden: Bool {
@@ -31,11 +30,11 @@ class RewardsViewController: UITableViewController {
         rewardsTableView.dataSource = self
         
         populateRewardsAll()
-        rewardsByRelic = RewardUtils.groupByRelic(rewards: rewardsAll)
+        let rewardsByRelic = RewardUtils.groupByRelic(rewards: rewardsAll)
         
-        rewards = RewardUtils.rewards(for: selectedRelics, from: rewardsByRelic)
-        RewardUtils.setDropOdds(for: &rewards)
-        rewardsByRarity = RewardUtils.groupByRariry(rewards: rewards)
+        rewardsForSelectedRelics = RewardUtils.rewards(for: selectedRelics, from: rewardsByRelic)
+        RewardUtils.setDropOdds(for: &rewardsForSelectedRelics)
+        rewardsByRarity = RewardUtils.groupByRariry(rewards: rewardsForSelectedRelics)
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -68,6 +67,7 @@ class RewardsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let headerView: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
         headerView.textLabel!.textColor = .white
+        headerView.backgroundView?.backgroundColor = UIColor(red: 20/255.0, green: 39/255.0, blue: 47/255.0, alpha: 1)
     }
     
     // MARK: - Table view data source
