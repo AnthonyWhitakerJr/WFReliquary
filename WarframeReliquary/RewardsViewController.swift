@@ -15,8 +15,6 @@ class RewardsViewController: UITableViewController {
     @IBOutlet weak var rewardsTableView: UITableView!
     
     var rewardsByRarity = Dictionary<Rarity, [Reward]> ()
-    var rewardsAll = [Reward]()
-    var rewardsForSelectedRelics = [Reward]()
     var selectedRelics = [Relic]()
     
     override var prefersStatusBarHidden: Bool {
@@ -29,10 +27,7 @@ class RewardsViewController: UITableViewController {
         rewardsTableView.delegate = self
         rewardsTableView.dataSource = self
         
-        populateRewardsAll()
-        let rewardsByRelic = RewardUtils.groupByRelic(rewards: rewardsAll)
-        
-        rewardsForSelectedRelics = RewardUtils.rewards(for: selectedRelics, from: rewardsByRelic)
+        var rewardsForSelectedRelics = RewardUtils.rewards(for: selectedRelics)
         RewardUtils.setDropOdds(for: &rewardsForSelectedRelics)
         rewardsByRarity = RewardUtils.groupByRariry(rewards: rewardsForSelectedRelics)
         
@@ -41,20 +36,6 @@ class RewardsViewController: UITableViewController {
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
-    
-    func populateRewardsAll() {
-        let app = UIApplication.shared.delegate as! AppDelegate
-        let context = app.persistentContainer.viewContext
-        let fetchRequest: NSFetchRequest<Reward> = Reward.fetchRequest()
-        
-        do {
-            let results = try context.fetch(fetchRequest)
-            self.rewardsAll = results
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-        
     }
     
     override func didReceiveMemoryWarning() {
