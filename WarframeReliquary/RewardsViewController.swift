@@ -33,6 +33,10 @@ class RewardsViewController: UITableViewController {
         rewardsByRarity = RewardUtils.groupByRarity(selectedRewards: selectedRewards)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        rewardsTableView.reloadData()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
