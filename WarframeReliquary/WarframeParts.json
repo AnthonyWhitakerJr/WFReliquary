@@ -1,0 +1,673 @@
+{
+  "Manifest": [
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/WukongSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/WukongHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/WukongChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VoltPrimeSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VoltPrimeHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeHelmet.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VoltPrimeChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeChassis.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VaubanPrimeSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VaubanPrimeHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeHelmet.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VaubanPrimeChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeChassis.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VOLTSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VOLTHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/VOLTChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrinitySystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrinityPrimeSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrinityPrimeHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeHelmet.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrinityPrimeChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeChassis.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrinityHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrinityChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrapperSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrapperHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TrapperChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TenguSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TenguHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/TenguChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SarynSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SarynPrimeSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SarynPrimeHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeHelmet.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SarynPrimeChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeChassis.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SarynHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/SarynChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RhinoSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RhinoPrimeSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RhinoPrimeHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeHelmet.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RhinoPrimeChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeChassis.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RhinoHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RhinoChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RangerSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RangerHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/RangerChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PaladinSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PaladinHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/PaladinChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NyxSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeHelmet.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NyxPrimeChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeChassis.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NyxHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NyxChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NovaSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NovaPrimeSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NovaPrimeHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeHelmet.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NovaPrimeChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeChassis.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NovaHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NovaChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NezhaSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NezhaHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NezhaChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NekrosPrimeSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NekrosPrimeHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeHelmet.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NekrosPrimeChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeChassis.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NecroSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NecroHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/NecroChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MummySystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MummyHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MummyChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagicianSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagicianHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagicianChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagPrimeSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagPrimeHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeHelmet.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagPrimeChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeChassis.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/MagChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/LokiPrimeSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/LokiPrimeHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeHelmet.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/LokiPrimeChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeChassis.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/LOKISystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/LOKIHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/LOKIChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HydroidSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HydroidHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HydroidChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HarlequinSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HarlequinHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/HarlequinChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GunslingerSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GunslingerHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/GunslingerChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FrostSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FrostPrimeSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FrostPrimeHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeHelmet.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FrostPrimeChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeChassis.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FrostHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FrostChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FairySystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FairyHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/FairyChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ExcaliburSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ExcaliburHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ExcaliburChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/EmberSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/EmberPrimeSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/EmberPrimeHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeHelmet.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/EmberPrimeChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeChassis.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/EmberHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/EmberChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ChromaSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ChromaHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/ChromaChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BrawlerSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BrawlerHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BrawlerChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BerserkerSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BerserkerHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BerserkerChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BansheeSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BansheeHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/BansheeChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AshSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AshPrimeSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AshPrimeHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeHelmet.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AshPrimeChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframePrimeChassis.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AshHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AshChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AnimusSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AnimusHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AnimusComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\AnimusAspect.png",
+      "fileTime": 131122555152786750
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AnimusChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+      "fileTime": 131122555198651060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AnimaSystemsComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeSystem.png",
+      "fileTime": 131122555198963060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AnimaHelmetComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeHelmet.png",
+      "fileTime": 131122555198807060
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AnimaComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\AnimaAspect.png",
+      "fileTime": 131122555152786750
+    },
+    {
+      "uniqueName": "/Lotus/Types/Recipes/WarframeRecipes/AnimaChassisComponent",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\GenericWarframeChassis.png",
+    }
+  ]
+}

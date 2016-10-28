@@ -23,7 +23,18 @@ class JsonParserTests: XCTestCase {
     
     func testExample() {
         let parts = JsonReader.parseJson()
-        print("\(parts)")
+        
+        var writeMe = "warframe,image\n"
+        
+        for part in parts {
+            writeMe.append("\(part.weaponName),\(part.imageName)")
+            writeMe.append("\n")
+        }
+        
+        print(writeMe)
+        
+        writeToFile(to: "warframePairings.csv", content: writeMe)
+//        print("\(parts)")
     }
     
     func testPerformanceExample() {
@@ -32,5 +43,21 @@ class JsonParserTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func writeToFile(to filename: String, content: String) {
+        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+            
+            let path = dir.appendingPathComponent(filename)
+            print("\(path)")
+
+            //writing
+            do {
+                try content.write(to: path, atomically: false, encoding: String.Encoding.utf8)
+            }
+            catch {/* error handling here */}
+            
+        }
+    }
+    
     
 }
