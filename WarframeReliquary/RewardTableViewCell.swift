@@ -10,7 +10,7 @@ import UIKit
 
 class RewardTableViewCell: UITableViewCell {
     
-    var reward: Reward!
+    var selectedReward: SelectedReward!
     
     @IBOutlet weak var partImage: UIImageView!
     @IBOutlet weak var partLabel: UILabel!
@@ -28,16 +28,16 @@ class RewardTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configureCell(reward: Reward) {
-        self.reward = reward
-        self.partLabel.text = reward.primePart.name
+    func configureCell(selectedReward: SelectedReward) {
+        self.selectedReward = selectedReward
+        self.partLabel.text = selectedReward.reward.primePart.name
         
-        let odds = reward.dropOdds!*100
+        let odds = selectedReward.dropOdds * 100
         let format = odds.truncatingRemainder(dividingBy: 1) == 0 ? "%.f%%" : "%.1f%%"        
         self.dropPercentageLabel.text = String(format: format, odds)
         
         var rarityColor: UIColor
-        switch reward.rarity {
+        switch selectedReward.reward.rarity {
         case .Common:
             rarityColor = Constants.bronze
         case .Uncommon:
@@ -48,7 +48,7 @@ class RewardTableViewCell: UITableViewCell {
         
         self.partLabel.textColor = rarityColor
         
-        self.favoriteBackground.isHidden = !self.reward.primePart.isFavorite
+        self.favoriteBackground.isHidden = !self.selectedReward.reward.primePart.isFavorite
     }
 
 }

@@ -34,26 +34,26 @@ class RewardUtils {
         return rewardsTable
     }
     
-    static func groupByRariry(rewards : [Reward]) -> Dictionary<Rarity, [Reward]> {
-        var rewardsTable = Dictionary<Rarity, [Reward]>()
-        for reward in rewards {
-            if rewardsTable[reward.rarity] != nil {
-                rewardsTable[reward.rarity]!.append(reward)
+    static func groupByRarity(selectedRewards : [SelectedReward]) -> Dictionary<Rarity, [SelectedReward]> {
+        var rewardsTable = Dictionary<Rarity, [SelectedReward]>()
+        for selectedReward in selectedRewards {
+            if rewardsTable[selectedReward.reward.rarity] != nil {
+                rewardsTable[selectedReward.reward.rarity]!.append(selectedReward)
             } else {
-                rewardsTable[reward.rarity] = [reward]
+                rewardsTable[selectedReward.reward.rarity] = [selectedReward]
             }
         }
         return rewardsTable
     }
 
     /// Returns a sorted array of unique rewards. Any duplicate rewards will have their drop odds combined.
-    static func unique(rewards: [Reward]) -> [Reward] {
-        var rewardSet = Dictionary<Reward.Key, Reward>()
-        for reward in rewards {
-            if rewardSet[reward.key] != nil {
-                rewardSet[reward.key]!.combineDropOdds(with: reward)
+    static func unique(selectedRewards: [SelectedReward]) -> [SelectedReward] {
+        var rewardSet = Dictionary<Reward.Key, SelectedReward>()
+        for selectedReward in selectedRewards {
+            if rewardSet[selectedReward.reward.key] != nil {
+                rewardSet[selectedReward.reward.key]!.combineDropOdds(with: selectedReward)
             } else {
-                rewardSet[reward.key] = reward
+                rewardSet[selectedReward.reward.key] = selectedReward
             }
         }
         return Array(rewardSet.values).sorted()
@@ -71,14 +71,18 @@ class RewardUtils {
         return rewards
     }
     
-    static func setDropOdds(for rewards: inout [Reward]) {
+    static func setDropOdds(for rewards: [Reward]) -> [SelectedReward] {
+        var selectedRewards = [SelectedReward]()
         for reward in rewards {
             let relicQuality = reward.relic.quality
             let rewardRarity = reward.rarity
             let key = DropChance.Key(quality: relicQuality, rarity: rewardRarity)
             let dropChance = dropChances[key]
-            reward.setDropOdds(dropChance: dropChance!)
+            let selectedReward = SelectedReward(reward: reward, dropChance: dropChance!)
+            selectedRewards.append(selectedReward)
         }
+        
+        return selectedRewards
     }
     
     

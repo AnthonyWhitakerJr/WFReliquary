@@ -10,7 +10,6 @@ import Foundation
 import CoreData
 
 public class Reward: NSManagedObject, Comparable {
-    public private(set) var dropOdds: Double?
     public var key: Key {
         return Key(rarity: rarity, primePart: primePart)
     }
@@ -24,22 +23,6 @@ public class Reward: NSManagedObject, Comparable {
         self.relic = relic
         self.primePart = primePart
         self.rarity = rarity
-    }
-    
-    func setDropOdds(dropChance: DropChance) {
-        dropOdds = dropChance.chance / Double(rarity.amountPerRelic)
-    }
-    
-    func combineDropOdds(with reward: Reward) {
-        if dropOdds == nil {
-            dropOdds = 0
-        }
-        
-        if let otherOdds = reward.dropOdds {
-            print("\(key) \(dropOdds!) + (1 - \(dropOdds!)) * \(otherOdds)")
-            dropOdds = dropOdds! + (1 - dropOdds!) * otherOdds
-            print("New odds: \(dropOdds!)")
-        }
     }
     
     // MARK: - Comparable

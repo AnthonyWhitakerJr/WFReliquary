@@ -35,6 +35,8 @@
 		927B6AAD1DB13D1300E1A031 /* RarirtyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927B6AAC1DB13D1300E1A031 /* RarirtyTests.swift */; };
 		929119E31DBED36200260156 /* PrimePartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929119E21DBED36200260156 /* PrimePartTableViewController.swift */; };
 		929119E51DBED3E400260156 /* PrimePartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929119E41DBED3E400260156 /* PrimePartTableViewCell.swift */; };
+		92924F6B1DC3369E00BE493D /* SelectedRelic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92924F6A1DC3369E00BE493D /* SelectedRelic.swift */; };
+		92924F6D1DC336B000BE493D /* SelectedReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92924F6C1DC336B000BE493D /* SelectedReward.swift */; };
 		92CBA3A71DB6502F0049DDDE /* RewardUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBA3A61DB6502F0049DDDE /* RewardUtilsTests.swift */; };
 		92CE01771DBD44FC0058ECC8 /* WeaponsParts.json in Resources */ = {isa = PBXBuildFile; fileRef = 92CE01761DBD44FC0058ECC8 /* WeaponsParts.json */; };
 		92CE01791DBD450B0058ECC8 /* ExportManifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 92CE01781DBD450B0058ECC8 /* ExportManifest.json */; };
@@ -107,6 +109,8 @@
 		927B6AAC1DB13D1300E1A031 /* RarirtyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RarirtyTests.swift; sourceTree = "<group>"; };
 		929119E21DBED36200260156 /* PrimePartTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimePartTableViewController.swift; sourceTree = "<group>"; };
 		929119E41DBED3E400260156 /* PrimePartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimePartTableViewCell.swift; sourceTree = "<group>"; };
+		92924F6A1DC3369E00BE493D /* SelectedRelic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedRelic.swift; sourceTree = "<group>"; };
+		92924F6C1DC336B000BE493D /* SelectedReward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedReward.swift; sourceTree = "<group>"; };
 		92CBA3A61DB6502F0049DDDE /* RewardUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardUtilsTests.swift; sourceTree = "<group>"; };
 		92CE01761DBD44FC0058ECC8 /* WeaponsParts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WeaponsParts.json; sourceTree = "<group>"; };
 		92CE01781DBD450B0058ECC8 /* ExportManifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ExportManifest.json; sourceTree = "<group>"; };
@@ -286,6 +290,8 @@
 				920CD4501DBFA68600FD61DA /* Reward+CoreDataProperties.swift */,
 				92DA46251DAD8E7300D9D3E0 /* Tier.swift */,
 				92DA46201DAD8AFF00D9D3E0 /* WarframeReliquary.xcdatamodeld */,
+				92924F6A1DC3369E00BE493D /* SelectedRelic.swift */,
+				92924F6C1DC336B000BE493D /* SelectedReward.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -453,6 +459,8 @@
 				920CD4601DBFAEEC00FD61DA /* Relic+CoreDataProperties.swift in Sources */,
 				920CD4551DBFA68600FD61DA /* Reward+CoreDataClass.swift in Sources */,
 				927B6AA71DB1323800E1A031 /* RelicUtils.swift in Sources */,
+				92924F6D1DC336B000BE493D /* SelectedReward.swift in Sources */,
+				92924F6B1DC3369E00BE493D /* SelectedRelic.swift in Sources */,
 				92DA46221DAD8AFF00D9D3E0 /* WarframeReliquary.xcdatamodeld in Sources */,
 				9240633A1DAD952E00398571 /* Rarity.swift in Sources */,
 				92673EB21DB5673500B6C3AB /* RewardTableViewCell.swift in Sources */,

@@ -14,7 +14,7 @@ class RewardsViewController: UITableViewController {
     
     @IBOutlet weak var rewardsTableView: UITableView!
     
-    var rewardsByRarity = Dictionary<Rarity, [Reward]> ()
+    var rewardsByRarity = Dictionary<Rarity, [SelectedReward]> ()
     var selectedRelics = [Relic]()
     
     override var prefersStatusBarHidden: Bool {
@@ -27,10 +27,10 @@ class RewardsViewController: UITableViewController {
         rewardsTableView.delegate = self
         rewardsTableView.dataSource = self
         
-        var rewardsForSelectedRelics = RewardUtils.rewards(for: selectedRelics)
-        RewardUtils.setDropOdds(for: &rewardsForSelectedRelics)
-        rewardsForSelectedRelics = RewardUtils.unique(rewards: rewardsForSelectedRelics)
-        rewardsByRarity = RewardUtils.groupByRariry(rewards: rewardsForSelectedRelics)
+        let rewardsForSelectedRelics = RewardUtils.rewards(for: selectedRelics)
+        var selectedRewards = RewardUtils.setDropOdds(for: rewardsForSelectedRelics)
+        selectedRewards = RewardUtils.unique(selectedRewards: selectedRewards)
+        rewardsByRarity = RewardUtils.groupByRarity(selectedRewards: selectedRewards)
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -69,8 +69,8 @@ class RewardsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "RewardCell", for: indexPath) as? RewardTableViewCell {
             if let rarity = convertToRarity(from: indexPath.section) {
-                let reward = rewardsByRarity[rarity]![indexPath.row]
-                cell.configureCell(reward: reward)
+                let selectedReward = rewardsByRarity[rarity]![indexPath.row]
+                cell.configureCell(selectedReward: selectedReward)
                 
                 return cell
             }
