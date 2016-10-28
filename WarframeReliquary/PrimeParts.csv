@@ -1,0 +1,123 @@
+name,isVaulted,imageName
+Akbronco Prime Blueprint,FALSE,
+Akbronco Prime Link,FALSE,GenericComponentPrimePlug.png
+Akstiletto Prime Barrel,FALSE,GenericGunPrimeBarrel.png
+Akstiletto Prime Blueprint,FALSE,
+Akstiletto Prime Link,FALSE,GenericComponentPrimePlug.png
+Akstiletto Prime Receiver,FALSE,GenericGunPrimeReceiver.png
+Ash Prime Blueprint,FALSE,
+Ash Prime Chassis Blueprint,FALSE,GenericWarframePrimeChassis.png
+Ash Prime Neuroptics Blueprint,FALSE,GenericWarframePrimeHelmet.png
+Ash Prime Systems Blueprint,FALSE,GenericWarframePrimeSystem.png
+Boar Prime Barrel,TRUE,GenericGunPrimeBarrel.png
+Boar Prime Blueprint,TRUE,
+Boar Prime Receiver,TRUE,GenericGunPrimeReceiver.png
+Boar Prime Stock,TRUE,GenericGunPrimeStock.png
+Braton Prime Barrel,FALSE,GenericGunPrimeBarrel.png
+Braton Prime Blueprint,FALSE,
+Braton Prime Receiver,FALSE,GenericGunPrimeReceiver.png
+Braton Prime Stock,FALSE,GenericGunPrimeStock.png
+Bronco Prime Barrel,FALSE,GenericGunPrimeBarrel.png
+Bronco Prime Blueprint,FALSE,
+Bronco Prime Receiver,FALSE,GenericGunPrimeReceiver.png
+Burston Prime Barrel,FALSE,GenericGunPrimeBarrel.png
+Burston Prime Blueprint,FALSE,
+Burston Prime Receiver,FALSE,GenericGunPrimeReceiver.png
+Burston Prime Stock,FALSE,GenericGunPrimeStock.png
+Carrier Prime Blueprint,FALSE,
+Carrier Prime Carapace,FALSE,GenericWarframeChassis.png
+Carrier Prime Cerebrum,FALSE,GenericWarframeHelmet.png
+Carrier Prime Systems,FALSE,GenericWarframeSystem.png
+Dakra Prime Blade,TRUE,GenericWeaponPrimeBlade.png
+Dakra Prime Blueprint,TRUE,
+Dakra Prime Handle,TRUE,GenericWeaponPrimeHilt.png
+Dual Kamas Prime Blade,FALSE,GenericWeaponPrimeBlade.png
+Dual Kamas Prime Blueprint,FALSE,
+Dual Kamas Prime Handle,FALSE,GenericWeaponPrimeHilt.png
+Fang Prime Blade,FALSE,GenericWeaponPrimeBlade.png
+Fang Prime Blueprint,FALSE,
+Fang Prime Handle,FALSE,GenericWeaponPrimeHilt.png
+Forma Blueprint,FALSE,
+Fragor Prime Blueprint,FALSE,
+Fragor Prime Handle,FALSE,GenericWeaponPrimeHilt.png
+Fragor Prime Head,FALSE,GenericWeaponPrimeBlade.png
+Galatine Prime Blade,FALSE,GenericWeaponPrimeBlade.png
+Galatine Prime Blueprint,FALSE,
+Galatine Prime Handle,FALSE,GenericWeaponPrimeHilt.png
+Hikou Prime Blueprint,FALSE,
+Hikou Prime Pouch,FALSE,GenericComponentPrimeLatch.png
+Hikou Prime Stars,FALSE,GenericWeaponPrimeBlade.png
+Kavasa Prime Collar Band,FALSE,GenericComponentPrimeLatch.png
+Kavasa Prime Collar Blueprint,FALSE,
+Kavasa Prime Collar Buckle,FALSE,GenericComponentPrimePlug.png
+Lex Prime Barrel,FALSE,GenericGunPrimeBarrel.png
+Lex Prime Blueprint,FALSE,
+Lex Prime Receiver,FALSE,GenericGunPrimeReceiver.png
+Mag Prime Blueprint,TRUE,
+Mag Prime Chassis Blueprint,TRUE,GenericWarframePrimeChassis.png
+Mag Prime Neuroptics Blueprint,TRUE,GenericWarframePrimeHelmet.png
+Mag Prime Systems Blueprint,TRUE,GenericWarframePrimeSystem.png
+Nekros Prime Blueprint,FALSE,
+Nekros Prime Chassis Blueprint,FALSE,GenericWarframePrimeChassis.png
+Nekros Prime Neuroptics Blueprint,FALSE,GenericWarframePrimeHelmet.png
+Nekros Prime Systems Blueprint,FALSE,GenericWarframePrimeSystem.png
+Nikana Prime Blade,FALSE,GenericWeaponPrimeBlade.png
+Nikana Prime Blueprint,FALSE,
+Nikana Prime Hilt,FALSE,GenericWeaponPrimeHilt.png
+Nova Prime Blueprint,FALSE,
+Nova Prime Chassis Blueprint,FALSE,GenericWarframePrimeChassis.png
+Nova Prime Neuroptics Blueprint,FALSE,GenericWarframePrimeHelmet.png
+Nova Prime Systems Blueprint,FALSE,GenericWarframePrimeSystem.png
+Nyx Prime Blueprint,FALSE,
+Nyx Prime Chassis Blueprint,FALSE,GenericWarframePrimeChassis.png
+Nyx Prime Neuroptics Blueprint,FALSE,GenericWarframePrimeHelmet.png
+Nyx Prime Systems Blueprint,FALSE,GenericWarframePrimeSystem.png
+Odonata Prime Blueprint,FALSE,
+Odonata Prime Harness Blueprint,FALSE,GenericArchwingHarness.png
+Odonata Prime Systems Blueprint,FALSE,GenericArchwingSystems.png
+Odonata Prime Wings Blueprint,FALSE,GenericArchwingWings.png
+Orthos Prime Blade,FALSE,GenericWeaponPrimeBlade.png
+Orthos Prime Blueprint,FALSE,
+Orthos Prime Handle,FALSE,GenericWeaponPrimeHilt.png
+Paris Prime Blueprint,FALSE,
+Paris Prime Grip,FALSE,GenericComponentPrimeLatch.png
+Paris Prime Lower Limb,FALSE,GenericWeaponPrimeBlade.png
+Paris Prime String,FALSE,GenericGunPrimeStock.png
+Paris Prime Upper Limb,FALSE,GenericWeaponPrimeBlade.png
+Saryn Prime Blueprint,FALSE,
+Saryn Prime Chassis Blueprint,FALSE,GenericWarframePrimeChassis.png
+Saryn Prime Neuroptics Blueprint,FALSE,GenericWarframePrimeHelmet.png
+Saryn Prime Systems Blueprint,FALSE,GenericWarframePrimeSystem.png
+Scindo Prime Blade,FALSE,GenericWeaponPrimeBlade.png
+Scindo Prime Blueprint,FALSE,
+Scindo Prime Handle,FALSE,GenericWeaponPrimeHilt.png
+Soma Prime Barrel,FALSE,GenericGunPrimeBarrel.png
+Soma Prime Blueprint,FALSE,
+Soma Prime Receiver,FALSE,GenericGunPrimeReceiver.png
+Soma Prime Stock,FALSE,GenericGunPrimeStock.png
+Spira Prime Blade,FALSE,GenericWeaponPrimeBlade.png
+Spira Prime Blueprint,FALSE,
+Spira Prime Pouch,FALSE,GenericComponentPrimeLatch.png
+Tigris Prime Barrel,FALSE,GenericGunPrimeBarrel.png
+Tigris Prime Blueprint,FALSE,
+Tigris Prime Receiver,FALSE,GenericGunPrimeReceiver.png
+Tigris Prime Stock,FALSE,GenericGunPrimeStock.png
+Trinity Prime Blueprint,FALSE,
+Trinity Prime Chassis Blueprint,FALSE,GenericWarframePrimeChassis.png
+Trinity Prime Neuroptics Blueprint,FALSE,GenericWarframePrimeHelmet.png
+Trinity Prime Systems Blueprint,FALSE,GenericWarframePrimeSystem.png
+Vasto Prime Barrel,FALSE,GenericGunPrimeBarrel.png
+Vasto Prime Blueprint,FALSE,
+Vasto Prime Receiver,FALSE,GenericGunPrimeReceiver.png
+Vauban Prime Blueprint,FALSE,
+Vauban Prime Chassis Blueprint,FALSE,GenericWarframePrimeChassis.png
+Vauban Prime Neuroptics Blueprint,FALSE,GenericWarframePrimeHelmet.png
+Vauban Prime Systems Blueprint,FALSE,GenericWarframePrimeSystem.png
+Vectis Prime Barrel,FALSE,GenericGunPrimeBarrel.png
+Vectis Prime Blueprint,FALSE,
+Vectis Prime Receiver,FALSE,GenericGunPrimeReceiver.png
+Vectis Prime Stock,FALSE,GenericGunPrimeStock.png
+Volt Prime Blueprint,FALSE,
+Volt Prime Chassis Blueprint,FALSE,GenericWarframePrimeChassis.png
+Volt Prime Neuroptics Blueprint,FALSE,GenericWarframePrimeHelmet.png
+Volt Prime Systems Blueprint,FALSE,GenericWarframePrimeSystem.png
