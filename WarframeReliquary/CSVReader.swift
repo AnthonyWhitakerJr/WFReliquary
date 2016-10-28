@@ -25,13 +25,54 @@ class CsvReader {
                 let part = PrimePart(name: name, isVaulted: isVaulted, insertInto: context)
                 
                 primeParts[name] = part
-                
             }
         } catch let err as NSError {
             print(err.debugDescription)
         }
         
         return primeParts
+    }
+    
+    static func parsePrimeSetCsv(into context: NSManagedObjectContext) -> Dictionary<String, PrimeSet> {
+        var primeSets = Dictionary<String, PrimeSet>()
+        let path = Bundle.main.path(forResource: "PrimeSet", ofType: "csv")
+        
+        do {
+            let csv = try CSV(contentsOfFile: path!)
+            let rows = csv.rows
+            
+            for row in rows {//Force upwrap to fail fast
+                let name = row["name"]!
+                let imageName = row["imageName"]!
+                let primeSet = PrimeSet(name: name, imageName: imageName, insertInto: context)
+                
+                primeSets[name] = primeSet
+            }
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+        
+        return primeSets
+    }
+    
+    static func parsePrimeSetComponentsCsv(primeSets: Dictionary<String, PrimeSet>, primeParts: Dictionary<String, PrimePart>, into context: NSManagedObjectContext) {
+        let path = Bundle.main.path(forResource: "PrimeSetComponents", ofType: "csv")
+        
+        do {
+            let csv = try CSV(contentsOfFile: path!)
+            let rows = csv.rows
+            
+            for row in rows {//Force upwrap to fail fast
+                let partName = row["partName"]!
+                let setName = row["setName"]!
+                let numberRequired = Int16(row["numberRequired"]!)
+                let primeSet = primeSets[setName]!
+                let primePart = primeParts[partName]!
+                _ = PrimeSetComponent(primeSet: primeSet, primePart: primePart, numberRequired: numberRequired!, insertInto: context)
+            }
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
     }
     
     static func parseRelicCsv(into context: NSManagedObjectContext) -> Dictionary<Relic.Key, Relic> {
