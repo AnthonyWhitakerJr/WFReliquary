@@ -13,7 +13,7 @@ class CsvReader {
     
     static func parsePrimePartCsv(into context: NSManagedObjectContext) -> Dictionary<String, PrimePart> {
         var primeParts = Dictionary<String, PrimePart>()
-        let path = Bundle.main.path(forResource: "Items", ofType: "csv")
+        let path = Bundle.main.path(forResource: "PrimeParts", ofType: "csv")
         
         do {
             let csv = try CSV(contentsOfFile: path!)
@@ -22,7 +22,8 @@ class CsvReader {
             for row in rows {//Force upwrap to fail fast
                 let name = row["name"]!
                 let isVaulted = Bool.init(row["isVaulted"]!.lowercased())!
-                let part = PrimePart(name: name, isVaulted: isVaulted, insertInto: context)
+                let imageName = row["imageName"]!
+                let part = PrimePart(name: name, isVaulted: isVaulted, imageName: imageName, insertInto: context)
                 
                 primeParts[name] = part
             }

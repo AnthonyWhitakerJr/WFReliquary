@@ -11,7 +11,7 @@ import CoreData
 
 public class PrimeSet: NSManagedObject, Comparable {
 
-    convenience init(name: String, imageName: String?, insertInto context: NSManagedObjectContext) {
+    convenience init(name: String, imageName: String, insertInto context: NSManagedObjectContext) {
         self.init(context: context)
         self.name = name
         self.imageName = imageName

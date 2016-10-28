@@ -11,10 +11,11 @@ import CoreData
 
 public class PrimePart: NSManagedObject, Comparable {
     
-    convenience init(name: String, isVaulted: Bool, insertInto context: NSManagedObjectContext) {
+    convenience init(name: String, isVaulted: Bool, imageName: String, insertInto context: NSManagedObjectContext) {
         self.init(context: context)
         self.name = name
         self.isVaulted = isVaulted
+        self.imageName = imageName
     }
     
     // MARK: - Comparable

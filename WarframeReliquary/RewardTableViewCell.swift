@@ -49,6 +49,15 @@ class RewardTableViewCell: UITableViewCell {
         self.partLabel.textColor = rarityColor
         
         self.favoriteBackground.isHidden = !self.selectedReward.reward.primePart.isFavorite
+        
+        var imageName: String
+        if !selectedReward.reward.primePart.imageName.isBlank {
+            imageName = selectedReward.reward.primePart.imageName
+        } else {
+            imageName = selectedReward.reward.primePart.component!.primeSet.imageName
+        }
+        
+        self.partImage.image = UIImage(named: imageName)
     }
 
 }

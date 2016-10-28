@@ -17,3 +17,13 @@ extension Array {
         return dict
     }
 }
+
+extension String {
+    var isBlank: Bool {
+        return isEmpty || trimmed.isEmpty
+    }
+    
+    var trimmed: String {
+        return trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+    }
+}

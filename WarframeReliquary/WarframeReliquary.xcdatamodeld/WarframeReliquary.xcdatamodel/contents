@@ -6,7 +6,7 @@
         <attribute name="rarity" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <entity name="PrimePart" representedClassName=".PrimePart" syncable="YES">
-        <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageName" attributeType="String" syncable="YES"/>
         <attribute name="isFavorite" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="isVaulted" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" attributeType="String" minValueString="1" syncable="YES"/>
@@ -14,7 +14,7 @@
         <relationship name="component" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PrimeSetComponent" inverseName="primePart" inverseEntity="PrimeSetComponent" syncable="YES"/>
     </entity>
     <entity name="PrimeSet" representedClassName=".PrimeSet" syncable="YES">
-        <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageName" attributeType="String" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
         <relationship name="primeSetComponents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PrimeSetComponent" inverseName="primeSet" inverseEntity="PrimeSetComponent" syncable="YES"/>
     </entity>
@@ -36,11 +36,11 @@
         <relationship name="relic" maxCount="1" deletionRule="Nullify" destinationEntity="Relic" inverseName="rewards" inverseEntity="Relic" syncable="YES"/>
     </entity>
     <elements>
+        <element name="DropChance" positionX="117" positionY="27" width="128" height="30"/>
         <element name="PrimePart" positionX="-90" positionY="-117" width="128" height="135"/>
         <element name="PrimeSet" positionX="117" positionY="27" width="128" height="90"/>
         <element name="PrimeSetComponent" positionX="126" positionY="36" width="128" height="90"/>
         <element name="Relic" positionX="-92" positionY="81" width="128" height="120"/>
         <element name="Reward" positionX="412" positionY="-27" width="128" height="88"/>
-        <element name="DropChance" positionX="117" positionY="27" width="128" height="30"/>
     </elements>
 </model>

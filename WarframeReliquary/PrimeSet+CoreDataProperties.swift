@@ -15,7 +15,7 @@ extension PrimeSet {
         return NSFetchRequest<PrimeSet>(entityName: "PrimeSet");
     }
 
-    @NSManaged public var imageName: String?
+    @NSManaged public var imageName: String
     @NSManaged public var name: String
     @NSManaged public var primeSetComponents: NSSet?
 
