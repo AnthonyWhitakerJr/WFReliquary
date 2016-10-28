@@ -301,7 +301,7 @@
                             <outlet property="delegate" destination="RwZ-O1-Fj7" id="kox-Vp-gKv"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Favorites" image="first" id="XNn-LB-bBl"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="favoriteIcon" selectedImage="favoriteIconSelected" id="XNn-LB-bBl"/>
                     <connections>
                         <outlet property="primePartTableView" destination="7dZ-VB-Ubp" id="POS-t4-mil"/>
                     </connections>
@@ -354,7 +354,8 @@
         <image name="FavoriteBackground" width="640" height="360"/>
         <image name="Lith_Intact" width="512" height="342"/>
         <image name="bg1" width="3840" height="2160"/>
-        <image name="first" width="30" height="30"/>
+        <image name="favoriteIcon" width="25" height="22"/>
+        <image name="favoriteIconSelected" width="25" height="22"/>
         <image name="voidFissureIcon" width="16" height="32"/>
     </resources>
 </document>
