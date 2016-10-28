@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg1" translatesAutoresizingMaskIntoConstraints="NO" id="WBX-os-VsF"/>
@@ -183,16 +183,16 @@
             <objects>
                 <tableViewController id="d4j-4a-3D1" customClass="RewardsViewController" customModule="WarframeReliquary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="TeL-Ib-AhC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.013290839269757271" green="0.057691104710102081" blue="0.063405893743038177" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" red="0.078849010169506073" green="0.15100100636482239" blue="0.18303415179252625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RewardCell" id="PF8-dL-X2i" customClass="RewardTableViewCell" customModule="WarframeReliquary" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PF8-dL-X2i" id="Vbe-ua-Egw">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FavoriteBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Gcv-Zb-ewy"/>
@@ -257,16 +257,16 @@
             <objects>
                 <tableViewController id="RwZ-O1-Fj7" customClass="PrimePartTableViewController" customModule="WarframeReliquary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7dZ-VB-Ubp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" red="0.078849010169999997" green="0.1510010064" blue="0.18303415179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PrimePartCell" id="PfK-fZ-apG" customClass="PrimePartTableViewCell" customModule="WarframeReliquary" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PfK-fZ-apG" id="RUx-9V-dz1">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="414" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="EjZ-Cm-euf">
@@ -274,24 +274,29 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MXy-no-VhQ">
-                                            <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0k-Qs-J1h">
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="B0k-Qs-J1h" secondAttribute="height" multiplier="75:66" id="aTm-jI-1qa"/>
+                                            </constraints>
+                                            <state key="normal" image="favoriteIcon"/>
+                                            <state key="selected" image="favoriteIconSelected"/>
                                             <connections>
-                                                <action selector="valueChanged:" destination="PfK-fZ-apG" eventType="valueChanged" id="wO1-LI-5gJ"/>
+                                                <action selector="favoriteButtonPressed:" destination="PfK-fZ-apG" eventType="touchUpInside" id="REl-eD-9KY"/>
                                             </connections>
-                                        </switch>
+                                        </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="MXy-no-VhQ" firstAttribute="centerY" secondItem="RUx-9V-dz1" secondAttribute="centerY" id="1tB-i3-gLg"/>
                                         <constraint firstItem="EjZ-Cm-euf" firstAttribute="centerY" secondItem="RUx-9V-dz1" secondAttribute="centerY" id="7M2-K1-i5q"/>
-                                        <constraint firstAttribute="trailing" secondItem="MXy-no-VhQ" secondAttribute="trailing" constant="8" id="I0S-Yv-BTx"/>
+                                        <constraint firstItem="B0k-Qs-J1h" firstAttribute="leading" secondItem="EjZ-Cm-euf" secondAttribute="trailing" constant="8" id="DRF-Ho-oKd"/>
+                                        <constraint firstAttribute="trailing" secondItem="B0k-Qs-J1h" secondAttribute="trailing" constant="8" id="Jvx-4e-V1o"/>
                                         <constraint firstItem="EjZ-Cm-euf" firstAttribute="leading" secondItem="RUx-9V-dz1" secondAttribute="leadingMargin" constant="8" id="T0K-BY-s4W"/>
-                                        <constraint firstItem="MXy-no-VhQ" firstAttribute="leading" secondItem="EjZ-Cm-euf" secondAttribute="trailing" constant="8" id="d6M-Mo-XrP"/>
+                                        <constraint firstAttribute="bottom" secondItem="B0k-Qs-J1h" secondAttribute="bottom" id="TMN-XS-cPG"/>
+                                        <constraint firstItem="B0k-Qs-J1h" firstAttribute="top" secondItem="RUx-9V-dz1" secondAttribute="top" id="z0Q-aS-KsK"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.01000070106" green="0.057615719740000002" blue="0.063428670170000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <outlet property="favoriteSwitch" destination="MXy-no-VhQ" id="zFk-3w-KHM"/>
+                                    <outlet property="favoriteButton" destination="B0k-Qs-J1h" id="cyY-Fv-yRs"/>
                                     <outlet property="partNameLabel" destination="EjZ-Cm-euf" id="XdZ-aI-1bv"/>
                                 </connections>
                             </tableViewCell>
@@ -308,7 +313,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lx9-V8-5tV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744.79999999999995" y="358.4707646176912"/>
+            <point key="canvasLocation" x="743.47826086956525" y="357.88043478260875"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

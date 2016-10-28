@@ -11,7 +11,7 @@ import UIKit
 class PrimePartTableViewCell: UITableViewCell {
     
     @IBOutlet weak var partNameLabel: UILabel!
-    @IBOutlet weak var favoriteSwitch: UISwitch!
+    @IBOutlet weak var favoriteButton: UIButton!
     
     var primePart: PrimePart!
 
@@ -29,17 +29,18 @@ class PrimePartTableViewCell: UITableViewCell {
     func configureCell(primePart: PrimePart) {
         self.primePart = primePart
         partNameLabel.text = primePart.name
-        favoriteSwitch.setOn(primePart.isFavorite, animated: false)
+        favoriteButton.isSelected = primePart.isFavorite
     }
 
-    @IBAction func valueChanged(_ sender: UISwitch) {
-        primePart.isFavorite = sender.isOn
+    @IBAction func favoriteButtonPressed(_ sender: UIButton) {
+        favoriteButton.isSelected = !favoriteButton.isSelected
+        primePart.isFavorite = favoriteButton.isSelected
         
         do {
             try primePart.managedObjectContext?.save()
         } catch {
             fatalError("Failure to save context: \(error)")
         }
-        
     }
+
 }
