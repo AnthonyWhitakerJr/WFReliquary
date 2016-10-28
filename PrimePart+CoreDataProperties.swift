@@ -15,10 +15,12 @@ extension PrimePart {
         return NSFetchRequest<PrimePart>(entityName: "PrimePart");
     }
 
+    @NSManaged public var associatedRewards: NSSet?
+    @NSManaged public var component: PrimeSetComponent?
+    @NSManaged public var imageName: String?
+    @NSManaged public var isFavorite: Bool
     @NSManaged public var isVaulted: Bool
     @NSManaged public var name: String
-    @NSManaged public var isFavorite: Bool
-    @NSManaged public var associatedRewards: NSSet?
 
 }
 
