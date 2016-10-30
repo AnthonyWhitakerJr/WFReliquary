@@ -17,7 +17,7 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     var relicsAll = Dictionary<Relic.Key, Relic>()
     var relicsByTier = Dictionary<Tier, [Relic]>() // TODO: Refactor to pull directly from context
-    var selectedRelics = [Relic]()
+    var selectedRelics = [SelectedRelic]()
     
     let maxRelicCount = 4
     
@@ -101,7 +101,7 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
         } else if collectionView == selectedRelicCollectionView {
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SelectedRelicCell", for: indexPath) as? SelectedRelicCell {
                 let relic = selectedRelics[indexPath.row]
-                cell.configureCell(relic: relic)
+                cell.configureCell(selectedRelic: relic)
                 
                 return cell
             }
@@ -114,17 +114,16 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
         if collectionView == relicCollectionView {
             let relicCell = collectionView.cellForItem(at: indexPath) as! FissureRelicCell
             
-            if selectedRelics.count == maxRelicCount {
-                removeAll(occurencesOf: relicCell.relic, from: &selectedRelics)
-                relicCell.update(count: 0)
-            } else {
-                selectedRelics.append(relicCell.relic)
+            if selectedRelics.count != maxRelicCount {
+                selectedRelics.append(SelectedRelic(relic: relicCell.relic))
                 selectedRelics.sort()
                 
                 let relicCount = relicCell.relicCount + 1
                 relicCell.update(count: relicCount)
             }
         } else if collectionView == selectedRelicCollectionView {
+            let relic = selectedRelics[indexPath.row]
+            relic.cycleQuality()
             // Remove relic from selected relics
         }
         

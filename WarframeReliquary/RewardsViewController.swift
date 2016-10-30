@@ -15,7 +15,7 @@ class RewardsViewController: UITableViewController {
     @IBOutlet weak var rewardsTableView: UITableView!
     
     var rewardsByRarity = Dictionary<Rarity, [SelectedReward]> ()
-    var selectedRelics = [Relic]()
+    var selectedRelics = [SelectedRelic]()
     
     override var prefersStatusBarHidden: Bool {
         return true
@@ -30,8 +30,7 @@ class RewardsViewController: UITableViewController {
         let app = UIApplication.shared.delegate as! AppDelegate
         let context = app.persistentContainer.viewContext
         
-        let rewardsForSelectedRelics = RewardUtils.rewards(for: selectedRelics)
-        var selectedRewards = RewardUtils.setDropOdds(for: rewardsForSelectedRelics, from: context)
+        var selectedRewards = RewardUtils.rewards(for: selectedRelics, from: context)
         selectedRewards = RewardUtils.unique(selectedRewards: selectedRewards)
         rewardsByRarity = RewardUtils.groupByRarity(selectedRewards: selectedRewards)
     }

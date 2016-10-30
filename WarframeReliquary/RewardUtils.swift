@@ -58,21 +58,11 @@ class RewardUtils {
         return Array(rewardSet.values).sorted()
     }
     
-    /// Returns an array of the rewards from the given relics. May contain duplicates
-    static func rewards(for relics: [Relic]) -> [Reward] {
-        var rewards = [Reward]()
-        for relic in relics {
-            for reward in relic.rewards! as! Set<Reward> {
-                rewards.append(reward)
-            }
-        }
-        
-        return rewards
-    }
-    
-    static func setDropOdds(for rewards: [Reward], from context: NSManagedObjectContext) -> [SelectedReward] {
+    /// Returns an array of rewards from the given relics. May contain duplicates
+    static func rewards(for selectedRelics: [SelectedRelic], from context: NSManagedObjectContext) -> [SelectedReward] {
         var dropChances = Dictionary<DropChance.Key, DropChance>()
         let fetchRequest: NSFetchRequest<DropChance> = DropChance.fetchRequest()
+        var selectedRewards = [SelectedReward]()
         
         do {
             let results = try context.fetch(fetchRequest)
@@ -81,14 +71,16 @@ class RewardUtils {
             print(err.debugDescription)
         }
         
-        var selectedRewards = [SelectedReward]()
-        for reward in rewards {
-            let relicQuality = reward.relic.quality
-            let rewardRarity = reward.rarity
-            let key = DropChance.Key(quality: relicQuality, rarity: rewardRarity)
-            let dropChance = dropChances[key]
-            let selectedReward = SelectedReward(reward: reward, dropChance: dropChance!)
-            selectedRewards.append(selectedReward)
+        for selectedRelic in selectedRelics {
+            for reward in selectedRelic.relic.rewards! as! Set<Reward> {
+                let relicQuality = selectedRelic.quality
+                let rewardRarity = reward.rarity
+                let key = DropChance.Key(quality: relicQuality, rarity: rewardRarity)
+                let dropChance = dropChances[key]
+                let selectedReward = SelectedReward(reward: reward, dropChance: dropChance!)
+                selectedRewards.append(selectedReward)
+            }
+            
         }
         
         return selectedRewards

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FissureRelicCell: RelicCell {
+class FissureRelicCell: UICollectionViewCell {
     
     @IBOutlet weak var relicCountLabel: UILabel!
     @IBOutlet weak var relicImageView: UIImageView!
@@ -16,8 +16,7 @@ class FissureRelicCell: RelicCell {
     @IBOutlet weak var vaultedLabel: UILabel!
     
     var relicCount: Int = 0
-    
-    let labelBackgroundColor = UIColor(red: 219.0/255, green: 221.0/255, blue: 221.0/255, alpha: 0.8)
+    var relic: Relic!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,8 +33,8 @@ class FissureRelicCell: RelicCell {
         vaultedLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 6)
     }
     
-    override func configureCell(relic: Relic) {
-        super.configureCell(relic: relic)
+    func configureCell(relic: Relic) {
+        self.relic = relic
         
         relicCount = 0
         relicCountLabel.text = ""
@@ -59,4 +58,18 @@ class FissureRelicCell: RelicCell {
         }
     }
     
+    func image(for relic: Relic) -> UIImage {
+        var image: UIImage
+        switch relic.key.tier! {
+        case .Lith:
+            image = #imageLiteral(resourceName: "Lith_Intact")
+        case .Meso:
+            image = #imageLiteral(resourceName: "Meso_Intact")
+        case .Neo:
+            image = #imageLiteral(resourceName: "Neo_Intact")
+        case .Axi:
+            image = #imageLiteral(resourceName: "Axi_Intact")
+        }
+        return image
+    }
 }

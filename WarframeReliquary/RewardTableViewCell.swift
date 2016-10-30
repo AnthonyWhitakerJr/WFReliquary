@@ -35,7 +35,7 @@ class RewardTableViewCell: UITableViewCell {
         self.partLabel.text = selectedReward.reward.primePart.name
         
         let odds = selectedReward.dropOdds * 100
-        let format = odds.truncatingRemainder(dividingBy: 1) == 0 ? "%.f%%" : "%.1f%%"        
+        let format = odds.truncatingRemainder(dividingBy: 1) < 0.1 ? "%.f%%" : "%.1f%%"
         self.dropPercentageLabel.text = String(format: format, odds)
         
         var rarityColor: UIColor

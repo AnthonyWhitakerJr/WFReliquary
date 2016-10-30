@@ -14,7 +14,6 @@
 		920CD45F1DBFAEEC00FD61DA /* Relic+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920CD45D1DBFAEEC00FD61DA /* Relic+CoreDataClass.swift */; };
 		920CD4601DBFAEEC00FD61DA /* Relic+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920CD45E1DBFAEEC00FD61DA /* Relic+CoreDataProperties.swift */; };
 		92141C851DC132C600FFC3CA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92141C841DC132C600FFC3CA /* Extensions.swift */; };
-		921DEE5C1DB31D3000606458 /* RelicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921DEE5B1DB31D3000606458 /* RelicCell.swift */; };
 		921DEE5E1DB31D5A00606458 /* SelectedRelicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921DEE5D1DB31D5A00606458 /* SelectedRelicCell.swift */; };
 		9240633A1DAD952E00398571 /* Rarity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924063391DAD952E00398571 /* Rarity.swift */; };
 		924CDFC51DADEC8200F5D982 /* Relics.csv in Resources */ = {isa = PBXBuildFile; fileRef = 924CDFC01DADEC8200F5D982 /* Relics.csv */; };
@@ -89,7 +88,6 @@
 		920CD45D1DBFAEEC00FD61DA /* Relic+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Relic+CoreDataClass.swift"; sourceTree = "<group>"; };
 		920CD45E1DBFAEEC00FD61DA /* Relic+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Relic+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		92141C841DC132C600FFC3CA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		921DEE5B1DB31D3000606458 /* RelicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelicCell.swift; sourceTree = "<group>"; };
 		921DEE5D1DB31D5A00606458 /* SelectedRelicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedRelicCell.swift; sourceTree = "<group>"; };
 		924063391DAD952E00398571 /* Rarity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rarity.swift; sourceTree = "<group>"; };
 		924CDFC01DADEC8200F5D982 /* Relics.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Relics.csv; sourceTree = "<group>"; };
@@ -265,7 +263,6 @@
 				92DA45F81DAD690900D9D3E0 /* LaunchScreen.storyboard */,
 				92DA45F31DAD690900D9D3E0 /* Main.storyboard */,
 				92DE3D9D1DAF1877003DAC19 /* FissureRelicCell.swift */,
-				921DEE5B1DB31D3000606458 /* RelicCell.swift */,
 				92673EB11DB5673500B6C3AB /* RewardTableViewCell.swift */,
 				921DEE5D1DB31D5A00606458 /* SelectedRelicCell.swift */,
 				929119E41DBED3E400260156 /* PrimePartTableViewCell.swift */,
@@ -291,10 +288,10 @@
 				920CD45E1DBFAEEC00FD61DA /* Relic+CoreDataProperties.swift */,
 				920CD44F1DBFA68600FD61DA /* Reward+CoreDataClass.swift */,
 				920CD4501DBFA68600FD61DA /* Reward+CoreDataProperties.swift */,
-				92DA46251DAD8E7300D9D3E0 /* Tier.swift */,
-				92DA46201DAD8AFF00D9D3E0 /* WarframeReliquary.xcdatamodeld */,
 				92924F6A1DC3369E00BE493D /* SelectedRelic.swift */,
 				92924F6C1DC336B000BE493D /* SelectedReward.swift */,
+				92DA46251DAD8E7300D9D3E0 /* Tier.swift */,
+				92DA46201DAD8AFF00D9D3E0 /* WarframeReliquary.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -475,7 +472,6 @@
 				92924F701DC346DD00BE493D /* DropChance+CoreDataClass.swift in Sources */,
 				92924F711DC346DD00BE493D /* DropChance+CoreDataProperties.swift in Sources */,
 				920CD45F1DBFAEEC00FD61DA /* Relic+CoreDataClass.swift in Sources */,
-				921DEE5C1DB31D3000606458 /* RelicCell.swift in Sources */,
 				92673EAE1DB553B500B6C3AB /* RewardsViewController.swift in Sources */,
 				920CD4581DBFA68600FD61DA /* PrimePart+CoreDataProperties.swift in Sources */,
 				929119E51DBED3E400260156 /* PrimePartTableViewCell.swift in Sources */,

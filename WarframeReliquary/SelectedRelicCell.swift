@@ -8,11 +8,13 @@
 
 import UIKit
 
-class SelectedRelicCell: RelicCell {
+class SelectedRelicCell: UICollectionViewCell {
 
     @IBOutlet weak var relicImageView: UIImageView!
     @IBOutlet weak var relicTitleLabel: UILabel!
     @IBOutlet weak var vaultedLabel: UILabel!
+    
+    var selectedRelic: SelectedRelic!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,12 +27,16 @@ class SelectedRelicCell: RelicCell {
         vaultedLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 6)
     }
     
-    override func configureCell(relic: Relic) {
-        super.configureCell(relic: relic)
+    func configureCell(selectedRelic: SelectedRelic) {
+        self.selectedRelic = selectedRelic
         
-        relicTitleLabel.text = relic.key.description
-        relicImageView.image = image(for: relic)
+        relicTitleLabel.text = selectedRelic.relic.key.description
+        relicImageView.image = image(for: selectedRelic)
         
-        vaultedLabel.isHidden = !relic.isVaulted
+        vaultedLabel.isHidden = !selectedRelic.relic.isVaulted
+    }
+    
+    func image(for selectedRelic: SelectedRelic) -> UIImage {
+        return UIImage(named: "\(selectedRelic.relic.key.tier!.description)_\(selectedRelic.quality.description)")!
     }
 }

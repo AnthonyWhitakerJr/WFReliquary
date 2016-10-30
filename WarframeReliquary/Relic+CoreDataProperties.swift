@@ -18,7 +18,6 @@ extension Relic {
     @NSManaged public var isVaulted: Bool
     @NSManaged public var name: String
     @NSManaged public var tier: Tier
-    @NSManaged public var quality: Quality
     @NSManaged public var rewards: NSSet?
 
 }
