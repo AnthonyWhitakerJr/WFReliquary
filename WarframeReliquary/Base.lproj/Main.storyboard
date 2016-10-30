@@ -128,8 +128,8 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lith_Intact" translatesAutoresizingMaskIntoConstraints="NO" id="sdS-h6-ggc">
                                                     <rect key="frame" x="8" y="8" width="93" height="93"/>
                                                 </imageView>
-                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="VAULTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHe-gn-aym">
-                                                    <rect key="frame" x="0.0" y="0.0" width="109" height="109"/>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.85" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAULTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHe-gn-aym">
+                                                    <rect key="frame" x="3" y="43" width="103" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="OldStamper" family="Old Stamper" pointSize="23"/>
                                                     <color key="textColor" red="0.78301470624613878" green="0.090396249707123358" blue="0.0022233539918731691" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -220,7 +220,7 @@
         <scene sceneID="eRN-e1-CJW">
             <objects>
                 <tableViewController title="Rewards" id="d4j-4a-3D1" customClass="RewardsViewController" customModule="WarframeReliquary" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="TeL-Ib-AhC">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="TeL-Ib-AhC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.013290839269757271" green="0.057691104710102081" blue="0.063405893743038177" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -230,7 +230,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PF8-dL-X2i" id="Vbe-ua-Egw">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FavoriteBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Gcv-Zb-ewy">
@@ -312,7 +312,7 @@
         <scene sceneID="aHO-dW-rKF">
             <objects>
                 <tableViewController title="Prime Parts" automaticallyAdjustsScrollViewInsets="NO" id="RwZ-O1-Fj7" customClass="PrimePartTableViewController" customModule="WarframeReliquary" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7dZ-VB-Ubp">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7dZ-VB-Ubp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -322,17 +322,29 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PfK-fZ-apG" id="RUx-9V-dz1">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="Lith_Intact" translatesAutoresizingMaskIntoConstraints="NO" id="BGD-FS-XVs">
+                                            <rect key="frame" x="0.0" y="0.0" width="64.5" height="43.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="BGD-FS-XVs" secondAttribute="height" multiplier="64:43" id="wqS-IA-Vlk"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.85000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAULTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45V-IC-qP3">
+                                            <rect key="frame" x="5.5" y="15.5" width="54" height="12.5"/>
+                                            <fontDescription key="fontDescription" name="OldStamper" family="Old Stamper" pointSize="12"/>
+                                            <color key="textColor" red="0.78301470620000002" green="0.090396249710000001" blue="0.0022233539919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="EjZ-Cm-euf">
-                                            <rect key="frame" x="72.5" y="11.5" width="237" height="20.5"/>
+                                            <rect key="frame" x="72" y="11" width="237" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0k-Qs-J1h">
-                                            <rect key="frame" x="317.5" y="0.0" width="49.5" height="43.5"/>
+                                            <rect key="frame" x="317" y="0.0" width="49.5" height="43.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="B0k-Qs-J1h" secondAttribute="height" multiplier="75:66" id="aTm-jI-1qa"/>
                                             </constraints>
@@ -342,19 +354,15 @@
                                                 <action selector="favoriteButtonPressed:" destination="PfK-fZ-apG" eventType="touchUpInside" id="REl-eD-9KY"/>
                                             </connections>
                                         </button>
-                                        <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="Lith_Intact" translatesAutoresizingMaskIntoConstraints="NO" id="BGD-FS-XVs">
-                                            <rect key="frame" x="0.0" y="0.0" width="64.5" height="43.5"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="BGD-FS-XVs" secondAttribute="height" multiplier="64:43" id="wqS-IA-Vlk"/>
-                                            </constraints>
-                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="BGD-FS-XVs" firstAttribute="leading" secondItem="RUx-9V-dz1" secondAttribute="leading" id="1xR-ND-SRJ"/>
+                                        <constraint firstItem="45V-IC-qP3" firstAttribute="centerY" secondItem="BGD-FS-XVs" secondAttribute="centerY" id="7Df-mR-bsT"/>
                                         <constraint firstItem="EjZ-Cm-euf" firstAttribute="centerY" secondItem="RUx-9V-dz1" secondAttribute="centerY" id="7M2-K1-i5q"/>
                                         <constraint firstAttribute="bottom" secondItem="BGD-FS-XVs" secondAttribute="bottom" id="8F6-A9-dTM"/>
                                         <constraint firstItem="BGD-FS-XVs" firstAttribute="top" secondItem="RUx-9V-dz1" secondAttribute="top" id="DNA-di-tve"/>
                                         <constraint firstItem="B0k-Qs-J1h" firstAttribute="leading" secondItem="EjZ-Cm-euf" secondAttribute="trailing" constant="8" id="DRF-Ho-oKd"/>
+                                        <constraint firstItem="45V-IC-qP3" firstAttribute="centerX" secondItem="BGD-FS-XVs" secondAttribute="centerX" id="FUV-64-2GE"/>
                                         <constraint firstAttribute="trailing" secondItem="B0k-Qs-J1h" secondAttribute="trailing" constant="8" id="Jvx-4e-V1o"/>
                                         <constraint firstAttribute="bottom" secondItem="B0k-Qs-J1h" secondAttribute="bottom" id="TMN-XS-cPG"/>
                                         <constraint firstItem="EjZ-Cm-euf" firstAttribute="leading" secondItem="BGD-FS-XVs" secondAttribute="trailing" constant="8" id="jtD-lo-wYl"/>
@@ -366,6 +374,7 @@
                                     <outlet property="favoriteButton" destination="B0k-Qs-J1h" id="cyY-Fv-yRs"/>
                                     <outlet property="partImageView" destination="BGD-FS-XVs" id="u99-Yj-dei"/>
                                     <outlet property="partNameLabel" destination="EjZ-Cm-euf" id="XdZ-aI-1bv"/>
+                                    <outlet property="vaultedLabel" destination="45V-IC-qP3" id="gks-bl-5UT"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

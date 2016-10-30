@@ -13,12 +13,15 @@ class PrimePartTableViewCell: UITableViewCell {
     @IBOutlet weak var favoriteButton: UIButton!
     @IBOutlet weak var partImageView: UIImageView!
     @IBOutlet weak var partNameLabel: UILabel!
+    @IBOutlet weak var vaultedLabel: UILabel!
     
     var primePart: PrimePart!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        vaultedLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 6)
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -40,6 +43,8 @@ class PrimePartTableViewCell: UITableViewCell {
         }
         
         self.partImageView.image = UIImage(named: imageName)
+        
+        vaultedLabel.isHidden = !primePart.isVaulted
     }
 
     @IBAction func favoriteButtonPressed(_ sender: UIButton) {

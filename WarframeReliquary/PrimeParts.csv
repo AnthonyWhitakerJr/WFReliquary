@@ -68,7 +68,7 @@ Nova Prime Blueprint,FALSE,
 Nova Prime Chassis Blueprint,FALSE,GenericWarframePrimeChassis
 Nova Prime Neuroptics Blueprint,FALSE,GenericWarframePrimeHelmet
 Nova Prime Systems Blueprint,FALSE,GenericWarframePrimeSystem
-Nyx Prime Blueprint,FALSE,
+Nyx Prime Blueprint,TRUE,
 Nyx Prime Chassis Blueprint,TRUE,GenericWarframePrimeChassis
 Nyx Prime Neuroptics Blueprint,TRUE,GenericWarframePrimeHelmet
 Nyx Prime Systems Blueprint,TRUE,GenericWarframePrimeSystem
