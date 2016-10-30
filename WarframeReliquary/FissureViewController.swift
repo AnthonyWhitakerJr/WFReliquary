@@ -173,7 +173,6 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
             
             if selectedRelics.count != maxRelicCount {
                 selectedRelics.append(SelectedRelic(relic: relicCell.relic))
-//                selectedRelics.sort()
                 
                 let relicCount = relicCell.relicCount + 1
                 relicCell.update(count: relicCount)
@@ -181,7 +180,6 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
         } else if collectionView == selectedRelicCollectionView {
             let relic = selectedRelics[indexPath.row]
             relic.cycleQuality()
-            // Remove relic from selected relics
         }
         
         selectedRelicCollectionView.reloadData()
