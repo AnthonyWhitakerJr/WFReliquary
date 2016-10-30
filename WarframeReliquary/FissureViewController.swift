@@ -18,6 +18,8 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
     var relicsAll = Dictionary<Relic.Key, Relic>()
     var relicsByTier = Dictionary<Tier, [Relic]>() // TODO: Refactor to pull directly from context
     var selectedRelics = [SelectedRelic]()
+    var selectedIndexPath: IndexPath? //FIXME: Find a better way of doing this
+
     
     let maxRelicCount = 4
     
@@ -79,23 +81,51 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
                 break
             }
             selectedRelicCollectionView.beginInteractiveMovementForItem(at: selectedIndexPath)
+            self.selectedIndexPath = selectedIndexPath
         case UIGestureRecognizerState.changed:
             selectedRelicCollectionView.updateInteractiveMovementTargetPosition(gesture.location(in: gesture.view!))
         case UIGestureRecognizerState.ended:
             selectedRelicCollectionView.endInteractiveMovement()
+
+            let frame = CGRect(x: 0, y: 0, width: gesture.view!.frame.width, height: gesture.view!.frame.height)
+            if !frame.contains(gesture.location(in: gesture.view!)){
+                removeSelectedRelic()
+            }
+            
+            selectedIndexPath = nil
         default:
             selectedRelicCollectionView.cancelInteractiveMovement()
+            selectedIndexPath = nil
         }
     }
     
+    func removeSelectedRelic() {
+        guard !selectedRelics.isEmpty else {
+            return
+        }
+        
+        let removedRelic = selectedRelics.remove(at: self.selectedIndexPath!.row)
+        selectedRelicCollectionView.reloadData()
+        
+        let row = indexPath(for: removedRelic.relic.key)
+        let cell = relicCollectionView.cellForItem(at: IndexPath(row: row, section: 0)) as! FissureRelicCell
+        cell.update(count: cell.relicCount - 1)
+    }
+    
+    func indexPath(for key: Relic.Key) -> Array<Any>.Index {
+        let relics = relicsByTier[selectedTier!]
+        let index = relics!.index(where: {$0.key == key})
+        return index!
+    }
+    
     func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        // move your data order
         let temp = selectedRelics.remove(at: sourceIndexPath.item)
         selectedRelics.insert(temp, at: destinationIndexPath.item)
     }
     
     // MARK: - Segmented Control
     @IBAction func tierChanged(_ sender: UISegmentedControl) {
+        selectedRelicCollectionView.cancelInteractiveMovement()
         selectedRelics.removeAll()
         selectedRelicCollectionView.reloadData()
         relicCollectionView.reloadData()
