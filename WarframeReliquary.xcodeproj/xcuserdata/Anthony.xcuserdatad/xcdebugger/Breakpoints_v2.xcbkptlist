@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WarframeReliquary/RewardTableViewCell.swift"
-            timestampString = "499351687.133453"
+            timestampString = "499493868.405575"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "configureCell(selectedReward:)"
             landmarkType = "7">
          </BreakpointContent>

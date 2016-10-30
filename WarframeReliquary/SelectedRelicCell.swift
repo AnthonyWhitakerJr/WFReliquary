@@ -12,7 +12,8 @@ class SelectedRelicCell: RelicCell {
 
     @IBOutlet weak var relicImageView: UIImageView!
     @IBOutlet weak var relicTitleLabel: UILabel!
-        
+    @IBOutlet weak var vaultedLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -21,6 +22,7 @@ class SelectedRelicCell: RelicCell {
         relicTitleLabel.layer.cornerRadius = 5.0
         relicTitleLabel.layer.masksToBounds = true
         
+        vaultedLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 6)
     }
     
     override func configureCell(relic: Relic) {
@@ -29,10 +31,6 @@ class SelectedRelicCell: RelicCell {
         relicTitleLabel.text = relic.key.description
         relicImageView.image = image(for: relic)
         
-        if relic.isVaulted {
-            relicTitleLabel.backgroundColor = vaultedRelicColor
-        } else {
-            relicTitleLabel.backgroundColor = UIColor.clear
-        }
+        vaultedLabel.isHidden = !relic.isVaulted
     }
 }

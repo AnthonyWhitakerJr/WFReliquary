@@ -26,6 +26,7 @@
 		925106021DC3665E00254953 /* WarframeParts.json in Resources */ = {isa = PBXBuildFile; fileRef = 925106011DC3665E00254953 /* WarframeParts.json */; };
 		925106051DC37B3400254953 /* PrimeParts.csv in Resources */ = {isa = PBXBuildFile; fileRef = 925106031DC37B3400254953 /* PrimeParts.csv */; };
 		925106061DC37B3400254953 /* PrimeSet.csv in Resources */ = {isa = PBXBuildFile; fileRef = 925106041DC37B3400254953 /* PrimeSet.csv */; };
+		9266AA261DC5A765005E7930 /* old_stamper.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9266AA251DC5A765005E7930 /* old_stamper.ttf */; };
 		92673EAE1DB553B500B6C3AB /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92673EAD1DB553B500B6C3AB /* RewardsViewController.swift */; };
 		92673EB21DB5673500B6C3AB /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92673EB11DB5673500B6C3AB /* RewardTableViewCell.swift */; };
 		92673EB41DB5773500B6C3AB /* Quality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92673EB31DB5773500B6C3AB /* Quality.swift */; };
@@ -102,6 +103,7 @@
 		925106011DC3665E00254953 /* WarframeParts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WarframeParts.json; sourceTree = "<group>"; };
 		925106031DC37B3400254953 /* PrimeParts.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PrimeParts.csv; sourceTree = "<group>"; };
 		925106041DC37B3400254953 /* PrimeSet.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PrimeSet.csv; sourceTree = "<group>"; };
+		9266AA251DC5A765005E7930 /* old_stamper.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = old_stamper.ttf; sourceTree = "<group>"; };
 		92673EAD1DB553B500B6C3AB /* RewardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
 		92673EB11DB5673500B6C3AB /* RewardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
 		92673EB31DB5773500B6C3AB /* Quality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quality.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			children = (
 				92673EB51DB57D0F00B6C3AB /* DropChances.csv */,
 				92CE01781DBD450B0058ECC8 /* ExportManifest.json */,
+				9266AA251DC5A765005E7930 /* old_stamper.ttf */,
 				925106031DC37B3400254953 /* PrimeParts.csv */,
 				925106041DC37B3400254953 /* PrimeSet.csv */,
 				92D3B1EF1DC2EE8200AACF51 /* PrimeSetComponents.csv */,
@@ -430,6 +433,7 @@
 				924CDFC41DADEC8200F5D982 /* Rarity.csv in Resources */,
 				92CE01771DBD44FC0058ECC8 /* WeaponParts.json in Resources */,
 				92673EB61DB57D0F00B6C3AB /* DropChances.csv in Resources */,
+				9266AA261DC5A765005E7930 /* old_stamper.ttf in Resources */,
 				924CDFC51DADEC8200F5D982 /* Relics.csv in Resources */,
 				92DA45F51DAD690900D9D3E0 /* Main.storyboard in Resources */,
 				924CDFC71DADEC8200F5D982 /* Tier.csv in Resources */,

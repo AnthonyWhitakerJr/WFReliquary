@@ -13,6 +13,7 @@ class FissureRelicCell: RelicCell {
     @IBOutlet weak var relicCountLabel: UILabel!
     @IBOutlet weak var relicImageView: UIImageView!
     @IBOutlet weak var relicTitleLabel: UILabel!
+    @IBOutlet weak var vaultedLabel: UILabel!
     
     var relicCount: Int = 0
     
@@ -29,7 +30,8 @@ class FissureRelicCell: RelicCell {
         
         relicTitleLabel.layer.cornerRadius = 5.0
         relicTitleLabel.layer.masksToBounds = true
-
+        
+        vaultedLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 6)
     }
     
     override func configureCell(relic: Relic) {
@@ -42,11 +44,7 @@ class FissureRelicCell: RelicCell {
         relicTitleLabel.text = relic.key.description
         relicImageView.image = image(for: relic)
         
-        if relic.isVaulted {
-            relicTitleLabel.backgroundColor = vaultedRelicColor
-        } else {
-            relicTitleLabel.backgroundColor = labelBackgroundColor
-        }
+        vaultedLabel.isHidden = !relic.isVaulted
     }
     
     func update(count: Int) {

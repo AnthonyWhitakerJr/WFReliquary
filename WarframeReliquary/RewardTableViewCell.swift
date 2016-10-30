@@ -16,10 +16,12 @@ class RewardTableViewCell: UITableViewCell {
     @IBOutlet weak var partLabel: UILabel!
     @IBOutlet weak var dropPercentageLabel: UILabel!
     @IBOutlet weak var favoriteBackground: UIImageView!
+    @IBOutlet weak var vaultedLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        vaultedLabel.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 6)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -58,6 +60,8 @@ class RewardTableViewCell: UITableViewCell {
         }
         
         self.partImage.image = UIImage(named: imageName)
+        
+        vaultedLabel.isHidden = !selectedReward.reward.primePart.isVaulted
     }
 
 }
