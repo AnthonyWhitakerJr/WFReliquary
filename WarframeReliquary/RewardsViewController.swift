@@ -50,7 +50,6 @@ class RewardsViewController: UITableViewController {
         let headerView: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
         headerView.textLabel!.textColor = .white
         headerView.backgroundView?.backgroundColor = UIColor(red: 20/255.0, green: 39/255.0, blue: 47/255.0, alpha: 1)
-        headerView.textLabel!.font = UIFont(name: "Titillium-Black", size: 17)
     }
     
     // MARK: - Table view data source
