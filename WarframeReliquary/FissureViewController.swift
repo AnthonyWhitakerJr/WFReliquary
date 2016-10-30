@@ -87,8 +87,7 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
         case UIGestureRecognizerState.ended:
             selectedRelicCollectionView.endInteractiveMovement()
 
-            let frame = CGRect(x: 0, y: 0, width: gesture.view!.frame.width, height: gesture.view!.frame.height)
-            if !frame.contains(gesture.location(in: gesture.view!)){
+            if gesture.isOutsideView(){
                 removeSelectedRelic()
             }
             

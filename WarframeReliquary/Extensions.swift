@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension Array {
     public func toDictionary<Key: Hashable>(with selectKey: (Element) -> Key) -> [Key:Element] {
@@ -25,5 +26,13 @@ extension String {
     
     var trimmed: String {
         return trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+    }
+}
+
+extension UILongPressGestureRecognizer {
+    
+    open func isOutsideView() -> Bool {
+        let frame = CGRect(x: 0, y: 0, width: self.view!.frame.width, height: self.view!.frame.height)
+        return !frame.contains(self.location(in: self.view!))
     }
 }
