@@ -466,6 +466,11 @@
       "fileTime": 131122554402889950
     },
     {
+      "uniqueName": "/Lotus/Upgrades/Mods/Warframe/Events/AvatarStaggerRecoveryMod",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AvatarMods\\AvatarStaggerRecoveryMod.jpeg",
+      "fileTime": 131214580499503330
+    },
+    {
       "uniqueName": "/Lotus/Upgrades/Mods/Warframe/DualStat/VigorMod",
       "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AvatarMods\\Vigor.jpeg",
       "fileTime": 131122554407725980
@@ -474,6 +479,11 @@
       "uniqueName": "/Lotus/Upgrades/Mods/Warframe/DualStat/RunSpeedArmorMod",
       "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AvatarMods\\ArmoredAgility.jpeg",
       "fileTime": 131122554403045950
+    },
+    {
+      "uniqueName": "/Lotus/Upgrades/Mods/Warframe/DualStat/HolsterSpeedSlideBoostMod",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AvatarMods\\HolsterSpeedSlideBoostMod.jpeg",
+      "fileTime": 131219685226803970
     },
     {
       "uniqueName": "/Lotus/Upgrades/Mods/Warframe/DualStat/FortitudeMod",
@@ -891,6 +901,11 @@
       "fileTime": 131122554476834430
     },
     {
+      "uniqueName": "/Lotus/Upgrades/Mods/Shotgun/DualStat/ColdDmgReloadSpeedMod",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\Shotgun\\ColdDmgReloadSpeedMod.jpeg",
+      "fileTime": 131219685226959970
+    },
+    {
       "uniqueName": "/Lotus/Upgrades/Mods/Shotgun/DualStat/BlazeMod",
       "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\DoubleMods\\ShotgunBlazeMod.jpeg",
       "fileTime": 131122554411938020
@@ -989,6 +1004,11 @@
       "uniqueName": "/Lotus/Upgrades/Mods/Sentinel/Kubrow/KubrowClonedFinisherMod",
       "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\Kubrow\\KubrowFinisher.jpeg",
       "fileTime": 131122554416462030
+    },
+    {
+      "uniqueName": "/Lotus/Upgrades/Mods/Sentinel/Events/Index/CompanionMedipetKitMod",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\Pets\\CompanionMediPetKit.jpeg",
+      "fileTime": 131214580499503330
     },
     {
       "uniqueName": "/Lotus/Upgrades/Mods/Rifle/WeaponZoomFovMod",
@@ -1234,6 +1254,16 @@
       "uniqueName": "/Lotus/Upgrades/Mods/Rifle/Event/ProjectNightwatch/OgrisNightwatchMod",
       "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\Rifle\\OgrisNightwatchMod.jpeg",
       "fileTime": 131122554474026400
+    },
+    {
+      "uniqueName": "/Lotus/Upgrades/Mods/Rifle/Event/CorpusArena/TetraCorpusArenaMod",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\Rifle\\TetraCorpusArenaMod.jpeg",
+      "fileTime": 131215366481297780
+    },
+    {
+      "uniqueName": "/Lotus/Upgrades/Mods/Rifle/Event/CorpusArena/SupraCorpusArenaMod",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\Pistol\\CorpusArenaDetronMod.jpeg",
+      "fileTime": 131213978971768620
     },
     {
       "uniqueName": "/Lotus/Upgrades/Mods/Rifle/DualStat/WildfireMod",
@@ -1996,6 +2026,11 @@
       "fileTime": 131122554418022050
     },
     {
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/Event/CorpusArena/ProvaCorpusArenaMod",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\Melee\\ProvaCorpusArenaMod.jpeg",
+      "fileTime": 131212965252491090
+    },
+    {
       "uniqueName": "/Lotus/Upgrades/Mods/Melee/DualStat/RendingStrikeMod",
       "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\DoubleMods\\MeleeRendingStrikeMod.jpeg",
       "fileTime": 131122554410222000
@@ -2029,6 +2064,11 @@
       "uniqueName": "/Lotus/Upgrades/Mods/Melee/DualStat/CorruptedDamageSpeedMod",
       "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\Melee\\CorruptedChargeDmgForChargeSpeedMod.jpeg",
       "fileTime": 131122554418646050
+    },
+    {
+      "uniqueName": "/Lotus/Upgrades/Mods/Melee/DualStat/ComboTimeStatusChanceMod",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\Melee\\ComboTimeStatusChanceMod.jpeg",
+      "fileTime": 131219685226959970
     },
     {
       "uniqueName": "/Lotus/Upgrades/Mods/Melee/Channel/ChannelVampireMod",
@@ -2471,6 +2511,11 @@
       "fileTime": 131122554430502130
     },
     {
+      "uniqueName": "/Lotus/Types/Sentinels/SentinelPrecepts/Events/CorpusArena/ShieldAuraPrecept",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\SentinelShieldingPrecept.jpeg",
+      "fileTime": 131215366481609780
+    },
+    {
       "uniqueName": "/Lotus/Types/Friendly/Pets/KubrowPetPrecepts/KubrowVipChasePrecept",
       "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\Kubrow\\KubrowVIPChase.jpeg",
       "fileTime": 131122554417710050
@@ -2671,6 +2716,11 @@
       "fileTime": 131122554391657870
     },
     {
+      "uniqueName": "/Lotus/Powersuits/Sandman/SandmanStormAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\InarosSandstormAugment.jpeg",
+      "fileTime": 131169739462683000
+    },
+    {
       "uniqueName": "/Lotus/Powersuits/Rhino/RhinoChargeAugmentCard",
       "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\RhinoChargeAugment2.jpeg",
       "fileTime": 131122554391501870
@@ -2684,6 +2734,16 @@
       "uniqueName": "/Lotus/Powersuits/Rhino/IronSkinAugmentCard",
       "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\RhinoIronSkinAugment.jpeg",
       "fileTime": 131122554391501870
+    },
+    {
+      "uniqueName": "/Lotus/Powersuits/Ranger/RangerStealAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\RangerStealAugment.jpeg",
+      "fileTime": 131122554391501870
+    },
+    {
+      "uniqueName": "/Lotus/Powersuits/Ranger/RangerQuiverPvPAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\PvP\\Augments\\QuiverAugment.jpeg",
+      "fileTime": 131122554440174190
     },
     {
       "uniqueName": "/Lotus/Powersuits/Pirate/TidalWaveAugmentCard",
@@ -2711,6 +2771,11 @@
       "fileTime": 131122554391345870
     },
     {
+      "uniqueName": "/Lotus/Powersuits/Paladin/RegenerationAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\OberonRenewalAugment1.jpeg",
+      "fileTime": 131122554391189870
+    },
+    {
       "uniqueName": "/Lotus/Powersuits/Paladin/ReckoningPvPAugmentCard",
       "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\PvP\\Augments\\OberonReckoningPvPAugment.jpeg",
       "fileTime": 131122554440174190
@@ -2719,6 +2784,16 @@
       "uniqueName": "/Lotus/Powersuits/Paladin/ReckoningAugmentCard",
       "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\OberonReckoningAugment.jpeg",
       "fileTime": 131122554391189870
+    },
+    {
+      "uniqueName": "/Lotus/Powersuits/Ninja/TeleportToAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\AshTeleportAugment1.jpeg",
+      "fileTime": 131122554385105840
+    },
+    {
+      "uniqueName": "/Lotus/Powersuits/Ninja/SmokeScreenPvPAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\PvP\\Augments\\SmokescreenPvPAugmentCard.jpeg",
+      "fileTime": 131122554440330190
     },
     {
       "uniqueName": "/Lotus/Powersuits/Ninja/SmokeScreenAugmentCard",
@@ -2736,6 +2811,26 @@
       "fileTime": 131122554384637840
     },
     {
+      "uniqueName": "/Lotus/Powersuits/Nezha/NezhaSashPvPAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\PvP\\Augments\\WardingHaloAugment.jpeg",
+      "fileTime": 131122554440642190
+    },
+    {
+      "uniqueName": "/Lotus/Powersuits/Nezha/NezhaSashAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\NezhaWardingHaloAugment.jpeg",
+      "fileTime": 131160252392272940
+    },
+    {
+      "uniqueName": "/Lotus/Powersuits/Necro/TerrorTotemAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\TerrorTotemAugment.jpeg",
+      "fileTime": 131122554391657870
+    },
+    {
+      "uniqueName": "/Lotus/Powersuits/Necro/SoulPunchPvPAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\PvP\\Augments\\SoulPunchAugment.jpeg",
+      "fileTime": 131122554440486190
+    },
+    {
       "uniqueName": "/Lotus/Powersuits/Necro/SoulPunchAugmentCard",
       "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\NekrosSoulPunchAugment1.jpeg",
       "fileTime": 131122554389941870
@@ -2748,6 +2843,11 @@
     {
       "uniqueName": "/Lotus/Powersuits/Necro/CloneTheDeadAugmentCard",
       "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\NekrosCloneTheDeadAugment.jpeg",
+      "fileTime": 131122554389785870
+    },
+    {
+      "uniqueName": "/Lotus/Powersuits/MonkeyKing/MonkeyStaffAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\MonkeyStaffAugment.jpeg",
       "fileTime": 131122554389785870
     },
     {
@@ -2806,6 +2906,11 @@
       "fileTime": 131122554388693860
     },
     {
+      "uniqueName": "/Lotus/Powersuits/Loki/DecoyPvPAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\PvP\\Augments\\DecoyAugment.jpeg",
+      "fileTime": 131122554437834180
+    },
+    {
       "uniqueName": "/Lotus/Powersuits/Jade/SelfBulletAttractorPvPAugmentCard",
       "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\NyxSelfBulletAttractorPvPAugment.jpeg",
       "fileTime": 131122554390097870
@@ -2824,6 +2929,11 @@
       "uniqueName": "/Lotus/Powersuits/Jade/ChaosAugmentCard",
       "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\NyxChaosAugment.jpeg",
       "fileTime": 131122554389941870
+    },
+    {
+      "uniqueName": "/Lotus/Powersuits/Harlequin/PrismPvPAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\PvP\\Augments\\MiragePrismAugment.jpeg",
+      "fileTime": 131122554440174190
     },
     {
       "uniqueName": "/Lotus/Powersuits/Harlequin/ObjectChangeAugmentCard",
@@ -2906,6 +3016,11 @@
       "fileTime": 131122554387289860
     },
     {
+      "uniqueName": "/Lotus/Powersuits/Dragon/DragonLuckAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\ChromaLuckAugment1.jpeg",
+      "fileTime": 131122554387133860
+    },
+    {
       "uniqueName": "/Lotus/Powersuits/Dragon/DragonBreathAugmentCard",
       "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\ChromaSpectralFlameAugment.jpeg",
       "fileTime": 131122554387133860
@@ -2921,9 +3036,34 @@
       "fileTime": 131122554389161860
     },
     {
+      "uniqueName": "/Lotus/Powersuits/Cowgirl/GunFuPvPAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\PvP\\Augments\\MesaPeacemakerAugment.jpeg",
+      "fileTime": 131122554440174190
+    },
+    {
       "uniqueName": "/Lotus/Powersuits/Cowgirl/BallisticBatteryAugmentCard",
       "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\MesaBallisticBatteryAugment.jpeg",
       "fileTime": 131122554389005860
+    },
+    {
+      "uniqueName": "/Lotus/Powersuits/Brawler/BrawlerSummonPvPAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\PvP\\Augments\\AtlasRumberAugment.jpeg",
+      "fileTime": 131122554437678180
+    },
+    {
+      "uniqueName": "/Lotus/Powersuits/Brawler/BrawlerSummonAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\BrawlerSummonAugmentCard.jpeg",
+      "fileTime": 131122554386977860
+    },
+    {
+      "uniqueName": "/Lotus/Powersuits/Brawler/BrawlerGazeAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\BrawlerGazeAugmentCard.jpeg",
+      "fileTime": 131122554386821860
+    },
+    {
+      "uniqueName": "/Lotus/Powersuits/Brawler/BrawlerBarrierAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\BrawlerBarrierAugmentCard.jpeg",
+      "fileTime": 131122554386665840
     },
     {
       "uniqueName": "/Lotus/Powersuits/Berserker/ShieldBashAugmentCard",
@@ -2934,6 +3074,11 @@
       "uniqueName": "/Lotus/Powersuits/Berserker/LastStandPvPAugmentCard",
       "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\PvP\\Augments\\ValkyrLastStandPvPAugment.jpeg",
       "fileTime": 131122554440486190
+    },
+    {
+      "uniqueName": "/Lotus/Powersuits/Berserker/LastStandAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\ValkyrHysteriaAugment.jpeg",
+      "fileTime": 131169621281104600
     },
     {
       "uniqueName": "/Lotus/Powersuits/Berserker/IntimidateAugmentCard",
@@ -2961,6 +3106,11 @@
       "fileTime": 131122554385105840
     },
     {
+      "uniqueName": "/Lotus/Powersuits/Banshee/EarthQuakeAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\BansheeEarthquakeAugment1.jpeg",
+      "fileTime": 131122554385105840
+    },
+    {
       "uniqueName": "/Lotus/Powersuits/Archwing/StealthJetPack/GravInstabilityAugmentCard",
       "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\ArchwingMods\\Iztal\\GravInstabilityAugment.jpeg",
       "fileTime": 131122554401641940
@@ -2984,6 +3134,11 @@
       "uniqueName": "/Lotus/Powersuits/AntiMatter/NullStarAugmentCard",
       "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\AbilityAugments\\NovaNullStarAugment1.jpeg",
       "fileTime": 131122554389941870
+    },
+    {
+      "uniqueName": "/Lotus/Powersuits/AntiMatter/AntiMatterDropPvPAugmentCard",
+      "textureLocation": "\\Lotus\\Interface\\Cards\\Images\\PvP\\Augments\\AntiMatterAugment.jpeg",
+      "fileTime": 131122554437210180
     },
     {
       "uniqueName": "/Lotus/Powersuits/AntiMatter/AntiMatterDropAugmentCard",
@@ -3078,7 +3233,7 @@
     {
       "uniqueName": "/Lotus/Weapons/Tenno/ThrowingWeapons/LiDagger/LiDagger",
       "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\LiDagger.png",
-      "fileTime": 131122555238431310
+      "fileTime": 131219661931721500
     },
     {
       "uniqueName": "/Lotus/Weapons/Tenno/Shotgun/ShotgunVandal",
@@ -3392,8 +3547,8 @@
     },
     {
       "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/DarkSword/DarkLongSword",
-      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\SwordDark_d.png",
-      "fileTime": 131122555327819870
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\DarkSword.png",
+      "fileTime": 131173182011787730
     },
     {
       "uniqueName": "/Lotus/Weapons/Tenno/Melee/Swords/CutlassAndPoignard/TennoCutlass",
@@ -3622,8 +3777,8 @@
     },
     {
       "uniqueName": "/Lotus/Weapons/Tenno/Melee/Dagger/DarkDagger",
-      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\SwordDark_d.png",
-      "fileTime": 131122555327819870
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\DarkDagger.png",
+      "fileTime": 131173182011787730
     },
     {
       "uniqueName": "/Lotus/Weapons/Tenno/Melee/Dagger/Dagger",
@@ -4069,6 +4224,11 @@
       "uniqueName": "/Lotus/Weapons/Infested/Melee/Swords/Mios/Mios",
       "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\Mios.png",
       "fileTime": 131122555246231360
+    },
+    {
+      "uniqueName": "/Lotus/Weapons/Infested/Melee/InfEmbolistScythe/InfestedScythe",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\EmbolistScythe.png",
+      "fileTime": 131212112703008750
     },
     {
       "uniqueName": "/Lotus/Weapons/Infested/Melee/Glaives/PunctureGlaive/PunctureGlaiveWeapon",
@@ -19621,6 +19781,66 @@
       "fileTime": 131122555101774430
     },
     {
+      "uniqueName": "/Lotus/Types/Enemies/CorpusChampions/TeamC/CCTeamCStealthAvatar",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Npcs\\Corpus\\Champions\\CCTeamCStealthAgent.png",
+      "fileTime": 131214047966368000
+    },
+    {
+      "uniqueName": "/Lotus/Types/Enemies/CorpusChampions/TeamC/CCTeamCSimplifiedHackerAvatar",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Npcs\\Corpus\\Champions\\CCTeamCHackerAgent.png",
+      "fileTime": 131214047966368000
+    },
+    {
+      "uniqueName": "/Lotus/Types/Enemies/CorpusChampions/TeamC/CCTeamCMoaAvatar",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Npcs\\Corpus\\Champions\\CCTeamCMoaAgent.png",
+      "fileTime": 131214047966368000
+    },
+    {
+      "uniqueName": "/Lotus/Types/Enemies/CorpusChampions/TeamC/CCTeamCDeceptionAvatar",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Npcs\\Corpus\\Champions\\CCTeamCDeceptionAgent.png",
+      "fileTime": 131214047966212000
+    },
+    {
+      "uniqueName": "/Lotus/Types/Enemies/CorpusChampions/TeamB/CCTeamBRiotMoaAvatar",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Npcs\\Corpus\\Champions\\CCTeamBRiotMoaAgent.png",
+      "fileTime": 131214047966212000
+    },
+    {
+      "uniqueName": "/Lotus/Types/Enemies/CorpusChampions/TeamB/CCTeamBOspreyAvatar",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Npcs\\Corpus\\Champions\\CCTeamBRaptorAgent.png",
+      "fileTime": 131214047966212000
+    },
+    {
+      "uniqueName": "/Lotus/Types/Enemies/CorpusChampions/TeamB/CCTeamBHyenaAvatar",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Npcs\\Corpus\\Champions\\CCTeamBHyenaAgent.png",
+      "fileTime": 131214047966212000
+    },
+    {
+      "uniqueName": "/Lotus/Types/Enemies/CorpusChampions/TeamB/CCTeamBDisruptorAvatar",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Npcs\\Corpus\\Champions\\CCTeamBDisruptorAgent.png",
+      "fileTime": 131214047966212000
+    },
+    {
+      "uniqueName": "/Lotus/Types/Enemies/CorpusChampions/TeamA/CCTeamAZanukaAvatar",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Npcs\\Corpus\\Champions\\CCTeamAZanukaAgent.png",
+      "fileTime": 131214047966212000
+    },
+    {
+      "uniqueName": "/Lotus/Types/Enemies/CorpusChampions/TeamA/CCTeamASkateBAvatar",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Npcs\\Corpus\\Champions\\CCTeamAHeavyAgent.png",
+      "fileTime": 131214047966212000
+    },
+    {
+      "uniqueName": "/Lotus/Types/Enemies/CorpusChampions/TeamA/CCTeamASkateAvatar",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Npcs\\Corpus\\Champions\\CCTeamASkateAgent.png",
+      "fileTime": 131214047966212000
+    },
+    {
+      "uniqueName": "/Lotus/Types/Enemies/CorpusChampions/TeamA/CCTeamARifleAvatar",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Npcs\\Corpus\\Champions\\CCTeamARifleAgent.png",
+      "fileTime": 131214047966212000
+    },
+    {
       "uniqueName": "/Lotus/Types/Enemies/Corpus/Vip/AladV/AladBossAvatar",
       "textureLocation": "\\Lotus\\Interface\\Icons\\Npcs\\AladVPortrait_d.png",
       "fileTime": 131122555083834320
@@ -23006,6 +23226,11 @@
       "fileTime": 131122554323797440
     },
     {
+      "uniqueName": "/Lotus/Upgrades/Skins/Sigils/DotD2016Sigil",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Sigils\\DOTD2016.png",
+      "fileTime": 131219786315696940
+    },
+    {
       "uniqueName": "/Lotus/Upgrades/Skins/Sigils/DeathMarkSigilZanuka",
       "textureLocation": "\\Lotus\\Interface\\Icons\\MarkedForDeathZanuka.png",
       "fileTime": 131122554999437780
@@ -23711,6 +23936,11 @@
       "fileTime": 131122555157778780
     },
     {
+      "uniqueName": "/Lotus/Upgrades/Skins/MonkeyKing/MonkeyKingAltHelmet",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\WukongAltHelmet.png",
+      "fileTime": 131122555347320000
+    },
+    {
       "uniqueName": "/Lotus/Upgrades/Skins/Miscellaneous/HuntsmanSoma",
       "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\HuntsmanSomaSkin.png",
       "fileTime": 131122555213627150
@@ -23759,6 +23989,11 @@
       "uniqueName": "/Lotus/Upgrades/Skins/MeleeDangles/FireMeleeDangle",
       "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\FireMeleeDangle.png",
       "fileTime": 131122555194283020
+    },
+    {
+      "uniqueName": "/Lotus/Upgrades/Skins/MeleeDangles/EmbolistMeleeDangle",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\EmbolistSugatra.png",
+      "fileTime": 131212112703008750
     },
     {
       "uniqueName": "/Lotus/Upgrades/Skins/MeleeDangles/CordsMeleeDangle",
@@ -23994,6 +24229,11 @@
       "uniqueName": "/Lotus/Upgrades/Skins/Halloween/HalloweenSobek",
       "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\HalloweenSkinSobek.png",
       "fileTime": 131122555211911140
+    },
+    {
+      "uniqueName": "/Lotus/Upgrades/Skins/Halloween/HalloweenSilvaAndAegis",
+      "textureLocation": "\\Lotus\\Interface\\Icons\\Store\\HalloweenSwordBoard.png",
+      "fileTime": 131219661931565490
     },
     {
       "uniqueName": "/Lotus/Upgrades/Skins/Halloween/HalloweenScindo",
