@@ -45,6 +45,10 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         populateRelicsAll()
         relicsByTier = RelicUtils.groupByTier(relics: relicsAll)
+        
+        let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongGesture(_:)))
+        longPressGesture.minimumPressDuration = 0.18
+        self.selectedRelicCollectionView.addGestureRecognizer(longPressGesture)
     }
     
     override func didReceiveMemoryWarning() {
@@ -65,6 +69,29 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
             print(err.debugDescription)
         }
 
+    }
+    
+    func handleLongGesture(_ gesture: UILongPressGestureRecognizer) {
+        switch(gesture.state) {
+            
+        case UIGestureRecognizerState.began:
+            guard let selectedIndexPath = self.selectedRelicCollectionView.indexPathForItem(at: gesture.location(in: self.selectedRelicCollectionView)) else {
+                break
+            }
+            selectedRelicCollectionView.beginInteractiveMovementForItem(at: selectedIndexPath)
+        case UIGestureRecognizerState.changed:
+            selectedRelicCollectionView.updateInteractiveMovementTargetPosition(gesture.location(in: gesture.view!))
+        case UIGestureRecognizerState.ended:
+            selectedRelicCollectionView.endInteractiveMovement()
+        default:
+            selectedRelicCollectionView.cancelInteractiveMovement()
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        // move your data order
+        let temp = selectedRelics.remove(at: sourceIndexPath.item)
+        selectedRelics.insert(temp, at: destinationIndexPath.item)
     }
     
     // MARK: - Segmented Control
@@ -116,7 +143,7 @@ class FissureViewController: UIViewController, UICollectionViewDelegate, UIColle
             
             if selectedRelics.count != maxRelicCount {
                 selectedRelics.append(SelectedRelic(relic: relicCell.relic))
-                selectedRelics.sort()
+//                selectedRelics.sort()
                 
                 let relicCount = relicCell.relicCount + 1
                 relicCell.update(count: relicCount)
