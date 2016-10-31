@@ -36,6 +36,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let primeSets = CsvReader.parsePrimeSetCsv(into: context)
         CsvReader.parsePrimeSetComponentsCsv(primeSets: primeSets, primeParts: primeParts, into: context)
         CsvReader.parseDropChanceCsv(into: context)
+        CsvReader.parseMyCollection(primeParts: primeParts, into: context)
+        
+        for (_, part) in primeParts {
+            if Int(part.count) < Int((part.component?.numberRequired)!) {
+                part.isFavorite = true
+            }
+        }
         
         do {
             try context.save()

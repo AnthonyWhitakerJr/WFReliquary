@@ -66,6 +66,7 @@
 		92DE3D9F1DAF1877003DAC19 /* FissureRelicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DE3D9D1DAF1877003DAC19 /* FissureRelicCell.swift */; };
 		92F23AB01DB6856E003E300E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F23AAF1DB6856E003E300E /* Constants.swift */; };
 		92F23AB21DB6A00C003E300E /* JsonReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F23AB11DB6A00C003E300E /* JsonReader.swift */; };
+		92FECDDC1DC7B45C00A895E7 /* MyCollection.csv in Resources */ = {isa = PBXBuildFile; fileRef = 92FECDDB1DC7B45C00A895E7 /* MyCollection.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +152,7 @@
 		92DE3D9D1DAF1877003DAC19 /* FissureRelicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FissureRelicCell.swift; sourceTree = "<group>"; };
 		92F23AAF1DB6856E003E300E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		92F23AB11DB6A00C003E300E /* JsonReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonReader.swift; sourceTree = "<group>"; };
+		92FECDDB1DC7B45C00A895E7 /* MyCollection.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MyCollection.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 			children = (
 				92673EB51DB57D0F00B6C3AB /* DropChances.csv */,
 				92CE01781DBD450B0058ECC8 /* ExportManifest.json */,
+				92FECDDB1DC7B45C00A895E7 /* MyCollection.csv */,
 				9266AA251DC5A765005E7930 /* old_stamper.ttf */,
 				9266AA271DC5AF5D005E7930 /* PrimeParts.csv */,
 				925106041DC37B3400254953 /* PrimeSet.csv */,
@@ -447,6 +450,7 @@
 				925106021DC3665E00254953 /* WarframeParts.json in Resources */,
 				924CDFC61DADEC8200F5D982 /* Rewards.csv in Resources */,
 				922410D61DC6745C00288B42 /* Titillium-Light.otf in Resources */,
+				92FECDDC1DC7B45C00A895E7 /* MyCollection.csv in Resources */,
 				922410D51DC6745C00288B42 /* Titillium-Bold.otf in Resources */,
 				925106061DC37B3400254953 /* PrimeSet.csv in Resources */,
 			);

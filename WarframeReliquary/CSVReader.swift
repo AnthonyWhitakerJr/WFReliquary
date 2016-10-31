@@ -150,5 +150,25 @@ class CsvReader {
             print(err.debugDescription)
         }
     }
+    
+    static func parseMyCollection(primeParts: Dictionary<String, PrimePart>, into context: NSManagedObjectContext) {
+        let path = Bundle.main.path(forResource: "MyCollection", ofType: "csv")
+        
+        do {
+            let csv = try CSV(contentsOfFile: path!)
+            let rows = csv.rows
+            
+            for row in rows {//Force upwrap to fail fast
+                let name = row["name"]!
+                let count = Int32(row["count"]!)
+
+                
+                let part = primeParts[name]!
+                part.count = count!
+            }
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+    }
 
 }
