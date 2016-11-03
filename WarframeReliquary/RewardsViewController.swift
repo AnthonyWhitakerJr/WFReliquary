@@ -12,8 +12,6 @@ import CoreData
 /// Set selectedRelics with relevant relics before loading this controller
 class RewardsViewController: UITableViewController {
     
-    @IBOutlet weak var rewardsTableView: UITableView!
-    
     var rewardsByRarity = Dictionary<Rarity, [SelectedReward]> ()
     var selectedRelics = [SelectedRelic]()
     
@@ -24,9 +22,6 @@ class RewardsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        rewardsTableView.delegate = self
-        rewardsTableView.dataSource = self
-        
         let app = UIApplication.shared.delegate as! AppDelegate
         let context = app.persistentContainer.viewContext
         
@@ -36,7 +31,7 @@ class RewardsViewController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        rewardsTableView.reloadData()
+        tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
