@@ -65,7 +65,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAULTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sm-Hv-RuP">
-                                                    <rect key="frame" x="8.5" y="31" width="58.5" height="13.5"/>
+                                                    <rect key="frame" x="9" y="31" width="58.5" height="13.5"/>
                                                     <fontDescription key="fontDescription" name="OldStamper" family="Old Stamper" pointSize="13"/>
                                                     <color key="textColor" red="0.78301470620000002" green="0.090396249710000001" blue="0.0022233539919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -129,7 +129,7 @@
                                                     <rect key="frame" x="8" y="8" width="93" height="93"/>
                                                 </imageView>
                                                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAULTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHe-gn-aym">
-                                                    <rect key="frame" x="3" y="43.5" width="103" height="23.5"/>
+                                                    <rect key="frame" x="3" y="43" width="103" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="OldStamper" family="Old Stamper" pointSize="23"/>
                                                     <color key="textColor" red="0.78301470624613878" green="0.090396249707123358" blue="0.0022233539918731691" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -234,10 +234,10 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FavoriteBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Gcv-Zb-ewy">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                         </imageView>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Drop %" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKZ-15-zNg">
-                                            <rect key="frame" x="312" y="11" width="55" height="21.5"/>
+                                        <label hidden="YES" opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Drop %" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKZ-15-zNg">
+                                            <rect key="frame" x="312" y="11" width="55" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="55" id="sNI-vI-hg1"/>
                                             </constraints>
@@ -248,13 +248,13 @@
                                             <size key="shadowOffset" width="-1" height="-1"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="Lith_Intact" translatesAutoresizingMaskIntoConstraints="NO" id="cMX-vS-yQ6">
-                                            <rect key="frame" x="0.0" y="0.0" width="64.5" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="64" height="43"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="cMX-vS-yQ6" secondAttribute="height" multiplier="64:43" id="ehv-vE-8ut"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Part Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="sB4-Bp-FsJ">
-                                            <rect key="frame" x="72.5" y="11" width="231.5" height="21.5"/>
+                                            <rect key="frame" x="72" y="11" width="232" height="22"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -262,26 +262,46 @@
                                             <size key="shadowOffset" width="-1" height="-1"/>
                                         </label>
                                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAULTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGi-LN-7U7">
-                                            <rect key="frame" x="6" y="16" width="54" height="12.5"/>
+                                            <rect key="frame" x="5" y="15" width="54" height="13"/>
                                             <fontDescription key="fontDescription" name="OldStamper" family="Old Stamper" pointSize="12"/>
                                             <color key="textColor" red="0.78301470620000002" green="0.090396249710000001" blue="0.0022233539919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ducat" translatesAutoresizingMaskIntoConstraints="NO" id="vTh-bu-OFQ">
+                                            <rect key="frame" x="364" y="11" width="11" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="vTh-bu-OFQ" secondAttribute="height" multiplier="32:66" id="9ph-l7-WBF"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yv-GG-Q7N">
+                                            <rect key="frame" x="312" y="11" width="50" height="22"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" red="0.01000070106" green="0.057615719740000002" blue="0.063428670170000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <size key="shadowOffset" width="-1" height="-1"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="cMX-vS-yQ6" secondAttribute="bottom" id="0N2-10-rYd"/>
+                                        <constraint firstItem="9yv-GG-Q7N" firstAttribute="leading" secondItem="yKZ-15-zNg" secondAttribute="leading" id="3ck-7J-VZ6"/>
+                                        <constraint firstItem="vTh-bu-OFQ" firstAttribute="height" secondItem="9yv-GG-Q7N" secondAttribute="height" id="5XQ-tW-jeE"/>
                                         <constraint firstItem="FGi-LN-7U7" firstAttribute="centerY" secondItem="cMX-vS-yQ6" secondAttribute="centerY" id="KEN-Ch-YX8"/>
                                         <constraint firstItem="cMX-vS-yQ6" firstAttribute="leading" secondItem="Vbe-ua-Egw" secondAttribute="leading" id="Mdh-Mm-tbF"/>
                                         <constraint firstItem="FGi-LN-7U7" firstAttribute="centerX" secondItem="cMX-vS-yQ6" secondAttribute="centerX" id="Mxp-BB-dDy"/>
+                                        <constraint firstItem="vTh-bu-OFQ" firstAttribute="leading" secondItem="9yv-GG-Q7N" secondAttribute="trailing" constant="2" id="TXg-lb-Zoe"/>
                                         <constraint firstItem="yKZ-15-zNg" firstAttribute="trailing" secondItem="Vbe-ua-Egw" secondAttribute="trailingMargin" id="UNZ-A7-gNw"/>
                                         <constraint firstItem="Gcv-Zb-ewy" firstAttribute="leading" secondItem="Vbe-ua-Egw" secondAttribute="leading" id="WwN-Mi-7OD"/>
                                         <constraint firstItem="cMX-vS-yQ6" firstAttribute="top" secondItem="Vbe-ua-Egw" secondAttribute="top" id="a9o-Tz-7aT"/>
+                                        <constraint firstItem="9yv-GG-Q7N" firstAttribute="centerY" secondItem="Vbe-ua-Egw" secondAttribute="centerY" id="baw-SL-MiA"/>
                                         <constraint firstItem="Gcv-Zb-ewy" firstAttribute="top" secondItem="Vbe-ua-Egw" secondAttribute="top" id="bl8-jl-Tis"/>
                                         <constraint firstItem="yKZ-15-zNg" firstAttribute="leading" secondItem="sB4-Bp-FsJ" secondAttribute="trailing" constant="8" id="dYk-VA-seE"/>
+                                        <constraint firstAttribute="trailing" secondItem="vTh-bu-OFQ" secondAttribute="trailing" id="dwC-h5-wO6"/>
                                         <constraint firstItem="sB4-Bp-FsJ" firstAttribute="leading" secondItem="cMX-vS-yQ6" secondAttribute="trailing" constant="8" id="e3x-lQ-6x2"/>
                                         <constraint firstAttribute="bottom" secondItem="Gcv-Zb-ewy" secondAttribute="bottom" id="g19-N8-dJB"/>
                                         <constraint firstItem="sB4-Bp-FsJ" firstAttribute="centerY" secondItem="Vbe-ua-Egw" secondAttribute="centerY" id="hSJ-jn-R8q"/>
                                         <constraint firstAttribute="trailing" secondItem="Gcv-Zb-ewy" secondAttribute="trailing" id="mJg-rA-EE6"/>
+                                        <constraint firstItem="vTh-bu-OFQ" firstAttribute="centerY" secondItem="Vbe-ua-Egw" secondAttribute="centerY" id="nMe-ZK-D4g"/>
                                         <constraint firstItem="yKZ-15-zNg" firstAttribute="centerY" secondItem="Vbe-ua-Egw" secondAttribute="centerY" id="nv6-Gl-lsP"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -300,8 +320,15 @@
                             <outlet property="delegate" destination="d4j-4a-3D1" id="Fmj-af-o1L"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Rewards" id="4Ei-Zu-AnT">
+                        <barButtonItem key="rightBarButtonItem" image="Ducat" id="eCj-Yc-IL7">
+                            <connections>
+                                <action selector="detailOptionButtonPressed:" destination="d4j-4a-3D1" id="G35-Wz-0lS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="rewardsTableView" destination="TeL-Ib-AhC" id="3UG-Yz-cSh"/>
+                        <outlet property="detailOptionButton" destination="eCj-Yc-IL7" id="9zI-Z6-9xR"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="33o-Ft-fun" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -332,7 +359,7 @@
                                             </constraints>
                                         </imageView>
                                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.85000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAULTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45V-IC-qP3">
-                                            <rect key="frame" x="6" y="16" width="54" height="12.5"/>
+                                            <rect key="frame" x="5.5" y="15.5" width="54" height="12.5"/>
                                             <fontDescription key="fontDescription" name="OldStamper" family="Old Stamper" pointSize="12"/>
                                             <color key="textColor" red="0.78301470620000002" green="0.090396249710000001" blue="0.0022233539919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -433,6 +460,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Ducat" width="10" height="22"/>
         <image name="FavoriteBackground" width="640" height="360"/>
         <image name="Lith_Intact" width="512" height="342"/>
         <image name="Void" width="375" height="667"/>
