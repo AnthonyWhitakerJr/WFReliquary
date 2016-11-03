@@ -65,7 +65,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAULTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sm-Hv-RuP">
-                                                    <rect key="frame" x="8.5" y="31" width="58.5" height="13.5"/>
+                                                    <rect key="frame" x="9" y="31" width="58.5" height="13.5"/>
                                                     <fontDescription key="fontDescription" name="OldStamper" family="Old Stamper" pointSize="13"/>
                                                     <color key="textColor" red="0.78301470620000002" green="0.090396249710000001" blue="0.0022233539919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -129,7 +129,7 @@
                                                     <rect key="frame" x="8" y="8" width="93" height="93"/>
                                                 </imageView>
                                                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAULTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHe-gn-aym">
-                                                    <rect key="frame" x="3" y="43.5" width="103" height="23.5"/>
+                                                    <rect key="frame" x="3" y="43" width="103" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="OldStamper" family="Old Stamper" pointSize="23"/>
                                                     <color key="textColor" red="0.78301470624613878" green="0.090396249707123358" blue="0.0022233539918731691" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -262,7 +262,7 @@
                                             <size key="shadowOffset" width="-1" height="-1"/>
                                         </label>
                                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAULTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGi-LN-7U7">
-                                            <rect key="frame" x="5.5" y="15.5" width="54" height="12.5"/>
+                                            <rect key="frame" x="5" y="16" width="54" height="12.5"/>
                                             <fontDescription key="fontDescription" name="OldStamper" family="Old Stamper" pointSize="12"/>
                                             <color key="textColor" red="0.78301470620000002" green="0.090396249710000001" blue="0.0022233539919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -323,11 +323,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Rewards" id="4Ei-Zu-AnT">
-                        <barButtonItem key="rightBarButtonItem" image="Ducat" id="eCj-Yc-IL7">
-                            <connections>
-                                <action selector="detailOptionButtonPressed:" destination="d4j-4a-3D1" id="G35-Wz-0lS"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="eCj-Yc-IL7"/>
                     </navigationItem>
                     <connections>
                         <outlet property="detailOptionButton" destination="eCj-Yc-IL7" id="9zI-Z6-9xR"/>
@@ -361,7 +357,7 @@
                                             </constraints>
                                         </imageView>
                                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.85000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAULTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45V-IC-qP3">
-                                            <rect key="frame" x="6" y="16" width="54" height="12.5"/>
+                                            <rect key="frame" x="5.5" y="15.5" width="54" height="12.5"/>
                                             <fontDescription key="fontDescription" name="OldStamper" family="Old Stamper" pointSize="12"/>
                                             <color key="textColor" red="0.78301470620000002" green="0.090396249710000001" blue="0.0022233539919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>

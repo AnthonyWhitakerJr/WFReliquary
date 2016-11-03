@@ -12,6 +12,8 @@ import CoreData
 /// Set selectedRelics with relevant relics before loading this controller
 class RewardsViewController: UITableViewController {
     
+    @IBOutlet weak var detailOptionButton: UIBarButtonItem!
+    
     var rewardsByRarity = Dictionary<Rarity, [SelectedReward]> ()
     var selectedRelics = [SelectedRelic]()
     
@@ -25,6 +27,13 @@ class RewardsViewController: UITableViewController {
         let app = UIApplication.shared.delegate as! AppDelegate
         let context = app.persistentContainer.viewContext
         
+        let customButton = UIButton(type: .custom)
+        customButton.setImage(#imageLiteral(resourceName: "Ducat"), for: .normal)
+        customButton.setTitle("%", for: .selected)
+        customButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        customButton.addTarget(self, action: #selector(detailOptionButtonPressed(_:)), for: .touchUpInside)
+        detailOptionButton.customView = customButton
+        
         var selectedRewards = RewardUtils.rewards(for: selectedRelics, from: context)
         selectedRewards = RewardUtils.unique(selectedRewards: selectedRewards)
         rewardsByRarity = RewardUtils.groupByRarity(selectedRewards: selectedRewards)
@@ -37,6 +46,15 @@ class RewardsViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func detailOptionButtonPressed(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        
+        let image = sender.isSelected ? nil : #imageLiteral(resourceName: "Ducat")  // Hack to get around normal image showing on selected state
+        sender.setImage(image, for: .normal)
+        
+        tableView.reloadData()
     }
     
     // MARK: - Table view delegate
@@ -64,10 +82,12 @@ class RewardsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "RewardCell", for: indexPath) as? RewardTableViewCell {
             if let rarity = convertToRarity(from: indexPath.section) {
-                let selectedReward = rewardsByRarity[rarity]![indexPath.row]
-                cell.configureCell(selectedReward: selectedReward)
-                
-                return cell
+                if let option = detailOptionButton.customView as? UIButton {
+                    let selectedReward = rewardsByRarity[rarity]![indexPath.row]
+                    cell.configureCell(selectedReward: selectedReward, option: option.isSelected)
+                    
+                    return cell
+                }
             }
         }
         

@@ -17,7 +17,6 @@ class RewardTableViewCell: UITableViewCell {
     @IBOutlet weak var dropPercentageLabel: UILabel!
     @IBOutlet weak var favoriteBackground: UIImageView!
     @IBOutlet weak var vaultedLabel: UILabel!
-    
     @IBOutlet weak var ducatValueLabel: UILabel!
     @IBOutlet weak var ducatImage: UIImageView!
     
@@ -33,23 +32,16 @@ class RewardTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configureCell(selectedReward: SelectedReward) {
+    func configureCell(selectedReward: SelectedReward, option: Bool) {
         self.selectedReward = selectedReward
         self.partLabel.text = selectedReward.reward.primePart.name
         
-//        let odds = selectedReward.dropOdds * 100
-//        let format = odds.truncatingRemainder(dividingBy: 1) < 0.1 ? "%.f%%" : "%.1f%%"
-//        self.dropPercentageLabel.text = String(format: format, odds)
+        let odds = selectedReward.dropOdds * 100
+        let format = odds.truncatingRemainder(dividingBy: 1) < 0.1 ? "%.f%%" : "%.1f%%"
+        self.dropPercentageLabel.text = String(format: format, odds)
         
-        let attachment:NSTextAttachment = NSTextAttachment()
-        attachment.image = #imageLiteral(resourceName: "Ducat")
-        attachment.bounds = CGRect(x: 0.0, y: dropPercentageLabel.font.descender, width: attachment.image!.size.width, height: attachment.image!.size.height)
-        let attachmentString:NSAttributedString = NSAttributedString(attachment: attachment)
-        let text:NSMutableAttributedString = NSMutableAttributedString(string: "\(selectedReward.reward.primePart.ducatValue)")
-        text.append(attachmentString)
-        
-        self.dropPercentageLabel.attributedText = text
-        
+        self.ducatValueLabel.text = "\(selectedReward.reward.primePart.ducatValue)"
+        toggleDetails(option: option)
         
         var rarityColor: UIColor
         switch selectedReward.reward.rarity {
@@ -78,21 +70,9 @@ class RewardTableViewCell: UITableViewCell {
     }
 
     func toggleDetails(option: Bool) {
-        switch option {
-        case false: // Drop Percentage
-            let odds = selectedReward.dropOdds * 100
-            let format = odds.truncatingRemainder(dividingBy: 1) < 0.1 ? "%.f%%" : "%.1f%%"
-            self.dropPercentageLabel.text = String(format: format, odds)
-        case true: // Ducat Value
-            let attachment:NSTextAttachment = NSTextAttachment()
-            attachment.image = #imageLiteral(resourceName: "Ducat")
-            attachment.bounds = CGRect(x: 0.0, y: dropPercentageLabel.font.descender, width: attachment.image!.size.width, height: attachment.image!.size.height)
-            let attachmentString:NSAttributedString = NSAttributedString(attachment: attachment)
-            let text:NSMutableAttributedString = NSMutableAttributedString(string: "\(selectedReward.reward.primePart.ducatValue)")
-            text.append(attachmentString)
-            
-            self.dropPercentageLabel.attributedText = text
-        }
+            dropPercentageLabel.isHidden = option
+            ducatImage.isHidden = !option
+            ducatValueLabel.isHidden = !option
         
     }
 }
