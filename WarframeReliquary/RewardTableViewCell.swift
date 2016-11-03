@@ -17,6 +17,8 @@ class RewardTableViewCell: UITableViewCell {
     @IBOutlet weak var dropPercentageLabel: UILabel!
     @IBOutlet weak var favoriteBackground: UIImageView!
     @IBOutlet weak var vaultedLabel: UILabel!
+    @IBOutlet weak var ducatValueLabel: UILabel!
+    @IBOutlet weak var ducatImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,6 +39,8 @@ class RewardTableViewCell: UITableViewCell {
         let odds = selectedReward.dropOdds * 100
         let format = odds.truncatingRemainder(dividingBy: 1) < 0.1 ? "%.f%%" : "%.1f%%"
         self.dropPercentageLabel.text = String(format: format, odds)
+        
+        self.ducatValueLabel.text = "\(selectedReward.reward.primePart.ducatValue)"
         
         var rarityColor: UIColor
         switch selectedReward.reward.rarity {
@@ -64,4 +68,10 @@ class RewardTableViewCell: UITableViewCell {
         vaultedLabel.isHidden = !selectedReward.reward.primePart.isVaulted
     }
 
+    func toggleDetails(option: Bool) {
+            dropPercentageLabel.isHidden = option
+            ducatImage.isHidden = !option
+            ducatValueLabel.isHidden = !option
+        
+    }
 }

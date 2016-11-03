@@ -65,7 +65,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAULTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sm-Hv-RuP">
-                                                    <rect key="frame" x="9" y="31" width="58.5" height="13.5"/>
+                                                    <rect key="frame" x="8.5" y="31" width="58.5" height="13.5"/>
                                                     <fontDescription key="fontDescription" name="OldStamper" family="Old Stamper" pointSize="13"/>
                                                     <color key="textColor" red="0.78301470620000002" green="0.090396249710000001" blue="0.0022233539919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -129,7 +129,7 @@
                                                     <rect key="frame" x="8" y="8" width="93" height="93"/>
                                                 </imageView>
                                                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAULTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHe-gn-aym">
-                                                    <rect key="frame" x="3" y="43" width="103" height="23.5"/>
+                                                    <rect key="frame" x="3" y="43.5" width="103" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="OldStamper" family="Old Stamper" pointSize="23"/>
                                                     <color key="textColor" red="0.78301470624613878" green="0.090396249707123358" blue="0.0022233539918731691" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -236,7 +236,7 @@
                                         <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FavoriteBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Gcv-Zb-ewy">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                         </imageView>
-                                        <label hidden="YES" opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Drop %" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKZ-15-zNg">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Drop %" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKZ-15-zNg">
                                             <rect key="frame" x="312" y="11" width="55" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="55" id="sNI-vI-hg1"/>
@@ -262,18 +262,12 @@
                                             <size key="shadowOffset" width="-1" height="-1"/>
                                         </label>
                                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAULTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGi-LN-7U7">
-                                            <rect key="frame" x="5" y="15" width="54" height="13"/>
+                                            <rect key="frame" x="5.5" y="15.5" width="54" height="12.5"/>
                                             <fontDescription key="fontDescription" name="OldStamper" family="Old Stamper" pointSize="12"/>
                                             <color key="textColor" red="0.78301470620000002" green="0.090396249710000001" blue="0.0022233539919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ducat" translatesAutoresizingMaskIntoConstraints="NO" id="vTh-bu-OFQ">
-                                            <rect key="frame" x="364" y="11" width="11" height="22"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="vTh-bu-OFQ" secondAttribute="height" multiplier="32:66" id="9ph-l7-WBF"/>
-                                            </constraints>
-                                        </imageView>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yv-GG-Q7N">
+                                        <label hidden="YES" opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yv-GG-Q7N">
                                             <rect key="frame" x="312" y="11" width="50" height="22"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -281,6 +275,12 @@
                                             <color key="shadowColor" red="0.01000070106" green="0.057615719740000002" blue="0.063428670170000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <size key="shadowOffset" width="-1" height="-1"/>
                                         </label>
+                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ducat" translatesAutoresizingMaskIntoConstraints="NO" id="vTh-bu-OFQ">
+                                            <rect key="frame" x="364" y="11" width="11" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="vTh-bu-OFQ" secondAttribute="height" multiplier="32:66" id="9ph-l7-WBF"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="cMX-vS-yQ6" secondAttribute="bottom" id="0N2-10-rYd"/>
@@ -308,6 +308,8 @@
                                 <color key="backgroundColor" red="0.010000701062381268" green="0.057615719735622406" blue="0.063428670167922974" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="dropPercentageLabel" destination="yKZ-15-zNg" id="qlV-QI-HH5"/>
+                                    <outlet property="ducatImage" destination="vTh-bu-OFQ" id="GQT-40-QEQ"/>
+                                    <outlet property="ducatValueLabel" destination="9yv-GG-Q7N" id="uta-wy-hiZ"/>
                                     <outlet property="favoriteBackground" destination="Gcv-Zb-ewy" id="UUp-iJ-tI3"/>
                                     <outlet property="partImage" destination="cMX-vS-yQ6" id="aRp-JX-73Q"/>
                                     <outlet property="partLabel" destination="sB4-Bp-FsJ" id="PV8-zd-Q5y"/>
@@ -359,7 +361,7 @@
                                             </constraints>
                                         </imageView>
                                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.85000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAULTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45V-IC-qP3">
-                                            <rect key="frame" x="5.5" y="15.5" width="54" height="12.5"/>
+                                            <rect key="frame" x="6" y="16" width="54" height="12.5"/>
                                             <fontDescription key="fontDescription" name="OldStamper" family="Old Stamper" pointSize="12"/>
                                             <color key="textColor" red="0.78301470620000002" green="0.090396249710000001" blue="0.0022233539919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
