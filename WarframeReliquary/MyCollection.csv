@@ -1,17 +1,17 @@
 name,count
 Akbronco Prime Blueprint,1
-Akbronco Prime Link,2
-Akstiletto Prime Barrel,1
+Akbronco Prime Link,3
+Akstiletto Prime Barrel,2
 Akstiletto Prime Blueprint,0
-Akstiletto Prime Link,0
+Akstiletto Prime Link,3
 Akstiletto Prime Receiver,0
-Ash Prime Blueprint,1
-Ash Prime Chassis Blueprint,1
-Ash Prime Neuroptics Blueprint,1
+Ash Prime Blueprint,2
+Ash Prime Chassis Blueprint,2
+Ash Prime Neuroptics Blueprint,2
 Ash Prime Systems Blueprint,0
 Boar Prime Barrel,0
 Boar Prime Blueprint,1
-Boar Prime Receiver,1
+Boar Prime Receiver,2
 Boar Prime Stock,0
 Braton Prime Barrel,1
 Braton Prime Blueprint,1
@@ -19,7 +19,7 @@ Braton Prime Receiver,0
 Braton Prime Stock,1
 Bronco Prime Barrel,0
 Bronco Prime Blueprint,3
-Bronco Prime Receiver,0
+Bronco Prime Receiver,1
 Burston Prime Barrel,1
 Burston Prime Blueprint,0
 Burston Prime Receiver,1
@@ -33,7 +33,7 @@ Dakra Prime Blueprint,1
 Dakra Prime Handle,0
 Dual Kamas Prime Blade,0
 Dual Kamas Prime Blueprint,1
-Dual Kamas Prime Handle,2
+Dual Kamas Prime Handle,4
 Fang Prime Blade,3
 Fang Prime Blueprint,1
 Fang Prime Handle,3
@@ -44,7 +44,7 @@ Fragor Prime Head,1
 Galatine Prime Blade,1
 Galatine Prime Blueprint,1
 Galatine Prime Handle,1
-Hikou Prime Blueprint,2
+Hikou Prime Blueprint,3
 Hikou Prime Pouch,0
 Hikou Prime Stars,1
 Kavasa Prime Collar Band,1
@@ -57,17 +57,17 @@ Mag Prime Blueprint,0
 Mag Prime Chassis Blueprint,0
 Mag Prime Neuroptics Blueprint,0
 Mag Prime Systems Blueprint,0
-Nekros Prime Blueprint,1
-Nekros Prime Chassis Blueprint,1
-Nekros Prime Neuroptics Blueprint,1
+Nekros Prime Blueprint,0
+Nekros Prime Chassis Blueprint,0
+Nekros Prime Neuroptics Blueprint,0
 Nekros Prime Systems Blueprint,0
-Nikana Prime Blade,0
-Nikana Prime Blueprint,0
+Nikana Prime Blade,2
+Nikana Prime Blueprint,1
 Nikana Prime Hilt,0
 Nova Prime Blueprint,0
 Nova Prime Chassis Blueprint,0
-Nova Prime Neuroptics Blueprint,0
-Nova Prime Systems Blueprint,0
+Nova Prime Neuroptics Blueprint,1
+Nova Prime Systems Blueprint,2
 Nyx Prime Blueprint,2
 Nyx Prime Chassis Blueprint,0
 Nyx Prime Neuroptics Blueprint,0
@@ -75,26 +75,26 @@ Nyx Prime Systems Blueprint,0
 Odonata Prime Blueprint,0
 Odonata Prime Harness Blueprint,1
 Odonata Prime Systems Blueprint,1
-Odonata Prime Wings Blueprint,0
+Odonata Prime Wings Blueprint,1
 Orthos Prime Blade,0
 Orthos Prime Blueprint,0
 Orthos Prime Handle,0
 Paris Prime Blueprint,1
-Paris Prime Grip,1
+Paris Prime Grip,3
 Paris Prime Lower Limb,1
 Paris Prime String,1
-Paris Prime Upper Limb,1
+Paris Prime Upper Limb,2
 Saryn Prime Blueprint,0
-Saryn Prime Chassis Blueprint,0
+Saryn Prime Chassis Blueprint,1
 Saryn Prime Neuroptics Blueprint,1
 Saryn Prime Systems Blueprint,1
 Scindo Prime Blade,0
 Scindo Prime Blueprint,0
 Scindo Prime Handle,1
-Soma Prime Barrel,1
-Soma Prime Blueprint,0
-Soma Prime Receiver,0
-Soma Prime Stock,0
+Soma Prime Barrel,0
+Soma Prime Blueprint,1
+Soma Prime Receiver,1
+Soma Prime Stock,1
 Spira Prime Blade,0
 Spira Prime Blueprint,2
 Spira Prime Pouch,0
@@ -108,7 +108,7 @@ Trinity Prime Neuroptics Blueprint,0
 Trinity Prime Systems Blueprint,0
 Vasto Prime Barrel,1
 Vasto Prime Blueprint,1
-Vasto Prime Receiver,2
+Vasto Prime Receiver,3
 Vauban Prime Blueprint,1
 Vauban Prime Chassis Blueprint,1
 Vauban Prime Neuroptics Blueprint,0
@@ -118,6 +118,6 @@ Vectis Prime Blueprint,1
 Vectis Prime Receiver,0
 Vectis Prime Stock,0
 Volt Prime Blueprint,0
-Volt Prime Chassis Blueprint,0
+Volt Prime Chassis Blueprint,1
 Volt Prime Neuroptics Blueprint,1
-Volt Prime Systems Blueprint,1
+Volt Prime Systems Blueprint,3
