@@ -23,7 +23,8 @@ class CsvReader {
                 let name = row["name"]!
                 let isVaulted = Bool.init(row["isVaulted"]!.lowercased())!
                 let imageName = row["imageName"]!
-                let part = PrimePart(name: name, isVaulted: isVaulted, imageName: imageName, insertInto: context)
+                let ducatValue = Int16(row["ducatValue"]!)!
+                let part = PrimePart(name: name, isVaulted: isVaulted, imageName: imageName, ducatValue: ducatValue, insertInto: context)
                 
                 primeParts[name] = part
             }
