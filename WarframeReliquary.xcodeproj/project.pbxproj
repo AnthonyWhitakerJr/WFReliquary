@@ -43,6 +43,7 @@
 		92924F6D1DC336B000BE493D /* SelectedReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92924F6C1DC336B000BE493D /* SelectedReward.swift */; };
 		92924F701DC346DD00BE493D /* DropChance+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92924F6E1DC346DD00BE493D /* DropChance+CoreDataClass.swift */; };
 		92924F711DC346DD00BE493D /* DropChance+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92924F6F1DC346DD00BE493D /* DropChance+CoreDataProperties.swift */; };
+		929EE1C81DEE3B4A00EDF2C3 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929EE1C71DEE3B4A00EDF2C3 /* FavoriteButton.swift */; };
 		92CBA3A71DB6502F0049DDDE /* RewardUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBA3A61DB6502F0049DDDE /* RewardUtilsTests.swift */; };
 		92CE01771DBD44FC0058ECC8 /* WeaponParts.json in Resources */ = {isa = PBXBuildFile; fileRef = 92CE01761DBD44FC0058ECC8 /* WeaponParts.json */; };
 		92CE01791DBD450B0058ECC8 /* ExportManifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 92CE01781DBD450B0058ECC8 /* ExportManifest.json */; };
@@ -123,6 +124,7 @@
 		92924F6C1DC336B000BE493D /* SelectedReward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedReward.swift; sourceTree = "<group>"; };
 		92924F6E1DC346DD00BE493D /* DropChance+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DropChance+CoreDataClass.swift"; sourceTree = "<group>"; };
 		92924F6F1DC346DD00BE493D /* DropChance+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DropChance+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		929EE1C71DEE3B4A00EDF2C3 /* FavoriteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		92CBA3A61DB6502F0049DDDE /* RewardUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardUtilsTests.swift; sourceTree = "<group>"; };
 		92CE01761DBD44FC0058ECC8 /* WeaponParts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WeaponParts.json; sourceTree = "<group>"; };
 		92CE01781DBD450B0058ECC8 /* ExportManifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ExportManifest.json; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 			children = (
 				92DA45F81DAD690900D9D3E0 /* LaunchScreen.storyboard */,
 				92DA45F31DAD690900D9D3E0 /* Main.storyboard */,
+				929EE1C71DEE3B4A00EDF2C3 /* FavoriteButton.swift */,
 				92DE3D9D1DAF1877003DAC19 /* FissureRelicCell.swift */,
 				92673EB11DB5673500B6C3AB /* RewardTableViewCell.swift */,
 				921DEE5D1DB31D5A00606458 /* SelectedRelicCell.swift */,
@@ -490,6 +493,7 @@
 				92673EB21DB5673500B6C3AB /* RewardTableViewCell.swift in Sources */,
 				92DA46261DAD8E7300D9D3E0 /* Tier.swift in Sources */,
 				92D3B1EA1DC2D60700AACF51 /* PrimeSet+CoreDataClass.swift in Sources */,
+				929EE1C81DEE3B4A00EDF2C3 /* FavoriteButton.swift in Sources */,
 				92D3B1EB1DC2D60700AACF51 /* PrimeSet+CoreDataProperties.swift in Sources */,
 				924CDFCC1DAE99AD00F5D982 /* CsvReader.swift in Sources */,
 				929119E31DBED36200260156 /* PrimePartTableViewController.swift in Sources */,

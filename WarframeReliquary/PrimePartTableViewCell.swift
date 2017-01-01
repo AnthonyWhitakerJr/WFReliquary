@@ -10,7 +10,7 @@ import UIKit
 
 class PrimePartTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var favoriteButton: UIButton!
+    @IBOutlet weak var favoriteButton: FavoriteButton!
     @IBOutlet weak var partImageView: UIImageView!
     @IBOutlet weak var partNameLabel: UILabel!
     @IBOutlet weak var vaultedLabel: UILabel!
